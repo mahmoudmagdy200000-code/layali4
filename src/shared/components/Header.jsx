@@ -1,38 +1,45 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Bell, Info } from 'lucide-react';
+import { Info } from 'lucide-react';
 import { useLanguage } from '@/features/i18n';
-import { useMenuData } from '@/features/menu/hooks/useMenuData';
 import { LanguageToggle } from './LanguageToggle';
 
 export function Header({ onAboutOpen }) {
-  const { t, isRTL } = useLanguage();
-  const { restaurant } = useMenuData() || {};
+  const { isRTL } = useLanguage();
 
   return (
-    <header className="sticky top-0 z-50 bg-[#ECE7DC]/90 backdrop-blur-md border-b border-black/5">
-      <motion.div
-        className="max-w-md mx-auto px-6 py-4 flex justify-between items-center gap-4"
-        initial={{ y: -20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-      >
-        <img 
-          src="/assets/logo.png" 
-          alt="Logo" 
-          className="h-10 w-auto object-contain shrink-0"
-          loading="eager"
-        />
+    <header className="bg-transparent relative">
+      {/* Utilities Container: Pinned to top corners via absolute positioning */}
+      <div className="absolute top-4 left-0 right-0 w-full px-6 flex justify-between items-start z-10">
+        {/* Language Toggle (AR/EN) */}
+        <LanguageToggle />
         
-        <div className="flex items-center gap-4">
-          <button 
-            onClick={onAboutOpen}
-            className="w-10 h-10 rounded-full flex items-center justify-center text-gray-900 hover:bg-black/5 transition-colors"
-          >
-            <Info size={20} />
-          </button>
-          <LanguageToggle />
-        </div>
-      </motion.div>
+        {/* Info/About Us Icon */}
+        <button 
+          onClick={onAboutOpen}
+          className="w-10 h-10 rounded-full flex items-center justify-center text-gray-900 hover:bg-black/5 transition-colors"
+          aria-label="About Us"
+        >
+          <Info size={24} />
+        </button>
+      </div>
+
+      {/* Hero Logo Container: Centered branding below the utilities */}
+      <div className="pt-16 pb-8 w-full flex justify-center items-center">
+        <motion.div 
+          initial={{ scale: 0.9, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
+          <img 
+            src="/assets/logo.png" 
+            alt="Logo" 
+            className="w-48 sm:w-56 h-auto object-contain"
+            loading="eager"
+          />
+        </motion.div>
+      </div>
     </header>
   );
 }
+
