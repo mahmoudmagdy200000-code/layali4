@@ -16,17 +16,12 @@ export function Header() {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
-        <div className="flex items-center gap-3 min-w-0">
-          <img 
-            src="/assets/logo.png" 
-            alt="Logo" 
-            className="h-10 w-auto object-contain shrink-0"
-            loading="eager"
-          />
-          <h1 className="text-lg md:text-xl font-bold tracking-wide text-gray-900 dark:text-gray-900 truncate">
-            {restaurant?.name}
-          </h1>
-        </div>
+        <img 
+          src="/assets/logo.png" 
+          alt="Logo" 
+          className="h-10 w-auto object-contain shrink-0"
+          loading="eager"
+        />
         
         <div className="flex items-center gap-4">
           <div className="hidden xs:flex flex-col items-end">

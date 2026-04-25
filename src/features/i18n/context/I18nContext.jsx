@@ -7,7 +7,7 @@ export const I18nContext = createContext();
 const translations = { en, ar };
 
 export function I18nProvider({ children }) {
-  const [lang, setLang] = useState('en');
+  const [lang, setLang] = useState('ar');
   const isRTL = lang === 'ar';
 
   const t = (path) => {
