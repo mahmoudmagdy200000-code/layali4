@@ -10,7 +10,7 @@ export function Header() {
   const { restaurant } = useMenuData() || {};
 
   return (
-    <header className="sticky top-0 z-50 bg-surface-950/90 backdrop-blur-md border-b border-outline-variant">
+    <header className="sticky top-0 z-50 bg-[#ECE7DC]/90 backdrop-blur-md border-b border-black/5">
       <motion.div
         className="max-w-md mx-auto px-6 py-4 flex justify-between items-center gap-4"
         initial={{ y: -20, opacity: 0 }}
@@ -23,18 +23,18 @@ export function Header() {
             className="h-10 w-auto object-contain shrink-0"
             loading="eager"
           />
-          <h1 className="text-lg md:text-xl font-bold tracking-wide text-brand-500 truncate">
+          <h1 className="text-lg md:text-xl font-bold tracking-wide text-gray-900 dark:text-gray-900 truncate">
             {restaurant?.name}
           </h1>
         </div>
         
         <div className="flex items-center gap-4">
           <div className="hidden xs:flex flex-col items-end">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-brand-500/70">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-gray-900/60 dark:text-gray-900/60">
               Open Now
             </span>
           </div>
-          <Bell size={18} className="text-brand-500" />
+          <Bell size={18} className="text-gray-900 dark:text-gray-900" />
           <LanguageToggle />
         </div>
       </motion.div>
