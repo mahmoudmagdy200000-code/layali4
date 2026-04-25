@@ -1,0 +1,22 @@
+{
+  "header": {
+    "title": "Layali Albatroun"
+  },
+  "links": {
+    "whatsapp": "Chat with Us",
+    "maps": "Location on Maps",
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "call": "Call for Inquiries",
+    "feedback": "Complaints & Feedback"
+  },
+  "menu": {
+    "title": "Menu",
+    "tagline": "Lebanese to the core",
+    "currency": "KWD"
+  },
+  "common": {
+    "popular": "Popular",
+    "vegan": "Vegan"
+  }
+}

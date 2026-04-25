@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Epicurean Noir Palette ──────────────────────────── */
+  --color-brand-500: #E8D9C5;   /* Warm Cream - Primary Action */
+  --color-brand-600: #D4AF37;   /* Burnished Gold - Accent */
+  
+  --color-surface-950: #121212; /* Deep Charcoal - Page BG */
+  --color-surface-900: #1A1A1A; /* Card/Container BG */
+  --color-surface-800: #242424; /* Elevated Surface */
+  
+  --color-on-surface: #E8D9C5;
+  --color-on-surface-variant: #E8D9C580; /* 50% opacity cream */
+  
+  --color-surface-container: #1A1A1A;
+  --color-outline-variant: #E8D9C51A; /* 10% opacity cream border */
+
+  /* ── Typography ────────────────────────────────────── */
+  --font-display: "Noto Serif", serif;
+  --font-body: "Work Sans", sans-serif;
+  --font-arabic: "Noto Naskh Arabic", serif;
+
+  /* ── Radius ────────────────────────────────────────── */
+  --radius-card: 0.75rem; /* 12px as per original Stitch */
+  --radius-pill: 9999px;
+
+  /* ── Shadows ───────────────────────────────────────── */
+  --shadow-card: none; /* Original design used tonal layering */
+  --shadow-tab: 0 4px 12px 0 rgba(0, 0, 0, 0.5);
+}
+
+@layer base {
+  html {
+    @apply antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    @apply bg-surface-950 font-body text-on-surface;
+  }
+
+  /* Custom scrollbar for category tabs */
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-500 text-surface-950 px-6 py-3 rounded-lg font-bold uppercase tracking-widest active:scale-95 transition-all;
+  }
+}

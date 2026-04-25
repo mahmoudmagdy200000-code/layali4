@@ -1,0 +1,715 @@
+{
+  "restaurantInfo": {
+    "name": {
+      "ar": "ليالي البترون",
+      "en": "Layali Al Batroun"
+    },
+    "tagline": {
+      "ar": "حيث تبدأ الحكاية",
+      "en": "Where the story begins"
+    },
+    "logo": "/assets/logo.png",
+    "established": "2026",
+    "location": {
+      "ar": "الكويت",
+      "en": "Kuwait"
+    },
+    "about": {
+      "title": {
+        "ar": "أهلاً بكم في بيتكم الثاني..",
+        "en": "Welcome to your second home.."
+      },
+      "story": {
+        "ar": "من هنا، ومن قلب الكويت، نفتح لكم أبواباً تطل على أصالة أزقة البترون العريقة، لننقلكم في تجربة حسية فريدة تتجاوز حدود المكان؛ حيث تجتمع رائحة الياسمين مع عبق المطبخ اللبناني الأصيل. في ليالي البترون، نحن لا نقدم مجرد طعام، بل نحيي تراثاً عريقاً ونشارككم تفاصيله في كل طبق.",
+        "en": "From the heart of Kuwait, we open doors overlooking the authenticity of the ancient alleys of Batroun, transporting you into a unique sensory experience. Where the scent of jasmine meets the fragrance of authentic Lebanese cuisine. We don't just serve food; we revive a rich heritage."
+      },
+      "slogan": {
+        "ar": "لبناني على أصوله",
+        "en": "Authentic Lebanese"
+      }
+    },
+    "socialLinks": {
+      "whatsapp": "",
+      "instagram": "",
+      "location": ""
+    }
+  },
+  "menu": [
+    {
+      "categoryId": "cold_mezza",
+      "categoryName": {
+        "ar": "الأطباق الباردة",
+        "en": "Cold Mezza"
+      },
+      "items": [
+        {
+          "id": "cm1",
+          "name": {
+            "ar": "فتوش",
+            "en": "Fattouch"
+          },
+          "description": {
+            "ar": "خضرة مشكلة - بندورة - بصل - زيت زيتون - خس - ليمون",
+            "en": "Mix vegetables, onion, tomato, Lettuce, lemon juice & olive oil"
+          },
+          "price": "1.900",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "cm2",
+          "name": {
+            "ar": "تبوله",
+            "en": "Tabouleh"
+          },
+          "description": {
+            "ar": "بقدونس - بصل - بندورة - زيت زيتون - ليمون - برغل",
+            "en": "Mixed parsley, onion, tomato, Olive oil, lemon, cracked wheat"
+          },
+          "price": "1.900",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "cm3",
+          "name": {
+            "ar": "حمص بيروتي",
+            "en": "Hummos Beiruti"
+          },
+          "description": {
+            "ar": "حمص - طحينة - بقدونس - بندورة - زيت زيتون",
+            "en": "Mix chickpeas with tahina, tomato, parsley, olive oil"
+          },
+          "price": "1.800",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "cm4",
+          "name": {
+            "ar": "ورق عنب",
+            "en": "Warak Enab"
+          },
+          "description": {
+            "ar": "ورق عنب - رز - بندوره - زيت زيتون",
+            "en": "Vine leaves stuffed with rice, tomato and olive oil"
+          },
+          "price": "2.000",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "cm5",
+          "name": {
+            "ar": "متبل باذنجان",
+            "en": "Moutabal Eggplant"
+          },
+          "description": {
+            "ar": "باذنجان مشوي - طحينة - زيت زيتون",
+            "en": "Grilled eggplant, tahina, olive oil"
+          },
+          "price": "1.800",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "cm6",
+          "name": {
+            "ar": "محمرة",
+            "en": "Muhammara"
+          },
+          "description": {
+            "ar": "جوز - رب الحر - زيت زيتون",
+            "en": "Walnuts, olive oil, molasses, chilly paste"
+          },
+          "price": "2.350",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        }
+      ]
+    },
+    {
+      "categoryId": "hot_mezza",
+      "categoryName": {
+        "ar": "مقبلات ساخنة",
+        "en": "Hot Mezza & Pastries"
+      },
+      "items": [
+        {
+          "id": "hm1",
+          "name": {
+            "ar": "رقاقات جبنة",
+            "en": "Cheese Rolls"
+          },
+          "description": {
+            "ar": "رقاقات جبنة مقلية أو مشوية",
+            "en": "Deep fried or grilled cheese rolls in a special crispy dough"
+          },
+          "price": "2.500",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "hm2",
+          "name": {
+            "ar": "كبة أقراص مقلية",
+            "en": "Kebbah Akras"
+          },
+          "description": {
+            "ar": "كبة برغل محشية باللحمة",
+            "en": "Stuffed kebbah with meat and pinenuts"
+          },
+          "price": "2.250",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "hm3",
+          "name": {
+            "ar": "نقانق لبنانية",
+            "en": "Lebanese Sausages"
+          },
+          "description": {
+            "ar": "نقانق مع دبس الرمان والحامض",
+            "en": "Special spices with pomegranate molasses lemon sauce"
+          },
+          "price": "1.900",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "hm4",
+          "name": {
+            "ar": "بطاطا حرة (كزبرة)",
+            "en": "Potato Coriander"
+          },
+          "description": {
+            "ar": "بطاطا مع ثوم وكزبرة",
+            "en": "Potato cubes with coriander, garlic & chilly"
+          },
+          "price": "1.650",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "hm5",
+          "name": {
+            "ar": "لحمة رأس عصفور",
+            "en": "Lahmeh Ras Asfour"
+          },
+          "description": {
+            "ar": "لحمة رأس عصفور بدبس الرمان أو حامض",
+            "en": "Pan-fried meat cubes with molasses or lemon"
+          },
+          "price": "2.500",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "hm6",
+          "name": {
+            "ar": "منقوشة زعتر",
+            "en": "Mankoushet Zaatar"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "1.500",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "hm7",
+          "name": {
+            "ar": "لحمة بعجين بدبس رمان",
+            "en": "Lahmeh Bil Ajin Molasses"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "2.250",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        }
+      ]
+    },
+    {
+      "categoryId": "grills",
+      "categoryName": {
+        "ar": "مشاوي",
+        "en": "Lebanese Mix Grilled"
+      },
+      "items": [
+        {
+          "id": "gr1",
+          "name": {
+            "ar": "مشاوي مشكل كبير (8 سيخ)",
+            "en": "Large Mixed Grill (8 skewers)"
+          },
+          "description": {
+            "ar": "كفتة، طاووق، ولحم مشوي. تقدم مع الخضار المشوي والبطاطا المقلية",
+            "en": "Marinated meat, chicken, kafta served with grilled vegetables and fried potato"
+          },
+          "price": "9.000",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "gr2",
+          "name": {
+            "ar": "شيش طاووق (3 سيخ)",
+            "en": "Shish Taouk (3 skewers)"
+          },
+          "description": {
+            "ar": "قطع من الطاووق المشوي مع الخضار والبطاطا",
+            "en": "Marinated chicken grill served with potato, garlic"
+          },
+          "price": "5.500",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "gr3",
+          "name": {
+            "ar": "كباب خشخاش",
+            "en": "Kabab Khaskash Platter"
+          },
+          "description": {
+            "ar": "كباب مشوي يقدم مع الطماطم",
+            "en": "Mixed spicy meat skewers served with tomatoes"
+          },
+          "price": "4.700",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "gr4",
+          "name": {
+            "ar": "ريش غنم (كستليته)",
+            "en": "Lamb Cutlets"
+          },
+          "description": {
+            "ar": "ريش مشوية بالتوابل الخاصة والخضار",
+            "en": "Marinated lamb cutlets with spices and vegetables"
+          },
+          "price": "7.500",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "gr5",
+          "name": {
+            "ar": "عرايس كفته بالجبنة",
+            "en": "Kafta Arayes with Cheese"
+          },
+          "description": {
+            "ar": "كفته مشويه بالخبز اللبناني مع جبنة",
+            "en": "Marinated grilled meat in Lebanese bread with cheese"
+          },
+          "price": "2.500",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        }
+      ]
+    },
+    {
+      "categoryId": "daily_dishes",
+      "categoryName": {
+        "ar": "الأطباق اليومية",
+        "en": "Daily Main Dishes"
+      },
+      "items": [
+        {
+          "id": "dd1",
+          "name": {
+            "ar": "فريكة دجاج",
+            "en": "Freekeh Chicken"
+          },
+          "description": {
+            "ar": "فريكة مطبوخة على نار هادية بالدجاج والبهارات الشرقية",
+            "en": "Seasoned freekeh, cooked slowly with marinated chicken and oriental spices"
+          },
+          "price": "3.750",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "dd2",
+          "name": {
+            "ar": "قوزي (رز وموزات)",
+            "en": "Ouzze"
+          },
+          "description": {
+            "ar": "رز، لحم مفروم، موزات",
+            "en": "Oriental rice with fresh lamb (mouzat)"
+          },
+          "price": "4.500",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "dd3",
+          "name": {
+            "ar": "كبة باللبن",
+            "en": "Kibbeh Bil Labban"
+          },
+          "description": {
+            "ar": "كبة برغل مطبوخة مع اللبن الطازج مع أرز",
+            "en": "Kibbeh cooked in hot yogurt and served with rice"
+          },
+          "price": "4.000",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        }
+      ]
+    },
+    {
+      "categoryId": "raw_meat",
+      "categoryName": {
+        "ar": "لحمة نية",
+        "en": "Lebanese Raw Meat"
+      },
+      "items": [
+        {
+          "id": "rm1",
+          "name": {
+            "ar": "تابلة",
+            "en": "Tableh"
+          },
+          "description": {
+            "ar": "لحمة نيئة مبهرة سادة",
+            "en": "Seasoned pure lamb"
+          },
+          "price": "2.500",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "rm2",
+          "name": {
+            "ar": "كبة نية",
+            "en": "Kibbeh Nayyeh"
+          },
+          "description": {
+            "ar": "لحمة نية مع برغل وبصل والبهارات",
+            "en": "Raw lamb with cracked wheat, onion and spices"
+          },
+          "price": "2.700",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        }
+      ]
+    },
+    {
+      "categoryId": "breakfast",
+      "categoryName": {
+        "ar": "ترويقة",
+        "en": "Breakfast"
+      },
+      "items": [
+        {
+          "id": "bf1",
+          "name": {
+            "ar": "بيض مع السجق",
+            "en": "Egg with Soujok"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "2.000",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "bf2",
+          "name": {
+            "ar": "فول مدمس",
+            "en": "Foul Modamas"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "1.750",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "bf3",
+          "name": {
+            "ar": "فتة حمص",
+            "en": "Fattah Hommous"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "2.250",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "bf4",
+          "name": {
+            "ar": "حلوم مشوي",
+            "en": "Grilled Halloumi"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "2.000",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        }
+      ]
+    },
+    {
+      "categoryId": "soups",
+      "categoryName": {
+        "ar": "شوربات",
+        "en": "Soups"
+      },
+      "items": [
+        {
+          "id": "sp1",
+          "name": {
+            "ar": "شوربة عدس",
+            "en": "Lentil Soup"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "1.750",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "sp2",
+          "name": {
+            "ar": "شوربة كريمة بالدجاج",
+            "en": "Cream Chicken Soup"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "1.900",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        }
+      ]
+    },
+    {
+      "categoryId": "desserts",
+      "categoryName": {
+        "ar": "حلويات",
+        "en": "Desserts"
+      },
+      "items": [
+        {
+          "id": "ds1",
+          "name": {
+            "ar": "عيش السرايا",
+            "en": "Ayesh El-Saraya"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "2.000",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "ds2",
+          "name": {
+            "ar": "عثملية بالقشطة",
+            "en": "Osmalieh with Kashta"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "2.250",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "ds3",
+          "name": {
+            "ar": "كريم برولية باللوتس",
+            "en": "Cream Brouleh Lotus"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "2.750",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        }
+      ]
+    },
+    {
+      "categoryId": "drinks",
+      "categoryName": {
+        "ar": "مشروبات",
+        "en": "Beverages"
+      },
+      "items": [
+        {
+          "id": "dr1",
+          "name": {
+            "ar": "قهوة تركية",
+            "en": "Turkish Coffee"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "1.250",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "dr2",
+          "name": {
+            "ar": "ليموناضة بالنعناع طازج",
+            "en": "Fresh Mint Lemonade"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "1.350",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "dr3",
+          "name": {
+            "ar": "موهيتو بالفراولة",
+            "en": "Strawberry Mojito"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "2.350",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        }
+      ]
+    }
+  ]
+}
