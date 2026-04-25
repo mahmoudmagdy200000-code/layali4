@@ -35,7 +35,7 @@ export function MenuItemCard({ image, title, description, price, currency, tags 
       </div>
 
       {/* Content Area: Vertical layout for text and price */}
-      <div className="p-5 flex flex-col flex-1">
+      <div className="p-5 flex flex-col flex-1 text-start">
         <div className="flex flex-col gap-1 mb-4">
           <h3 className="font-display text-lg font-bold text-gray-900 break-words leading-tight">
             {title}
