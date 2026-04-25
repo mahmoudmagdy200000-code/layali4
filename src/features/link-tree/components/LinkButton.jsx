@@ -3,14 +3,22 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '@/features/i18n';
 import { ChevronRight } from 'lucide-react';
 
-export function LinkButton({ href, icon: Icon, label, colorClass, index }) {
+export function LinkButton({ href, icon: Icon, label, colorClass, index, onClick }) {
   const { isRTL } = useLanguage();
+
+  const handleClick = (e) => {
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      onClick?.(href.substring(1));
+    }
+  };
 
   return (
     <motion.a
       href={href}
-      target="_blank"
-      rel="noopener noreferrer"
+      onClick={handleClick}
+      target={href.startsWith('#') ? undefined : "_blank"}
+      rel={href.startsWith('#') ? undefined : "noopener noreferrer"}
       className={`flex items-center gap-4 p-5 rounded-2xl border border-black/10 shadow-md transition-all group ${colorClass}`}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}

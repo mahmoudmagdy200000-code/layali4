@@ -12,9 +12,15 @@ function App() {
   const [isAboutOpen, setIsAboutOpen] = useState(false);
   const { t } = useLanguage();
 
+  const handleLinkAction = (action) => {
+    if (action === 'story') {
+      setIsAboutOpen(true);
+    }
+  };
+
   return (
     <PageShell>
-      <Header onAboutOpen={() => setIsAboutOpen(true)} />
+      <Header />
       <main className="flex-1 pb-20">
         <motion.div
           initial={{ opacity: 0 }}
@@ -26,7 +32,7 @@ function App() {
             <h2 className="font-display text-2xl text-gray-900 text-center mb-8">
               {t('links.section_title')}
             </h2>
-            <LinkTreeSection />
+            <LinkTreeSection onAction={handleLinkAction} />
           </div>
           
           <MenuSection />

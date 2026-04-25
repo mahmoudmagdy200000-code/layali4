@@ -1,6 +1,14 @@
-import { Phone, MapPin, Camera, MessageSquare, Info, Play } from 'lucide-react';
+import { Phone, MapPin, Camera, MessageSquare, Info, Play, PenLine as Quill } from 'lucide-react';
 
 export const LINK_CONFIG = [
+  {
+    id: 'story',
+    href: '#story',
+    icon: Quill,
+    labelKey: 'links.story',
+    colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',
+    priority: 0,
+  },
   {
     id: 'whatsapp',
     href: 'https://wa.me/966XXXXXXXXX', 
