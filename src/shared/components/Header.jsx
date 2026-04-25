@@ -23,7 +23,7 @@ export function Header() {
             className="h-10 w-auto object-contain shrink-0"
             loading="eager"
           />
-          <h1 className="text-lg md:text-xl font-bold tracking-wide text-gray-900 dark:text-white truncate">
+          <h1 className="text-lg md:text-xl font-bold tracking-wide text-brand-500 truncate">
             {restaurant?.name}
           </h1>
         </div>
