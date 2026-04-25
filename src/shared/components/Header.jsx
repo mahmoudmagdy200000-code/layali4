@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Bell } from 'lucide-react';
+import { Bell, Info } from 'lucide-react';
 import { useLanguage } from '@/features/i18n';
 import { useMenuData } from '@/features/menu/hooks/useMenuData';
 import { LanguageToggle } from './LanguageToggle';
 
-export function Header() {
+export function Header({ onAboutOpen }) {
   const { t, isRTL } = useLanguage();
   const { restaurant } = useMenuData() || {};
 
@@ -24,12 +24,12 @@ export function Header() {
         />
         
         <div className="flex items-center gap-4">
-          <div className="hidden xs:flex flex-col items-end">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-gray-900/60 dark:text-gray-900/60">
-              Open Now
-            </span>
-          </div>
-          <Bell size={18} className="text-gray-900 dark:text-gray-900" />
+          <button 
+            onClick={onAboutOpen}
+            className="w-10 h-10 rounded-full flex items-center justify-center text-gray-900 hover:bg-black/5 transition-colors"
+          >
+            <Info size={20} />
+          </button>
           <LanguageToggle />
         </div>
       </motion.div>
