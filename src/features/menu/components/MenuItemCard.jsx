@@ -42,18 +42,21 @@ export function MenuItemCard({ image, title, description, price, currency, tags 
       )}
 
       {/* Content Layer */}
-      <div className={`${hasImage ? 'absolute inset-x-0 bottom-0 p-6 flex flex-col justify-end h-full' : 'relative'} z-10`}>
-        <div className="flex justify-between items-start mb-2 gap-3">
-          <h3 className="font-display font-medium text-xl text-brand-500 leading-tight flex-1 break-words">
+      <div className={`${hasImage ? 'absolute inset-0 p-6 flex flex-col justify-end' : 'relative flex flex-col h-full'} z-10`}>
+        <div className="flex flex-col gap-1 mb-2">
+          <h3 className="font-display text-lg font-bold break-words text-brand-500 leading-tight">
             {title}
           </h3>
-          <span className="font-display text-sm text-brand-600 font-bold whitespace-nowrap shrink-0 mt-1">
+          <p className={`text-sm line-clamp-3 mb-3 ${hasImage ? 'text-white/80' : 'text-surface-500'}`}>
+            {description}
+          </p>
+        </div>
+        
+        <div className="mt-auto flex justify-end">
+          <span className="font-display text-base font-semibold text-yellow-600 dark:text-yellow-500 whitespace-nowrap">
             {formatCurrency(price, currency, isRTL)}
           </span>
         </div>
-        <p className={`text-xs leading-relaxed line-clamp-3 ${hasImage ? 'text-brand-500/80' : 'text-on-surface-variant'}`}>
-          {description}
-        </p>
       </div>
     </motion.div>
   );
