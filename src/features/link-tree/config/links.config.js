@@ -6,7 +6,7 @@ export const LINK_CONFIG = [
     href: 'https://wa.me/966XXXXXXXXX', 
     icon: MessageSquare,
     labelKey: 'links.whatsapp',
-    colorClass: 'bg-surface-900 text-brand-500',
+    colorClass: 'bg-green-600 hover:bg-green-700',
     priority: 1,
   },
   {
@@ -14,7 +14,7 @@ export const LINK_CONFIG = [
     href: 'https://maps.app.goo.gl/vzRGvzQYmdi6Yioh9',
     icon: MapPin,
     labelKey: 'links.maps',
-    colorClass: 'bg-surface-900 text-brand-500',
+    colorClass: 'bg-brand-600 hover:bg-brand-700',
     priority: 2,
   },
   {
@@ -22,7 +22,7 @@ export const LINK_CONFIG = [
     href: 'https://instagram.com/layalialbatroun',
     icon: Camera,
     labelKey: 'links.instagram',
-    colorClass: 'bg-surface-900 text-brand-500',
+    colorClass: 'bg-brand-600 hover:bg-brand-700',
     priority: 3,
   },
   {
@@ -30,7 +30,7 @@ export const LINK_CONFIG = [
     href: 'https://tiktok.com/@layalialbatroun',
     icon: Play,
     labelKey: 'links.tiktok',
-    colorClass: 'bg-surface-900 text-brand-500',
+    colorClass: 'bg-brand-600 hover:bg-brand-700',
     priority: 4,
   },
   {
@@ -38,7 +38,7 @@ export const LINK_CONFIG = [
     href: 'tel:41115030',
     icon: Phone,
     labelKey: 'links.call',
-    colorClass: 'bg-surface-900 text-brand-500',
+    colorClass: 'bg-brand-600 hover:bg-brand-700',
     priority: 5,
   },
   {
@@ -46,7 +46,7 @@ export const LINK_CONFIG = [
     href: 'tel:41197794',
     icon: Info,
     labelKey: 'links.feedback',
-    colorClass: 'bg-surface-900 text-brand-500',
+    colorClass: 'bg-brand-600 hover:bg-brand-700',
     priority: 6,
   },
 ];

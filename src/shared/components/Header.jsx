@@ -14,9 +14,12 @@ export function Header() {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
-        <h1 className="font-display text-xl font-bold text-brand-500 tracking-[0.2em] uppercase">
-          {t('header.title')}
-        </h1>
+        <img 
+          src="/assets/logo.png" 
+          alt="Layali Al Batroun Logo" 
+          className="h-12 w-auto object-contain"
+          loading="eager"
+        />
         
         <div className="flex items-center gap-4">
           <div className="hidden xs:flex flex-col items-end">
