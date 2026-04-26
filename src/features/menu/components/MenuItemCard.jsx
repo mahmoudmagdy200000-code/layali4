@@ -41,7 +41,7 @@ export function MenuItemCard({ image, title, description, price, currency, tags,
       {/* Content Area: Vertical layout for text and price */}
       <div className="p-5 flex flex-col flex-1 text-start">
         <div className="flex flex-col gap-1 mb-4">
-          <h3 className="font-display text-lg font-bold text-gray-900 break-words leading-tight">
+          <h3 className="font-display text-base font-bold text-gray-900 break-words leading-tight">
             {title}
           </h3>
           {description && description.trim() !== "" && (
@@ -51,7 +51,7 @@ export function MenuItemCard({ image, title, description, price, currency, tags,
           )}
         </div>
         
-        <div className="mt-auto flex justify-between items-center">
+        <div className="mt-auto flex items-center">
           <span className="font-display text-base font-semibold text-brand-900" dir={isRTL ? "rtl" : "ltr"}>
             {`${price} ${currency}`}
           </span>

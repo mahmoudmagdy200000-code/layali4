@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { AppProviders } from './providers/AppProviders';
 import { PageShell } from '@/shared/components/PageShell';
 import { Header } from '@/shared/components/Header';
+import { Footer } from '@/shared/components/Footer';
 import { useLanguage } from '@/features/i18n';
 import { LinkTreeSection } from '@/features/link-tree';
 import { MenuSection } from '@/features/menu';
@@ -38,6 +39,8 @@ function App() {
           <MenuSection />
         </motion.div>
       </main>
+
+      <Footer />
 
       <AboutModal 
         isOpen={isAboutOpen} 
