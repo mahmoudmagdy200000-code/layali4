@@ -23,11 +23,13 @@ export function MenuSection() {
         </p>
       </div>
 
-      <CategoryTabs
-        categories={categories}
-        activeId={activeId}
-        onSelect={setActiveId}
-      />
+      <div className="sticky top-0 z-40 bg-[#ECE7DC]/95 backdrop-blur-md pt-4 pb-2 shadow-sm -mx-6 px-6">
+        <CategoryTabs
+          categories={categories}
+          activeId={activeId}
+          onSelect={setActiveId}
+        />
+      </div>
 
       <MenuGrid items={activeItems} />
     </section>

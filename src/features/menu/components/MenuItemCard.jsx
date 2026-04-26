@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 import { formatCurrency } from '@/shared/utils/formatCurrency';
 import { useLanguage } from '@/features/i18n';
 
-export function MenuItemCard({ image, title, description, price, currency, tags }) {
+export function MenuItemCard({ image, title, description, price, currency, tags, categoryId }) {
   const { isRTL, t } = useLanguage();
   
-  // Use item image or premium Mediterranean placeholder
-  const displayImage = image || 'https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=600&q=80';
+  // The image is strictly provided by useMenuData (hardcoded unsplash or fallback)
+  const displayImage = image;
 
   return (
     <motion.div
@@ -24,6 +24,10 @@ export function MenuItemCard({ image, title, description, price, currency, tags 
           alt={title}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           loading="lazy"
+          onError={(e) => {
+            e.target.onerror = null; 
+            e.target.src = 'https://placehold.co/400x300/e2e8f0/475569?text=No+Image';
+          }}
         />
         
         {/* Popular Badge: Floating over the image */}
@@ -40,14 +44,16 @@ export function MenuItemCard({ image, title, description, price, currency, tags 
           <h3 className="font-display text-lg font-bold text-gray-900 break-words leading-tight">
             {title}
           </h3>
-          <p className="text-sm text-gray-600 line-clamp-2">
-            {description}
-          </p>
+          {description && description.trim() !== "" && (
+            <p className="text-sm text-gray-600 line-clamp-2">
+              {description}
+            </p>
+          )}
         </div>
         
         <div className="mt-auto flex justify-between items-center">
-          <span className="font-display text-base font-semibold text-brand-900">
-            {formatCurrency(price, currency, isRTL)}
+          <span className="font-display text-base font-semibold text-brand-900" dir={isRTL ? "rtl" : "ltr"}>
+            {`${price} ${currency}`}
           </span>
         </div>
       </div>
