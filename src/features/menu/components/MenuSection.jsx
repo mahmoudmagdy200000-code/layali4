@@ -23,7 +23,7 @@ export function MenuSection() {
         </p>
       </div>
 
-      <div className="sticky top-0 z-40 bg-[#ECE7DC]/95 backdrop-blur-md pt-4 pb-2 shadow-sm -mx-6 px-6">
+      <div className="sticky top-0 z-50 bg-[#ECE7DC]/85 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.03)] -mx-6 px-6 pt-4 pb-2 transition-all duration-300">
         <CategoryTabs
           categories={categories}
           activeId={activeId}

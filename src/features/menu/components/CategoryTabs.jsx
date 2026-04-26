@@ -12,15 +12,23 @@ export function CategoryTabs({ categories, activeId, onSelect }) {
             key={cat.id}
             onClick={() => onSelect(cat.id)}
             className={`
-              relative px-5 py-2 rounded-full text-sm font-bold tracking-tight transition-all duration-300 
-              shrink-0 min-w-max whitespace-nowrap snap-center active:scale-95
+              relative px-5 py-2.5 rounded-full text-sm font-bold tracking-tight transition-colors duration-300 
+              shrink-0 min-w-max whitespace-nowrap snap-center outline-none
               ${isActive 
-                ? 'bg-[#233a34] text-[#ECE7DC] shadow-md' 
-                : 'bg-transparent text-[#233a34]/70 hover:text-[#233a34] hover:bg-black/5'}
+                ? 'text-[#ECE7DC]' 
+                : 'text-[#233a34]/70 hover:text-[#233a34] hover:bg-black/5'}
             `}
+            style={{ WebkitTapHighlightColor: 'transparent' }}
           >
-            {/* Using solid brand background for the active state to unify with Link Tree buttons */}
-            <span className="relative z-10">{cat.label}</span>
+            {isActive && (
+              <motion.div
+                layoutId="activeCategoryTab"
+                className="absolute inset-0 bg-[#233a34] rounded-full shadow-md"
+                initial={false}
+                transition={{ type: 'spring', stiffness: 400, damping: 30 }}
+              />
+            )}
+            <span className="relative z-10 block transform-gpu">{cat.label}</span>
           </button>
         );
       })}

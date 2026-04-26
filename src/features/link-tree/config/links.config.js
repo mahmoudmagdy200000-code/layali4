@@ -11,7 +11,7 @@ export const LINK_CONFIG = [
   },
   {
     id: 'whatsapp',
-    href: 'https://wa.me/966XXXXXXXXX', 
+    href: 'https://wa.me/96541114030', 
     icon: MessageSquare,
     labelKey: 'links.whatsapp',
     colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',
@@ -43,7 +43,7 @@ export const LINK_CONFIG = [
   },
   {
     id: 'call',
-    href: 'tel:41115030',
+    href: 'https://wa.me/96541114030',
     icon: Phone,
     labelKey: 'links.call',
     colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',
@@ -51,7 +51,7 @@ export const LINK_CONFIG = [
   },
   {
     id: 'feedback',
-    href: 'tel:41197794',
+    href: 'https://wa.me/96541204444',
     icon: Info,
     labelKey: 'links.feedback',
     colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',
