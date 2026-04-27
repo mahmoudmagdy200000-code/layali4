@@ -2,9 +2,11 @@ import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 import { useMenuData } from '../hooks/useMenuData';
+import { useLanguage } from '@/features/i18n';
 
 export function AboutModal({ isOpen, onClose }) {
   const { restaurant } = useMenuData() || {};
+  const { t } = useLanguage();
 
   if (!restaurant) return null;
 
@@ -21,7 +23,7 @@ export function AboutModal({ isOpen, onClose }) {
           {/* Header */}
           <div className="flex justify-between items-center px-6 py-6 border-b border-black/5">
             <h2 className="font-display text-xl font-bold text-brand-900">
-              Our Story
+              {t('links.story')}
             </h2>
             <button 
               onClick={onClose}
