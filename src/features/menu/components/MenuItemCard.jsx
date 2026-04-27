@@ -1,67 +1,66 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { formatCurrency } from '@/shared/utils/formatCurrency';
 import { useLanguage } from '@/features/i18n';
 
-export function MenuItemCard({ image, title, description, price, currency, tags, categoryId }) {
+/**
+ * MenuItemCard — Image Grid Overlay variant.
+ * Renders as a full-bleed image tile with a gradient overlay
+ * displaying only the item name and price.
+ * Clicking opens the detail modal (handled by parent via onSelect).
+ */
+export function MenuItemCard({ image, title, description, price, currency, tags, categoryId, onSelect }) {
   const { isRTL, t } = useLanguage();
-  
-  // The image is strictly provided by useMenuData (hardcoded unsplash or fallback)
+
   const displayImage = image;
 
   return (
     <motion.div
       layout
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, scale: 0.95 }}
-      className="flex items-start gap-4 py-4 border-b border-black/5 last:border-0"
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.9 }}
+      transition={{ duration: 0.3 }}
+      onClick={onSelect}
+      className="relative overflow-hidden rounded-xl cursor-pointer group"
     >
-      {/* Thumbnail Image: Small and elegant */}
-      <div className="flex-shrink-0 w-20 h-20 overflow-hidden rounded-lg bg-gray-100">
+      {/* Full-bleed Image */}
+      <div className="aspect-square w-full">
         <img
           src={displayImage}
           alt={title}
-          className="w-full h-full object-cover grayscale-[0.2] contrast-[1.1]"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           loading="lazy"
           onError={(e) => {
-            e.target.onerror = null; 
-            e.target.src = 'https://placehold.co/100x100/e2e8f0/475569?text=Food';
+            e.target.onerror = null;
+            e.target.src = 'https://placehold.co/400x400/e2e8f0/475569?text=Food';
           }}
         />
       </div>
 
-      {/* Content Area: Horizontal layout with dotted connector */}
-      <div className="flex-1 min-w-0">
-        <div className="flex items-baseline justify-between gap-2">
-          <h3 className="font-display text-lg font-bold text-gray-900 break-words leading-tight">
-            {title}
-          </h3>
-          
-          {/* Dotted Connector: Hidden on very small screens, visible on tablet */}
-          <div className="hidden sm:block flex-1 border-b border-dotted border-gray-300 mx-2 mb-1.5" />
-          
-          <span className="font-display text-base font-semibold text-brand-900 whitespace-nowrap" dir={isRTL ? "rtl" : "ltr"}>
-            {`${price} ${currency}`}
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent pointer-events-none" />
+
+      {/* Popular Badge: Top corner */}
+      {tags?.includes('popular') && (
+        <div className={`absolute top-2.5 ${isRTL ? 'right-2.5' : 'left-2.5'} z-10`}>
+          <span className="bg-brand-600 text-white text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md shadow-lg">
+            {t('common.popular')}
           </span>
         </div>
+      )}
 
-        {description && description.trim() !== "" && (
-          <p className="mt-1 text-sm text-gray-600 font-body leading-relaxed max-w-[85%]">
-            {description}
-          </p>
-        )}
-        
-        {/* Popular Badge: Minimalist tag */}
-        {tags?.includes('popular') && (
-          <div className="mt-2 inline-flex items-center">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-brand-600 bg-brand-500/10 px-1.5 py-0.5 rounded">
-              {t('common.popular')}
-            </span>
-          </div>
-        )}
+      {/* Bottom Text Overlay: Name + Price */}
+      <div className="absolute bottom-0 left-0 right-0 p-3 flex justify-between items-end gap-2">
+        <h3 className="font-display text-sm sm:text-base font-bold text-white leading-tight line-clamp-2 flex-1">
+          {title}
+        </h3>
+        <span
+          className="font-display text-xs sm:text-sm font-semibold text-brand-500 whitespace-nowrap"
+          dir={isRTL ? 'rtl' : 'ltr'}
+        >
+          {`${price} ${currency}`}
+        </span>
       </div>
     </motion.div>
   );
 }
-

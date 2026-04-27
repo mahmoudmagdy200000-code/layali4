@@ -6,7 +6,7 @@ export function PageShell({ children }) {
       {/* Background Texture Overlay */}
       <div className="fixed inset-0 pointer-events-none opacity-[0.03] dark:opacity-[0.05] bg-[url('https://www.transparenttextures.com/patterns/dark-matter.png')] z-0" />
       
-      <div className="relative z-10 max-w-md md:max-w-5xl mx-auto min-h-screen flex flex-col">
+      <div className="relative z-10 max-w-md md:max-w-4xl lg:max-w-6xl mx-auto min-h-screen flex flex-col">
         {children}
       </div>
     </div>
