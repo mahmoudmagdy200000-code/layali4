@@ -1,4 +1,4 @@
-import { Phone, MapPin, Camera, MessageSquare, Info, Play, PenLine as Quill } from 'lucide-react';
+import { Phone, MapPin, Aperture, MessageCircle, MessageSquareHeart, Clapperboard, PenLine as Quill } from 'lucide-react';
 
 export const LINK_CONFIG = [
   {
@@ -12,7 +12,7 @@ export const LINK_CONFIG = [
   {
     id: 'whatsapp',
     href: 'https://wa.me/96541114030', 
-    icon: MessageSquare,
+    icon: MessageCircle,
     labelKey: 'links.whatsapp',
     colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',
     priority: 1,
@@ -28,7 +28,7 @@ export const LINK_CONFIG = [
   {
     id: 'instagram',
     href: 'https://instagram.com/layalialbatroun',
-    icon: Camera,
+    icon: Aperture,
     labelKey: 'links.instagram',
     colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',
     priority: 3,
@@ -36,7 +36,7 @@ export const LINK_CONFIG = [
   {
     id: 'tiktok',
     href: 'https://tiktok.com/@layalialbatroun',
-    icon: Play,
+    icon: Clapperboard,
     labelKey: 'links.tiktok',
     colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',
     priority: 4,
@@ -52,7 +52,7 @@ export const LINK_CONFIG = [
   {
     id: 'feedback',
     href: 'https://wa.me/96541204444',
-    icon: Info,
+    icon: MessageSquareHeart,
     labelKey: 'links.feedback',
     colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',
     priority: 6,

@@ -103,7 +103,7 @@ export function MenuItemDetailModal({ item, isOpen, onClose }) {
 
               {/* Full Description */}
               {item.description && item.description.trim() !== '' && (
-                <p className="text-base text-gray-600 font-body leading-relaxed">
+                <p className="text-base text-gray-800 font-body leading-loose">
                   {item.description}
                 </p>
               )}
