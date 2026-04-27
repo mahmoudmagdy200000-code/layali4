@@ -12,7 +12,7 @@ export function MenuGrid({ items }) {
   }
 
   return (
-    <div className="grid grid-cols-2 gap-4 px-6 pb-20">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 px-6 pb-20">
       <AnimatePresence mode="popLayout">
         {items.map((item) => (
           <MenuItemCard key={item.id} {...item} />
