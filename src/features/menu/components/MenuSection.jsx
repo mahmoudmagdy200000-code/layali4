@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useMenuData } from '../hooks/useMenuData';
 import { useLanguage } from '@/features/i18n';
 import { useActiveCategory } from '../hooks/useActiveCategory';
@@ -8,9 +8,13 @@ import { MenuGrid } from './MenuGrid';
 export function MenuSection() {
   const { categories, restaurant } = useMenuData();
   const { t } = useLanguage();
-  const { activeId, setActiveId } = useActiveCategory(categories[0]?.id);
+  const { activeId, setActiveId, isPending } = useActiveCategory(categories[0]?.id);
 
-  const activeItems = categories.find((cat) => cat.id === activeId)?.items || [];
+  // Memoize the filtered items — only recalculates when activeId or categories change
+  const activeItems = useMemo(
+    () => categories.find((cat) => cat.id === activeId)?.items || [],
+    [categories, activeId],
+  );
 
   return (
     <section className="flex flex-col gap-10 py-16">
@@ -31,7 +35,7 @@ export function MenuSection() {
         />
       </div>
 
-      <MenuGrid items={activeItems} />
+      <MenuGrid items={activeItems} isPending={isPending} />
     </section>
   );
 }

@@ -8,7 +8,7 @@ import { MenuItemDetailModal } from './MenuItemDetailModal';
  * 2 columns on mobile, 3 on tablets, 4 on large screens.
  * Manages the selected-item state for the detail modal.
  */
-export function MenuGrid({ items }) {
+export function MenuGrid({ items, isPending = false }) {
   const [selectedItem, setSelectedItem] = useState(null);
 
   if (!items || items.length === 0) {
@@ -21,7 +21,7 @@ export function MenuGrid({ items }) {
 
   return (
     <>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 px-4 sm:px-6 pb-20">
+      <div className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 px-4 sm:px-6 pb-20 transition-opacity duration-200 ${isPending ? 'opacity-70' : 'opacity-100'}`}>
         <AnimatePresence mode="popLayout">
           {items.map((item) => (
             <MenuItemCard

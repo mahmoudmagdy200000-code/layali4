@@ -30,6 +30,7 @@ export function MenuItemCard({ image, title, description, price, currency, tags,
           alt={title}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           loading="lazy"
+          decoding="async"
           onError={(e) => {
             e.target.onerror = null;
             e.target.src = 'https://placehold.co/400x400/e2e8f0/475569?text=Food';
