@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { AppProviders } from './providers/AppProviders';
 import { MainLayout } from './layouts/MainLayout';
 import { MinimalLayout } from './layouts/MinimalLayout';
@@ -17,6 +17,7 @@ function App() {
         {/* Kiosk Core Experience */}
         <Route element={<MainLayout />}>
           <Route path="/" element={<HomeCategoryGrid />} />
+          <Route path="/menu" element={<Navigate to="/" replace />} />
           <Route path="/category/:categoryId" element={<CategoryPage />} />
         </Route>
 
