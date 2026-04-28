@@ -8,11 +8,14 @@ import { LinkTreeSection } from '@/features/link-tree';
 import { HomeCategoryGrid } from '@/features/home/components/HomeCategoryGrid';
 import { CategoryPage } from '@/features/menu/components/CategoryPage';
 
+import { ScrollToTop } from '@/shared/components/ScrollToTop';
+
 function App() {
   const { t } = useLanguage();
 
   return (
     <>
+      <ScrollToTop />
       <Routes>
         {/* Kiosk Core Experience */}
         <Route element={<MainLayout />}>
