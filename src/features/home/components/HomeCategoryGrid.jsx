@@ -58,7 +58,7 @@ export function HomeCategoryGrid() {
               whileHover={{ scale: 1.03, y: -4 }}
               whileTap={{ scale: 0.97 }}
               onClick={() => navigate(`/category/${category.id}`)}
-              className="cursor-pointer flex flex-col items-center justify-center p-6 text-center rounded-3xl aspect-square shadow-sm hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-[#ECE7DC] to-[#E3DCCF] border border-white/50"
+              className="cursor-pointer flex flex-col items-center justify-center p-4 md:p-6 text-center rounded-3xl aspect-square w-full h-full min-h-[160px] shadow-sm hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-[#ECE7DC] to-[#E3DCCF] border border-white/50"
             >
               <div className="bg-[#233a34] text-[#ECE7DC] p-5 rounded-full mb-6 shadow-inner">
                 <Icon size={48} strokeWidth={1.5} />
