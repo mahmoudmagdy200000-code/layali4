@@ -58,12 +58,12 @@ export function HomeCategoryGrid() {
               whileHover={{ scale: 1.03, y: -4 }}
               whileTap={{ scale: 0.97 }}
               onClick={() => navigate(`/category/${category.id}`)}
-              className="cursor-pointer flex flex-col items-center justify-center p-4 md:p-6 text-center rounded-3xl aspect-square w-full h-full min-h-[160px] shadow-sm hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-[#ECE7DC] to-[#E3DCCF] border border-white/50"
+              className="cursor-pointer flex flex-col items-center justify-center p-3 md:p-4 text-center rounded-3xl aspect-square w-full h-full min-h-[140px] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-[#ECE7DC] to-[#E3DCCF] border border-white/50"
             >
-              <div className="bg-[#233a34] text-[#ECE7DC] p-5 rounded-full mb-6 shadow-inner">
-                <Icon size={48} strokeWidth={1.5} />
+              <div className="bg-[#233a34] text-[#ECE7DC] w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-full mb-2 shadow-inner shrink-0">
+                <Icon size={24} strokeWidth={1.5} />
               </div>
-              <h3 className="text-2xl md:text-3xl font-arabic text-[#1C1C1C] tracking-wide text-center leading-tight font-semibold">
+              <h3 className="text-sm md:text-base font-arabic text-[#1C1C1C] tracking-tight text-center leading-tight font-semibold">
                 {category.label}
               </h3>
             </motion.div>
