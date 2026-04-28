@@ -9,9 +9,11 @@ import { HomeCategoryGrid } from '@/features/home/components/HomeCategoryGrid';
 import { CategoryPage } from '@/features/menu/components/CategoryPage';
 
 import { ScrollToTop } from '@/shared/components/ScrollToTop';
+import { useSmartRefresh } from '@/shared/hooks/useSmartRefresh';
 
 function App() {
   const { t } = useLanguage();
+  useSmartRefresh();
 
   return (
     <>
