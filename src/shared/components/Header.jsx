@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useLocation, Link } from 'react-router-dom';
+import { Home } from 'lucide-react';
 import { useLanguage } from '@/features/i18n';
 import { LanguageToggle } from './LanguageToggle';
 
@@ -17,28 +18,20 @@ export function Header() {
            <LanguageToggle />
         </div>
 
-        {/* Logo & Menu Title */}
         <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
           <img 
             src="/assets/logo.png" 
             alt="Logo" 
-            className="h-9 w-auto object-contain"
+            className="h-10 w-auto object-contain"
           />
-          <span className="font-arabic text-xs font-bold text-[#233a34] uppercase tracking-wide -mt-0.5">
-             {t('menu.title')}
-          </span>
         </div>
 
         {/* Home Icon (Liwan Architectural Emblem) */}
         <Link 
           to="/" 
-          className={`relative z-10 p-1 hover:scale-110 transition-transform active:scale-95 ${isRTL ? 'order-3' : 'order-1'}`}
+          className={`relative z-10 p-2 hover:scale-110 transition-transform active:scale-95 ${isRTL ? 'order-3' : 'order-1'}`}
         >
-          <img 
-            src="/assets/home_icon_classic.png" 
-            alt="Home" 
-            className="w-10 h-10 object-contain drop-shadow-md"
-          />
+          <Home size={28} strokeWidth={1.5} className="text-[#233a34]" />
         </Link>
       </header>
     );
