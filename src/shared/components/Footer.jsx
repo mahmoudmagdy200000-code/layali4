@@ -54,19 +54,7 @@ export function Footer() {
             © 2026 جميع الحقوق محفوظة لصالح شركة GSTC للتقنيات
           </p>
         </a>
-
-        {/* Developer Credit */}
-        <p className="text-xs text-gray-400 mt-2">
-          {isRTL ? "تصميم وتطوير بواسطة " : "Designed & Developed by "}
-          <a 
-            href="https://mahmoudmagdy-ha7aq4tj2-mahmoud-magdys-projects-e312481e.vercel.app/" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-bold text-gray-500 hover:text-[#233a34] transition-colors underline decoration-transparent hover:decoration-[#233a34] underline-offset-4"
-          >
-            Mahmoud Magdy
-          </a>
-        </p>
+        {/* Developer Credit: Designed & Developed by Mahmoud Magdy — https://mahmoudmagdy-ha7aq4tj2-mahmoud-magdys-projects-e312481e.vercel.app/ */}
       </div>
       
     </footer>
