@@ -39,7 +39,7 @@ export function MenuItemCard({ image, title, description, price, currency, tags,
       </div>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pointer-events-none" />
 
       {/* Popular Badge: Top corner */}
       {tags?.includes('popular') && (
@@ -50,13 +50,18 @@ export function MenuItemCard({ image, title, description, price, currency, tags,
         </div>
       )}
 
-      {/* Bottom Text Overlay: Name + Price */}
+      {/* Bottom Text Overlay: Name + Description + Price */}
       <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4 flex flex-col justify-end items-start gap-1">
         <h3 className="font-display text-sm sm:text-base md:text-lg font-bold text-white leading-tight w-full">
           {title}
         </h3>
+        {description && (
+          <p className="text-[10px] sm:text-xs text-white/90 leading-snug w-full mb-1">
+            {description}
+          </p>
+        )}
         <span
-          className="font-display text-xs sm:text-sm font-semibold text-[#FFD700] whitespace-nowrap drop-shadow-md"
+          className="font-display text-xs sm:text-sm font-semibold text-[#FFD700] drop-shadow-md"
           dir={isRTL ? 'rtl' : 'ltr'}
         >
           {`${price} ${currency}`}

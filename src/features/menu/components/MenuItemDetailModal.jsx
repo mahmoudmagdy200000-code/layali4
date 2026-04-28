@@ -77,31 +77,38 @@ export function MenuItemDetailModal({ item, isOpen, onClose, onNext, onPrev, has
               />
               
               {/* Navigation Arrows */}
-              {hasPrev && (
-                <button
-                  onClick={(e) => { e.stopPropagation(); onPrev(); }}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/40 hover:bg-black/60 text-white flex items-center justify-center transition-all opacity-80 hover:opacity-100 shadow-lg backdrop-blur-sm"
-                  aria-label="Previous item"
-                >
-                  <ChevronLeft size={32} />
-                </button>
-              )}
-              {hasNext && (
-                <button
-                  onClick={(e) => { e.stopPropagation(); onNext(); }}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/40 hover:bg-black/60 text-white flex items-center justify-center transition-all opacity-80 hover:opacity-100 shadow-lg backdrop-blur-sm"
-                  aria-label="Next item"
-                >
-                  <ChevronRight size={32} />
-                </button>
-              )}
+              <button
+                onClick={(e) => { e.stopPropagation(); if (hasPrev) onPrev(); }}
+                disabled={!hasPrev}
+                className={`absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center transition-all shadow-lg backdrop-blur-sm ${
+                  hasPrev 
+                    ? 'bg-black/50 hover:bg-black/70 text-white cursor-pointer hover:scale-105 active:scale-95' 
+                    : 'bg-black/20 text-white/40 cursor-not-allowed'
+                }`}
+                aria-label="Previous item"
+              >
+                <ChevronLeft size={28} className="md:w-8 md:h-8" />
+              </button>
+
+              <button
+                onClick={(e) => { e.stopPropagation(); if (hasNext) onNext(); }}
+                disabled={!hasNext}
+                className={`absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center transition-all shadow-lg backdrop-blur-sm ${
+                  hasNext 
+                    ? 'bg-black/50 hover:bg-black/70 text-white cursor-pointer hover:scale-105 active:scale-95' 
+                    : 'bg-black/20 text-white/40 cursor-not-allowed'
+                }`}
+                aria-label="Next item"
+              >
+                <ChevronRight size={28} className="md:w-8 md:h-8" />
+              </button>
             </div>
 
             {/* Details Section */}
             <div className="p-6 flex flex-col gap-3 overflow-y-auto text-start">
               {/* Name + Price Row */}
               <div className="flex items-start justify-between gap-3">
-                <h2 className="font-display text-2xl font-bold text-gray-900 leading-tight flex-1">
+                <h2 className="font-display text-2xl font-bold text-[#1C1C1C] leading-tight flex-1">
                   {item.title}
                 </h2>
                 <span
@@ -123,7 +130,7 @@ export function MenuItemDetailModal({ item, isOpen, onClose, onNext, onPrev, has
 
               {/* Full Description */}
               {item.description && item.description.trim() !== '' && (
-                <p className="text-base text-gray-800 font-body leading-loose">
+                <p className="text-[15px] text-[#1C1C1C] font-medium font-body leading-relaxed">
                   {item.description}
                 </p>
               )}
