@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
 export function CategoryTabs({ categories, activeId, onSelect }) {
+  const activeTabRef = useRef(null);
+
+  useEffect(() => {
+    if (activeTabRef.current) {
+      activeTabRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'center',
+      });
+    }
+  }, [activeId]);
+
   return (
     <div className="flex flex-row overflow-x-auto whitespace-nowrap gap-3 py-3 w-full px-4 sm:px-6 snap-x [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
       {categories.map((cat) => {
@@ -10,6 +22,7 @@ export function CategoryTabs({ categories, activeId, onSelect }) {
         return (
           <button
             key={cat.id}
+            ref={isActive ? activeTabRef : null}
             onClick={() => onSelect(cat.id)}
             className={`
               relative px-5 py-2.5 rounded-full text-sm font-arabic font-bold tracking-tight transition-colors duration-300 
