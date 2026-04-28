@@ -40,7 +40,7 @@ export function HomeCategoryGrid() {
   return (
     <section className="flex flex-col gap-10 py-16">
       <div className="text-center px-6 flex flex-col gap-4">
-        <h2 className="font-display text-7xl text-[#1C1C1C] tracking-tight">
+        <h2 className="font-arabic text-7xl text-[#1C1C1C] tracking-tight font-bold">
           {t('menu.title')}
         </h2>
         <p className="text-sm text-[#1C1C1C]/80 tracking-widest uppercase font-bold">
@@ -63,7 +63,7 @@ export function HomeCategoryGrid() {
               <div className="bg-[#233a34] text-[#ECE7DC] p-5 rounded-full mb-6 shadow-inner">
                 <Icon size={48} strokeWidth={1.5} />
               </div>
-              <h3 className="text-2xl md:text-3xl font-display text-[#1C1C1C] tracking-wide text-center leading-tight">
+              <h3 className="text-2xl md:text-3xl font-arabic text-[#1C1C1C] tracking-wide text-center leading-tight font-semibold">
                 {category.label}
               </h3>
             </motion.div>

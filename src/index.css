@@ -18,7 +18,7 @@
   /* ── Typography ────────────────────────────────────── */
   --font-display: "Noto Serif", serif;
   --font-body: "Work Sans", sans-serif;
-  --font-arabic: "Noto Naskh Arabic", serif;
+  --font-arabic: "Almarai", sans-serif;
 
   /* ── Radius ────────────────────────────────────────── */
   --radius-card: 0.75rem; /* 12px as per original Stitch */

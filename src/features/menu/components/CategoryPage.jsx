@@ -47,7 +47,7 @@ export function CategoryPage() {
           </span>
         </Link>
 
-        <h2 className="absolute inset-0 flex items-center justify-center font-display text-xl text-[#1C1C1C] tracking-tight font-semibold pointer-events-none">
+        <h2 className="absolute inset-0 flex items-center justify-center font-arabic text-xl text-[#1C1C1C] tracking-tight font-semibold pointer-events-none">
           {t('menu.title')}
         </h2>
       </div>

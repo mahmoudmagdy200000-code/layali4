@@ -12,7 +12,7 @@ export function CategoryTabs({ categories, activeId, onSelect }) {
             key={cat.id}
             onClick={() => onSelect(cat.id)}
             className={`
-              relative px-5 py-2.5 rounded-full text-sm font-bold tracking-tight transition-colors duration-300 
+              relative px-5 py-2.5 rounded-full text-sm font-arabic font-bold tracking-tight transition-colors duration-300 
               shrink-0 min-w-max whitespace-nowrap snap-center outline-none
               ${isActive 
                 ? 'text-[#ECE7DC]' 
