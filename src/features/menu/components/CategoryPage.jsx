@@ -34,25 +34,8 @@ export function CategoryPage() {
   if (!categories) return null;
 
   return (
-    <section className="flex flex-col gap-6 py-4 relative">
-      {/* Navigation Bar */}
-      <div className="px-5 py-3 relative flex items-center w-full">
-        <Link 
-          to="/" 
-          className="relative z-10 flex items-center gap-1 text-[#1C1C1C]/70 hover:text-[#1C1C1C] transition-colors duration-200 active:scale-95"
-        >
-          <ChevronLeft size={20} strokeWidth={2} className={isRTL ? 'rotate-180' : ''} />
-          <span className="text-sm font-medium">
-            {isRTL ? 'العودة' : 'Back'}
-          </span>
-        </Link>
-
-        <h2 className="absolute inset-0 flex items-center justify-center font-arabic text-xl text-[#1C1C1C] tracking-tight font-semibold pointer-events-none">
-          {t('menu.title')}
-        </h2>
-      </div>
-
-      <div className="sticky top-0 z-50 bg-[#ECE7DC]/85 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.03)] -mx-6 px-6 pt-2 pb-2 transition-all duration-300">
+    <section className="flex flex-col gap-6 pt-20 pb-4 relative">
+      <div className="sticky top-16 z-50 bg-[#ECE7DC]/85 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.03)] -mx-6 px-6 pt-2 pb-2 transition-all duration-300">
         <CategoryTabs
           categories={categories}
           activeId={categoryId}

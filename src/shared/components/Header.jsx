@@ -1,10 +1,48 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useLocation, Link } from 'react-router-dom';
 import { useLanguage } from '@/features/i18n';
 import { LanguageToggle } from './LanguageToggle';
 
 export function Header() {
-  const { isRTL } = useLanguage();
+  const { isRTL, t } = useLanguage();
+  const location = useLocation();
+  const isCategoryView = location.pathname.startsWith('/category/');
+
+  if (isCategoryView) {
+    return (
+      <header className="fixed top-0 left-0 right-0 z-[60] bg-[#ECE7DC]/90 backdrop-blur-md border-b border-black/5 h-16 px-4 flex items-center justify-between">
+        {/* Language Switcher */}
+        <div className={`relative z-10 flex items-center ${isRTL ? 'order-1' : 'order-3'}`}>
+           <LanguageToggle />
+        </div>
+
+        {/* Logo & Menu Title */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+          <img 
+            src="/assets/logo.png" 
+            alt="Logo" 
+            className="h-8 w-auto object-contain"
+          />
+          <span className="font-arabic text-[10px] font-semibold text-[#233a34]/80 uppercase tracking-tight -mt-1">
+             {t('menu.title')}
+          </span>
+        </div>
+
+        {/* Home Icon (Lebanese House) */}
+        <Link 
+          to="/" 
+          className={`relative z-10 p-1 hover:scale-110 transition-transform active:scale-95 ${isRTL ? 'order-3' : 'order-1'}`}
+        >
+          <img 
+            src="/assets/lebanese_house_icon.png" 
+            alt="Home" 
+            className="w-11 h-11 object-contain drop-shadow-md"
+          />
+        </Link>
+      </header>
+    );
+  }
 
   return (
     <header className="bg-transparent relative">
@@ -32,4 +70,3 @@ export function Header() {
     </header>
   );
 }
-
