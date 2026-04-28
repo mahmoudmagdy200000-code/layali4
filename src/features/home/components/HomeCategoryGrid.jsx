@@ -39,11 +39,11 @@ export function HomeCategoryGrid() {
 
   return (
     <section className="flex flex-col gap-10 py-16">
-      <div className="text-center px-6 flex flex-col gap-4">
-        <h2 className="font-arabic text-7xl text-[#1C1C1C] tracking-tight font-bold">
+      <div className="text-center px-6 flex flex-col gap-3 mb-6">
+        <h2 className="font-arabic text-3xl md:text-5xl text-[#1C1C1C] tracking-tight font-semibold">
           {t('menu.title')}
         </h2>
-        <p className="text-sm text-[#1C1C1C]/80 tracking-widest uppercase font-bold">
+        <p className="text-xs md:text-sm text-[#1C1C1C]/60 tracking-widest uppercase font-medium">
           {restaurant.tagline}
         </p>
       </div>
