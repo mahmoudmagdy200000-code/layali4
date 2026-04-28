@@ -36,10 +36,10 @@ export function CategoryPage() {
   return (
     <section className="flex flex-col gap-6 py-4 relative">
       {/* Navigation Bar */}
-      <div className="px-5 py-3 flex items-center justify-between w-full">
+      <div className="px-5 py-3 relative flex items-center w-full">
         <Link 
           to="/" 
-          className="flex items-center gap-1 text-[#1C1C1C]/70 hover:text-[#1C1C1C] transition-colors duration-200 active:scale-95"
+          className="relative z-10 flex items-center gap-1 text-[#1C1C1C]/70 hover:text-[#1C1C1C] transition-colors duration-200 active:scale-95"
         >
           <ChevronLeft size={20} strokeWidth={2} className={isRTL ? 'rotate-180' : ''} />
           <span className="text-sm font-medium">
@@ -47,7 +47,7 @@ export function CategoryPage() {
           </span>
         </Link>
 
-        <h2 className="font-display text-xl text-[#1C1C1C] tracking-tight font-semibold">
+        <h2 className="absolute inset-0 flex items-center justify-center font-display text-xl text-[#1C1C1C] tracking-tight font-semibold pointer-events-none">
           {t('menu.title')}
         </h2>
       </div>
