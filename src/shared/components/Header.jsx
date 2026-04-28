@@ -22,7 +22,7 @@ export function Header() {
           <img 
             src="/assets/logo.png" 
             alt="Logo" 
-            className="h-10 w-auto object-contain"
+            className="h-[52px] w-auto object-contain"
           />
         </div>
 
