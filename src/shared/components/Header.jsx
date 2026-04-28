@@ -22,22 +22,22 @@ export function Header() {
           <img 
             src="/assets/logo.png" 
             alt="Logo" 
-            className="h-8 w-auto object-contain"
+            className="h-9 w-auto object-contain"
           />
-          <span className="font-arabic text-[10px] font-semibold text-[#233a34]/80 uppercase tracking-tight -mt-1">
+          <span className="font-arabic text-xs font-bold text-[#233a34] uppercase tracking-wide -mt-0.5">
              {t('menu.title')}
           </span>
         </div>
 
-        {/* Home Icon (Lebanese House) */}
+        {/* Home Icon (Liwan Architectural Emblem) */}
         <Link 
           to="/" 
           className={`relative z-10 p-1 hover:scale-110 transition-transform active:scale-95 ${isRTL ? 'order-3' : 'order-1'}`}
         >
           <img 
-            src="/assets/lebanese_house_icon.png" 
+            src="/assets/home_icon_new.png" 
             alt="Home" 
-            className="w-11 h-11 object-contain drop-shadow-md"
+            className="w-12 h-12 object-contain drop-shadow-lg"
           />
         </Link>
       </header>
