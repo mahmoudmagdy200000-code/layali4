@@ -31,22 +31,21 @@ export function Footer() {
       </div>
 
       {/* Copyright & Signature */}
-      <div className="flex flex-col items-center gap-3">
+      <div className="flex flex-col items-center gap-4">
         <a 
           href="https://alhrof.com/linktree" 
           target="_blank" 
           rel="noopener noreferrer"
           className="flex flex-col items-center gap-2 group"
         >
-          {/* GSTC Logo Placeholder (replace src when logo is available) */}
-          <div className="h-8 flex items-center justify-center opacity-70 group-hover:opacity-100 transition-opacity">
+          {/* GSTC Logo */}
+          <div className="h-10 flex items-center justify-center opacity-70 group-hover:opacity-100 transition-opacity">
             <img 
               src="/GSTC_logo_white_transparent.png" 
               alt="GSTC Logo" 
-              className="h-full object-contain filter invert brightness-0"
+              className="h-full object-contain filter invert"
               onError={(e) => {
                 e.target.onerror = null;
-                // Fallback elegant text if image isn't loaded yet
                 e.target.outerHTML = '<span class="font-display font-bold text-[#233a34] tracking-widest text-sm">GSTC</span>';
               }}
             />
@@ -55,6 +54,19 @@ export function Footer() {
             © 2026 جميع الحقوق محفوظة لصالح شركة GSTC للتقنيات
           </p>
         </a>
+
+        {/* Developer Credit */}
+        <p className="text-xs text-gray-400 mt-2">
+          {isRTL ? "تصميم وتطوير بواسطة " : "Designed & Developed by "}
+          <a 
+            href="https://mahmoudmagdy-ha7aq4tj2-mahmoud-magdys-projects-e312481e.vercel.app/" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold text-gray-500 hover:text-[#233a34] transition-colors underline decoration-transparent hover:decoration-[#233a34] underline-offset-4"
+          >
+            Mahmoud Magdy
+          </a>
+        </p>
       </div>
       
     </footer>
