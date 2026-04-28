@@ -63,7 +63,7 @@ export function HomeCategoryGrid() {
               <div className="bg-[#233a34] text-[#ECE7DC] p-5 rounded-full mb-6 shadow-inner">
                 <Icon size={48} strokeWidth={1.5} />
               </div>
-              <h3 className="text-2xl md:text-3xl font-display text-[#1C1C1C] tracking-wide line-clamp-2">
+              <h3 className="text-2xl md:text-3xl font-display text-[#1C1C1C] tracking-wide text-center leading-tight">
                 {category.label}
               </h3>
             </motion.div>

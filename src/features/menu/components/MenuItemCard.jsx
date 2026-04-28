@@ -51,12 +51,12 @@ export function MenuItemCard({ image, title, description, price, currency, tags,
       )}
 
       {/* Bottom Text Overlay: Name + Price */}
-      <div className="absolute bottom-0 left-0 right-0 p-3 flex justify-between items-end gap-2">
-        <h3 className="font-display text-sm sm:text-base font-bold text-white leading-tight line-clamp-2 flex-1">
+      <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4 flex flex-col justify-end items-start gap-1">
+        <h3 className="font-display text-sm sm:text-base md:text-lg font-bold text-white leading-tight w-full">
           {title}
         </h3>
         <span
-          className="font-display text-xs sm:text-sm font-semibold text-brand-500 whitespace-nowrap"
+          className="font-display text-xs sm:text-sm font-semibold text-[#FFD700] whitespace-nowrap drop-shadow-md"
           dir={isRTL ? 'rtl' : 'ltr'}
         >
           {`${price} ${currency}`}
