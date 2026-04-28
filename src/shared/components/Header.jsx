@@ -35,9 +35,9 @@ export function Header() {
           className={`relative z-10 p-1 hover:scale-110 transition-transform active:scale-95 ${isRTL ? 'order-3' : 'order-1'}`}
         >
           <img 
-            src="/assets/home_icon_new.png" 
+            src="/assets/home_icon_classic.png" 
             alt="Home" 
-            className="w-12 h-12 object-contain drop-shadow-lg"
+            className="w-10 h-10 object-contain drop-shadow-md"
           />
         </Link>
       </header>
