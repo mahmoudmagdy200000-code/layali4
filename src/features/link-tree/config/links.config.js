@@ -1,17 +1,17 @@
-import { Phone, MapPin, Aperture, MessageCircle, MessageSquareHeart, Clapperboard, PenLine as Quill } from 'lucide-react';
+import { Phone, MapPin, Aperture, MessageCircle, MessageSquareHeart, Clapperboard, Globe } from 'lucide-react';
 
 export const LINK_CONFIG = [
   {
-    id: 'story',
-    href: '#story',
-    icon: Quill,
-    labelKey: 'links.story',
-    colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',
+    id: 'website',
+    href: '/',
+    icon: Globe,
+    labelKey: 'links.website',
+    colorClass: 'bg-[#ECE7DC] text-[#1C1C1C]',
     priority: 10,
   },
   {
     id: 'whatsapp',
-    href: 'https://wa.me/96541204444', 
+    href: 'https://wa.me/96541204444',
     icon: MessageCircle,
     labelKey: 'links.whatsapp',
     colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',

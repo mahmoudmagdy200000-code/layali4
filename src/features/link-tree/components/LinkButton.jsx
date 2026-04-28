@@ -1,15 +1,20 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/features/i18n';
 import { ChevronRight } from 'lucide-react';
 
 export function LinkButton({ href, icon: Icon, label, colorClass, index, onClick }) {
   const { isRTL } = useLanguage();
+  const navigate = useNavigate();
 
   const handleClick = (e) => {
     if (href.startsWith('#')) {
       e.preventDefault();
       onClick?.(href.substring(1));
+    } else if (href.startsWith('/')) {
+      e.preventDefault();
+      navigate(href);
     }
   };
 
@@ -17,8 +22,8 @@ export function LinkButton({ href, icon: Icon, label, colorClass, index, onClick
     <motion.a
       href={href}
       onClick={handleClick}
-      target={href.startsWith('#') ? undefined : "_blank"}
-      rel={href.startsWith('#') ? undefined : "noopener noreferrer"}
+      target={(href.startsWith('#') || href.startsWith('/')) ? undefined : "_blank"}
+      rel={(href.startsWith('#') || href.startsWith('/')) ? undefined : "noopener noreferrer"}
       className={`flex items-center gap-4 p-5 rounded-2xl border border-black/10 shadow-md transition-all group ${colorClass}`}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
