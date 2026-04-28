@@ -12,7 +12,7 @@ export function Header() {
 
   if (isCategoryView) {
     return (
-      <header className="fixed top-0 left-0 right-0 z-[60] bg-[#ECE7DC]/90 backdrop-blur-md border-b border-black/5 h-16 px-4 flex items-center justify-between">
+      <header className="fixed top-0 left-0 right-0 z-[60] bg-[#ECE7DC]/90 backdrop-blur-md border-b border-black/5 h-14 px-4 py-1 flex items-center justify-between">
         {/* Language Switcher */}
         <div className={`relative z-10 flex items-center ${isRTL ? 'order-1' : 'order-3'}`}>
            <LanguageToggle />
@@ -22,7 +22,7 @@ export function Header() {
           <img 
             src="/assets/logo.png" 
             alt="Logo" 
-            className="h-[52px] w-auto object-contain"
+            className="h-12 w-auto object-contain"
           />
         </div>
 
