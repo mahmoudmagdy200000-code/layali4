@@ -35,26 +35,21 @@ export function CategoryPage() {
 
   return (
     <section className="flex flex-col gap-6 py-4 relative">
-      <div className="px-6 flex flex-row items-center justify-between w-full mb-2">
+      {/* Navigation Bar */}
+      <div className="px-5 py-3 flex items-center justify-between w-full">
         <Link 
           to="/" 
-          className="group flex items-center gap-2.5 text-[#1C1C1C] font-semibold text-sm tracking-wide bg-white/40 hover:bg-white/60 border border-white/60 backdrop-blur-xl px-4 py-2 rounded-full shadow-[0_4px_16px_0_rgba(0,0,0,0.05)] hover:shadow-[0_4px_16px_0_rgba(0,0,0,0.1)] transition-all duration-300 hover:scale-105 active:scale-95"
+          className="flex items-center gap-1 text-[#1C1C1C]/70 hover:text-[#1C1C1C] transition-colors duration-200 active:scale-95"
         >
-          <div className="bg-[#1C1C1C]/5 p-1 rounded-full group-hover:bg-[#1C1C1C]/10 transition-colors">
-            <ChevronLeft size={16} strokeWidth={2.5} className={isRTL ? 'rotate-180' : ''} />
-          </div>
-          <span className="hidden sm:inline">{t('common.back', 'Back to Categories')}</span>
-          <span className="sm:hidden">{t('common.back', 'Back')}</span>
+          <ChevronLeft size={20} strokeWidth={2} className={isRTL ? 'rotate-180' : ''} />
+          <span className="text-sm font-medium">
+            {isRTL ? 'العودة' : 'Back'}
+          </span>
         </Link>
 
-        <div className="flex flex-col items-end text-right">
-          <h2 className="font-display text-3xl md:text-4xl text-[#1C1C1C] tracking-tight">
-            {t('menu.title')}
-          </h2>
-          <p className="text-[10px] text-[#1C1C1C]/80 tracking-widest uppercase font-bold">
-            {restaurant.tagline}
-          </p>
-        </div>
+        <h2 className="font-display text-xl text-[#1C1C1C] tracking-tight font-semibold">
+          {t('menu.title')}
+        </h2>
       </div>
 
       <div className="sticky top-0 z-50 bg-[#ECE7DC]/85 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.03)] -mx-6 px-6 pt-2 pb-2 transition-all duration-300">
