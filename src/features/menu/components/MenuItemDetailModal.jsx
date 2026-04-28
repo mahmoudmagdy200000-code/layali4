@@ -1,6 +1,6 @@
 import React, { useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useLanguage } from '@/features/i18n';
 
 /**
@@ -8,7 +8,7 @@ import { useLanguage } from '@/features/i18n';
  * high-resolution image, full description, and price of a menu item.
  * Supports click-outside-to-close and Escape key dismissal.
  */
-export function MenuItemDetailModal({ item, isOpen, onClose }) {
+export function MenuItemDetailModal({ item, isOpen, onClose, onNext, onPrev, hasNext, hasPrev }) {
   const { isRTL, t } = useLanguage();
 
   // Close on Escape key
@@ -65,7 +65,7 @@ export function MenuItemDetailModal({ item, isOpen, onClose }) {
             </button>
 
             {/* High-Resolution Image */}
-            <div className="w-full aspect-[4/3] overflow-hidden flex-shrink-0">
+            <div className="w-full aspect-[4/3] overflow-hidden flex-shrink-0 relative group">
               <img
                 src={item.image}
                 alt={item.title}
@@ -75,6 +75,26 @@ export function MenuItemDetailModal({ item, isOpen, onClose }) {
                   e.target.src = 'https://placehold.co/800x600/e2e8f0/475569?text=Food';
                 }}
               />
+              
+              {/* Navigation Arrows */}
+              {hasPrev && (
+                <button
+                  onClick={(e) => { e.stopPropagation(); onPrev(); }}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/40 hover:bg-black/60 text-white flex items-center justify-center transition-all opacity-80 hover:opacity-100 shadow-lg backdrop-blur-sm"
+                  aria-label="Previous item"
+                >
+                  <ChevronLeft size={32} />
+                </button>
+              )}
+              {hasNext && (
+                <button
+                  onClick={(e) => { e.stopPropagation(); onNext(); }}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/40 hover:bg-black/60 text-white flex items-center justify-center transition-all opacity-80 hover:opacity-100 shadow-lg backdrop-blur-sm"
+                  aria-label="Next item"
+                >
+                  <ChevronRight size={32} />
+                </button>
+              )}
             </div>
 
             {/* Details Section */}

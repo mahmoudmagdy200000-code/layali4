@@ -6,10 +6,10 @@ import { MenuItemDetailModal } from './MenuItemDetailModal';
 /**
  * MenuGrid — Renders menu items in a tight image gallery grid.
  * 2 columns on mobile, 3 on tablets, 4 on large screens.
- * Manages the selected-item state for the detail modal.
+ * Manages the selected-index state for the detail modal gallery.
  */
 export function MenuGrid({ items, isPending = false }) {
-  const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState(null);
 
   if (!items || items.length === 0) {
     return (
@@ -19,15 +19,31 @@ export function MenuGrid({ items, isPending = false }) {
     );
   }
 
+  const handleNext = () => {
+    if (selectedIndex !== null && selectedIndex < items.length - 1) {
+      setSelectedIndex(selectedIndex + 1);
+    }
+  };
+
+  const handlePrev = () => {
+    if (selectedIndex !== null && selectedIndex > 0) {
+      setSelectedIndex(selectedIndex - 1);
+    }
+  };
+
+  const selectedItem = selectedIndex !== null ? items[selectedIndex] : null;
+  const hasNext = selectedIndex !== null && selectedIndex < items.length - 1;
+  const hasPrev = selectedIndex !== null && selectedIndex > 0;
+
   return (
     <>
       <div className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 px-4 sm:px-6 pb-20 transition-opacity duration-200 ${isPending ? 'opacity-70' : 'opacity-100'}`}>
         <AnimatePresence mode="popLayout">
-          {items.map((item) => (
+          {items.map((item, index) => (
             <MenuItemCard
               key={item.id}
               {...item}
-              onSelect={() => setSelectedItem(item)}
+              onSelect={() => setSelectedIndex(index)}
             />
           ))}
         </AnimatePresence>
@@ -36,8 +52,12 @@ export function MenuGrid({ items, isPending = false }) {
       {/* Detail Modal: Opens when any card is clicked */}
       <MenuItemDetailModal
         item={selectedItem}
-        isOpen={!!selectedItem}
-        onClose={() => setSelectedItem(null)}
+        isOpen={selectedIndex !== null}
+        onClose={() => setSelectedIndex(null)}
+        onNext={handleNext}
+        onPrev={handlePrev}
+        hasNext={hasNext}
+        hasPrev={hasPrev}
       />
     </>
   );

@@ -7,7 +7,7 @@ export const LINK_CONFIG = [
     icon: Quill,
     labelKey: 'links.story',
     colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',
-    priority: 0,
+    priority: 10,
   },
   {
     id: 'whatsapp',

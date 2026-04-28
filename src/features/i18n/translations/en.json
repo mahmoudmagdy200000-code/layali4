@@ -19,6 +19,7 @@
   },
   "common": {
     "popular": "Popular",
-    "vegan": "Vegan"
+    "vegan": "Vegan",
+    "back": "Back to Categories"
   }
 }
