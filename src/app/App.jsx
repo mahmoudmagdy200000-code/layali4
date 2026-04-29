@@ -22,8 +22,8 @@ function App() {
       <Routes>
         {/* Kiosk Core Experience */}
         <Route element={<MainLayout />}>
-          <Route path="/" element={<MenuPage />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="/" element={<AboutPage />} />
+          <Route path="/menu" element={<MenuPage />} />
           <Route path="/category/:categoryId" element={<CategoryPage />} />
         </Route>
 
@@ -31,9 +31,6 @@ function App() {
         <Route element={<MinimalLayout />}>
           <Route path="/linktree" element={<LinkTreePage />} />
         </Route>
-
-        {/* Fallback for legacy /menu path */}
-        <Route path="/menu" element={<Navigate to="/" replace />} />
       </Routes>
     </>
   );

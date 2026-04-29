@@ -9,9 +9,10 @@ export function Header() {
   const { isRTL, t } = useLanguage();
   const location = useLocation();
   
-  // Route logic: Show Home only when deep in category/item views
-  const isMenuRoot = location.pathname === '/' || location.pathname === '/menu';
-  const showHomeIcon = !isMenuRoot;
+  // Route logic: 
+  const isAboutPage = location.pathname === '/';
+  const isMenuRoot = location.pathname === '/menu';
+  const showHomeIcon = !isAboutPage && !isMenuRoot;
 
   return (
     <header 
@@ -22,20 +23,20 @@ export function Header() {
         
         {/* Column 1: Navigation Actions */}
         <div className="flex items-center gap-2">
-          {showHomeIcon ? (
+          {isAboutPage ? (
+            <Link 
+              to="/menu"
+              className="px-6 py-2 rounded-full bg-[#233a34] text-white text-sm font-bold hover:bg-[#1a2c27] transition-all duration-300 shadow-md shrink-0"
+            >
+              {t('menu.title')}
+            </Link>
+          ) : (
             <Link 
               to="/" 
               className="p-2 hover:scale-110 transition-transform active:scale-95 flex items-center shrink-0"
               title={t('nav.home')}
             >
               <Home size={28} strokeWidth={1.5} className="text-[#233a34]" />
-            </Link>
-          ) : (
-            <Link 
-              to="/about"
-              className="px-4 py-1.5 rounded-full border border-[#233a34]/20 text-[#233a34] text-sm font-bold hover:bg-[#233a34] hover:text-white transition-all duration-300 shrink-0"
-            >
-              {t('links.story')}
             </Link>
           )}
         </div>
