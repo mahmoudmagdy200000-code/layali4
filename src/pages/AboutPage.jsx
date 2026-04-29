@@ -2,7 +2,42 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/features/i18n';
 import useMenuData from '@/features/menu/hooks/useMenuData';
-import { Sparkles, ChefHat, Leaf } from 'lucide-react';
+import { Sparkles, ChefHat, Leaf, ImageOff } from 'lucide-react';
+
+function GalleryImage({ src, index }) {
+  const [error, setError] = React.useState(false);
+
+  if (error) {
+    return (
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="relative aspect-square bg-[#233a34]/5 rounded-2xl flex flex-col items-center justify-center border border-[#233a34]/10 p-6 text-[#233a34]/20 break-inside-avoid mb-6"
+      >
+        <ImageOff size={40} strokeWidth={1} />
+        <span className="text-xs mt-2 font-serif italic">Layali Batroun</span>
+      </motion.div>
+    );
+  }
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: index * 0.1 }}
+      className="relative group overflow-hidden rounded-2xl shadow-lg break-inside-avoid mb-6"
+    >
+      <img 
+        src={src} 
+        alt={`Gallery Image ${index + 1}`} 
+        onError={() => setError(true)}
+        className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
+      />
+      <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+    </motion.div>
+  );
+}
 
 export default function AboutPage() {
   const { t, isRTL } = useLanguage();
@@ -15,7 +50,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <img 
-          src="/assets/about/31.webp" 
+          src="/assets/about/DSC03257.webp" 
           alt="Layali Batroun Interior" 
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -166,34 +201,21 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-6">
             {[
-              '/assets/about/DSC03257.webp',
               '/assets/about/DSC03285.webp',
               '/assets/about/DSC03295.webp',
               '/assets/about/DSC03221.webp',
               '/assets/about/DSC03260.webp',
               '/assets/about/31.webp',
               '/assets/about/7-1.webp',
+              '/assets/about/about-hero.webp',
+              '/assets/about/about-story.webp',
               '/assets/about/1.webp',
               '/assets/about/2.webp',
               '/assets/about/home_icon_new.webp'
             ].map((src, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="relative group overflow-hidden rounded-2xl shadow-lg break-inside-avoid"
-              >
-                <img 
-                  src={src} 
-                  alt={`Gallery Image ${index + 1}`} 
-                  className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </motion.div>
+              <GalleryImage key={src} src={src} index={index} />
             ))}
           </div>
         </div>
