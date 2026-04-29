@@ -21,12 +21,12 @@ export function MenuItemCard({ image, title, description, price, currency, tags,
       onClick={onSelect}
       className="relative overflow-hidden rounded-xl cursor-pointer group"
     >
-      {/* Full-bleed Image */}
-      <div className="aspect-square w-full overflow-hidden">
+      {/* Full-bleed Image Wrapper */}
+      <div className="relative aspect-square w-full overflow-hidden">
         <img
           src={image || '/assets/menu/placeholder.jpg'}
           alt={title}
-          className="w-full h-full object-cover scale-[1.15] transition-transform duration-300 group-hover:scale-[1.25]"
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 transform-gpu will-change-transform scale-110 group-hover:scale-[1.25]"
           loading="lazy"
           decoding="async"
           onError={(e) => {
