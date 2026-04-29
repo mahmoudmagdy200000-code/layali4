@@ -1,4 +1,4 @@
-import { Phone, MapPin, MessageCircle, MessageSquareHeart, Clapperboard } from 'lucide-react';
+import { Phone, MapPin, MessageCircle, MessageSquareHeart, Clapperboard, Globe } from 'lucide-react';
 import { InstagramIcon as Instagram, TikTokIcon as TikTok } from '@/shared/components/Icons';
 
 export const LINK_CONFIG = [
@@ -17,6 +17,14 @@ export const LINK_CONFIG = [
     labelKey: 'links.maps',
     colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',
     priority: 2,
+  },
+  {
+    id: 'website',
+    href: '/',
+    icon: Globe,
+    labelKey: 'links.website',
+    colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',
+    priority: 2.5,
   },
   {
     id: 'instagram',
