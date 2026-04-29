@@ -266,8 +266,8 @@
         {
           "id": "b14",
           "name": {
-            "ar": "فتة بالبيض ناشف",
-            "en": "Fattah Egg Plat"
+            "ar": "فتة باذنجان",
+            "en": "Eggplant Fatteh"
           },
           "description": {
             "ar": "",
@@ -317,7 +317,7 @@
         {
           "id": "b17",
           "name": {
-            "ar": "حمسة بالبيض ناشف",
+            "ar": "حمسة بالبيض",
             "en": "Hamset Egg Plat"
           },
           "description": {
@@ -436,7 +436,7 @@
         {
           "id": "b24",
           "name": {
-            "ar": "صحن خضر",
+            "ar": "صحن خضرة",
             "en": "Vegetables Plate"
           },
           "description": {
@@ -504,7 +504,7 @@
         {
           "id": "b28",
           "name": {
-            "ar": "صحن خضر",
+            "ar": "صحن خضرة",
             "en": "Plate Vegetables"
           },
           "description": {
@@ -951,6 +951,57 @@
             "en": "KWD"
           },
           "image": "/images/optimized/g16.webp"
+        },
+        {
+          "id": "h18",
+          "name": {
+            "ar": "دجاج مشوي",
+            "en": "Chicken Grilled"
+          },
+          "description": {
+            "ar": "نصف دجاج مشوي مع البطاطا والثوم",
+            "en": "Marinated half chicken grilled with potatoes and garlic"
+          },
+          "price": "4.500",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": "/images/optimized/h18.webp"
+        },
+        {
+          "id": "h19",
+          "name": {
+            "ar": "عرايس كفتة",
+            "en": "Kafta Arayes"
+          },
+          "description": {
+            "ar": "كفتة مشوية بالخبز اللبناني ولبن",
+            "en": "Minced grilled meat in Lebanese bread served with yogurt"
+          },
+          "price": "2.000",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": "/images/optimized/h19.webp"
+        },
+        {
+          "id": "h20",
+          "name": {
+            "ar": "عرايس كفتة بالجبنة",
+            "en": "Kafta Arayes with Cheese"
+          },
+          "description": {
+            "ar": "كفتة مشوية بالخبز مع جبنة وللبناني",
+            "en": "Kafta in bread with cheese and yogurt"
+          },
+          "price": "2.500",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": "/images/optimized/h20.webp"
         }
       ]
     },
@@ -962,10 +1013,27 @@
       },
       "items": [
         {
-          "id": "h1",
+          "id": "h1_fried",
           "name": {
-            "ar": "رقاقات جبنة",
-            "en": "Cheese Rolls"
+            "ar": "رقاقات حبة مقلية",
+            "en": "Fried Cheese Rolls"
+          },
+          "description": {
+            "ar": "رقاقات جبنة مقلية أو مشوية",
+            "en": "Deep fried or grilled cheese rolls in crispy dough"
+          },
+          "price": "2.500",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": "/images/optimized/h1.webp"
+        },
+        {
+          "id": "h1_grilled",
+          "name": {
+            "ar": "رقاقات حبة مشوية",
+            "en": "Grilled Cheese Rolls"
           },
           "description": {
             "ar": "رقاقات جبنة مقلية أو مشوية",
@@ -1183,40 +1251,6 @@
           "image": "/images/optimized/h13.webp"
         },
         {
-          "id": "h14",
-          "name": {
-            "ar": "لسانات غنم",
-            "en": "Lamb Tongues"
-          },
-          "description": {
-            "ar": "لسانات متبلة مع ثوم وليمون وزيتون",
-            "en": "Lamb tongues marinated with olive oil, lemon and garlic"
-          },
-          "price": "2.250",
-          "currency": {
-            "ar": "د.ك",
-            "en": "KWD"
-          },
-          "image": "/images/optimized/_DSC3410.webp"
-        },
-        {
-          "id": "h15",
-          "name": {
-            "ar": "تشيكن ناجتس",
-            "en": "Chicken Nuggets"
-          },
-          "description": {
-            "ar": "",
-            "en": ""
-          },
-          "price": "1.500",
-          "currency": {
-            "ar": "د.ك",
-            "en": "KWD"
-          },
-          "image": "/images/optimized/h15.webp"
-        },
-        {
           "id": "h16",
           "name": {
             "ar": "زهرة بالطحينة",
@@ -1249,57 +1283,6 @@
             "en": "KWD"
           },
           "image": "/images/optimized/h17.webp"
-        },
-        {
-          "id": "h18",
-          "name": {
-            "ar": "دجاج مشوي",
-            "en": "Chicken Grilled"
-          },
-          "description": {
-            "ar": "نصف دجاج مشوي مع البطاطا والثوم",
-            "en": "Marinated half chicken grilled with potatoes and garlic"
-          },
-          "price": "5.000",
-          "currency": {
-            "ar": "د.ك",
-            "en": "KWD"
-          },
-          "image": "/images/optimized/h18.webp"
-        },
-        {
-          "id": "h19",
-          "name": {
-            "ar": "عرايس كفتة",
-            "en": "Kafta Arayes"
-          },
-          "description": {
-            "ar": "كفتة مشوية بالخبز اللبناني ولبن",
-            "en": "Minced grilled meat in Lebanese bread served with yogurt"
-          },
-          "price": "2.000",
-          "currency": {
-            "ar": "د.ك",
-            "en": "KWD"
-          },
-          "image": "/images/optimized/h19.webp"
-        },
-        {
-          "id": "h20",
-          "name": {
-            "ar": "عرايس كفتة بالجبنة",
-            "en": "Kafta Arayes with Cheese"
-          },
-          "description": {
-            "ar": "كفتة مشوية بالخبز مع جبنة وللبناني",
-            "en": "Kafta in bread with cheese and yogurt"
-          },
-          "price": "2.500",
-          "currency": {
-            "ar": "د.ك",
-            "en": "KWD"
-          },
-          "image": "/images/optimized/h20.webp"
         },
         {
           "id": "h21",
@@ -1466,10 +1449,10 @@
       ]
     },
     {
-      "id": "cold_meza",
+      "id": "salads",
       "categoryName": {
-        "ar": "الأطباق الباردة",
-        "en": "Cold Meza"
+        "ar": "سلطات",
+        "en": "Salads"
       },
       "items": [
         {
@@ -1575,6 +1558,32 @@
           "image": "/images/optimized/c6.webp"
         },
         {
+          "id": "c9",
+          "name": {
+            "ar": "سلطة الراهب",
+            "en": "Raheb Salad"
+          },
+          "description": {
+            "ar": "باذنجان – بندورة – خل – فلفلة – زيت زيتون",
+            "en": "Eggplant, tomato, onion, green capsicum, olive oil, lemon"
+          },
+          "price": "1.800",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": "/images/optimized/c9.webp"
+        }
+      ]
+    },
+    {
+      "id": "cold_meza",
+      "categoryName": {
+        "ar": "الأطباق الباردة",
+        "en": "Cold Meza"
+      },
+      "items": [
+        {
           "id": "c7",
           "name": {
             "ar": "حمص",
@@ -1607,23 +1616,6 @@
             "en": "KWD"
           },
           "image": "/images/optimized/c8.webp"
-        },
-        {
-          "id": "c9",
-          "name": {
-            "ar": "سلطة الراهب",
-            "en": "Raheb Salad"
-          },
-          "description": {
-            "ar": "باذنجان – بندورة – خل – فلفلة – زيت زيتون",
-            "en": "Eggplant, tomato, onion, green capsicum, olive oil, lemon"
-          },
-          "price": "1.800",
-          "currency": {
-            "ar": "د.ك",
-            "en": "KWD"
-          },
-          "image": "/images/optimized/c9.webp"
         },
         {
           "id": "c10",
@@ -1901,7 +1893,7 @@
         {
           "id": "r1",
           "name": {
-            "ar": "تبالة",
+            "ar": "تابله",
             "en": "Tableh"
           },
           "description": {
@@ -2029,7 +2021,7 @@
         {
           "id": "ds5",
           "name": {
-            "ar": "قشطة عسل",
+            "ar": "قشطة و عسل",
             "en": "Kashta with Honey"
           },
           "description": {
@@ -2046,7 +2038,7 @@
         {
           "id": "ds6",
           "name": {
-            "ar": "غزل البنات بالبوظة",
+            "ar": "غزل البنات بالآيس كريم",
             "en": "Gazal with Ice Cream"
           },
           "description": {
@@ -2204,6 +2196,74 @@
             "en": "KWD"
           },
           "image": "/images/optimized/_DSC3410.webp"
+        },
+        {
+          "id": "hd_b1",
+          "name": {
+            "ar": "بابونج",
+            "en": "Chamomile"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "0.750",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "hd_b2",
+          "name": {
+            "ar": "أبريق بابونج",
+            "en": "Chamomile Pot"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "2.000",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "hd_b1",
+          "name": {
+            "ar": "بابونج",
+            "en": "Chamomile"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "0.750",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "hd_b2",
+          "name": {
+            "ar": "أبريق بابونج",
+            "en": "Chamomile Pot"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "2.000",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
         }
       ]
     },
@@ -2281,6 +2341,210 @@
             "en": "KWD"
           },
           "image": "/images/optimized/_DSC3410.webp"
+        },
+        {
+          "id": "cf_sl1",
+          "name": {
+            "ar": "ايس سبانش لاتيه",
+            "en": "Ice Spanish Latte"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "2.250",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "cf_sl2",
+          "name": {
+            "ar": "سبانش لاتيه",
+            "en": "Spanish Latte"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "2.250",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "cf_cl1",
+          "name": {
+            "ar": "كافيه لاتيه",
+            "en": "Caffe Latte"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "2.000",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "cf_hc1",
+          "name": {
+            "ar": "هوت شوكلت",
+            "en": "Hot Chocolate"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "1.750",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "cf_mh1",
+          "name": {
+            "ar": "موكا هوت",
+            "en": "Hot Mocha"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "2.000",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "cf_mb1",
+          "name": {
+            "ar": "موكا بارد",
+            "en": "Iced Mocha"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "2.000",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "cf_sl1",
+          "name": {
+            "ar": "ايس سبانش لاتيه",
+            "en": "Ice Spanish Latte"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "2.250",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "cf_sl2",
+          "name": {
+            "ar": "سبانش لاتيه",
+            "en": "Spanish Latte"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "2.250",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "cf_cl1",
+          "name": {
+            "ar": "كافيه لاتيه",
+            "en": "Caffe Latte"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "2.000",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "cf_hc1",
+          "name": {
+            "ar": "هوت شوكلت",
+            "en": "Hot Chocolate"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "1.750",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "cf_mh1",
+          "name": {
+            "ar": "موكا هوت",
+            "en": "Hot Mocha"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "2.000",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "cf_mb1",
+          "name": {
+            "ar": "موكا بارد",
+            "en": "Iced Mocha"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "2.000",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
         }
       ]
     },
@@ -2301,7 +2565,7 @@
             "ar": "",
             "en": ""
           },
-          "price": "1.000",
+          "price": "0.500",
           "currency": {
             "ar": "د.ك",
             "en": "KWD"
@@ -2311,7 +2575,7 @@
         {
           "id": "sd2",
           "name": {
-            "ar": "قنينة مياه معدنية صغيرة",
+            "ar": "مياه معدنية صغيرة",
             "en": "Mineral Water Small"
           },
           "description": {
@@ -2328,14 +2592,14 @@
         {
           "id": "sd3",
           "name": {
-            "ar": "قنينة مياه معدنية كبيرة",
+            "ar": "مياه معدنية كبيرة",
             "en": "Mineral Water Large"
           },
           "description": {
             "ar": "",
             "en": ""
           },
-          "price": "1.000",
+          "price": "0.500",
           "currency": {
             "ar": "د.ك",
             "en": "KWD"
@@ -2345,14 +2609,14 @@
         {
           "id": "sd4",
           "name": {
-            "ar": "قنينة ماء غازية صغيرة",
+            "ar": "مياه غازية صغيرة",
             "en": "Sparkling Water Small"
           },
           "description": {
             "ar": "",
             "en": ""
           },
-          "price": "1.250",
+          "price": "0.500",
           "currency": {
             "ar": "د.ك",
             "en": "KWD"
@@ -2362,8 +2626,59 @@
         {
           "id": "sd5",
           "name": {
-            "ar": "قنينة ماء غازية كبيرة",
+            "ar": "مياه غازية كبيرة",
             "en": "Sparkling Water Large"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "0.500",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": "/images/optimized/_DSC3410.webp"
+        },
+        {
+          "id": "sd_mc1",
+          "name": {
+            "ar": "موهيتو كلاسيك",
+            "en": "Classic Mojito"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "0.500",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "sd_ln1",
+          "name": {
+            "ar": "لبن نعنع",
+            "en": "Mint Yogurt"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "0.500",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
+        },
+        {
+          "id": "sd_mc1",
+          "name": {
+            "ar": "موهيتو كلاسيك",
+            "en": "Classic Mojito"
           },
           "description": {
             "ar": "",
@@ -2374,7 +2689,24 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/_DSC3410.webp"
+          "image": ""
+        },
+        {
+          "id": "sd_ln1",
+          "name": {
+            "ar": "لبن نعنع",
+            "en": "Mint Yogurt"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "1.000",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
         }
       ]
     },
@@ -2486,6 +2818,49 @@
             "en": "KWD"
           },
           "image": "/images/optimized/j6.webp"
+        }
+      ]
+    },
+    {
+      "id": "kids_meals",
+      "categoryName": {
+        "ar": "وجبات أطفال",
+        "en": "Kids Meals"
+      },
+      "items": [
+        {
+          "id": "h15",
+          "name": {
+            "ar": "تشيكن ناجتس",
+            "en": "Chicken Nuggets"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "1.500",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": "/images/optimized/h15.webp"
+        },
+        {
+          "id": "km1",
+          "name": {
+            "ar": "شيكن سلايدر",
+            "en": "Chicken Slider"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "1.500",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
         }
       ]
     }
