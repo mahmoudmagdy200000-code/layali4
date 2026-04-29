@@ -17,7 +17,7 @@ export function Header() {
   return (
     <header 
       dir={isRTL ? 'rtl' : 'ltr'}
-      className="fixed top-0 left-0 right-0 z-[60] bg-[#ECE7DC]/90 backdrop-blur-md border-b border-black/5 h-16 w-full"
+      className={`fixed top-0 left-0 right-0 z-[60] bg-[#ECE7DC]/90 backdrop-blur-md border-b border-black/5 w-full transition-all duration-300 ${isLandingPage ? 'h-32' : 'h-16'}`}
     >
       <div className="grid grid-cols-3 items-center h-full w-full px-4 max-w-5xl mx-auto">
         
@@ -40,7 +40,7 @@ export function Header() {
            <img 
              src="/assets/logo.png" 
              alt="Logo" 
-             className="h-14 w-auto object-contain max-h-[56px] shrink-0"
+             className={`w-auto object-contain shrink-0 transition-all duration-300 ${isLandingPage ? 'h-24 max-h-[96px]' : 'h-14 max-h-[56px]'}`}
            />
         </div>
 

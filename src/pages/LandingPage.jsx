@@ -10,23 +10,7 @@ export default function LandingPage() {
   if (!restaurant) return null;
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-[70vh] px-6 py-12 text-center">
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="mb-20"
-      >
-        <img 
-          src="/assets/logo.png" 
-          alt="Logo" 
-          className="h-32 w-auto mx-auto"
-          style={{
-            WebkitBoxReflect: 'below -10px linear-gradient(transparent, rgba(0,0,0,0.15))'
-          }}
-        />
-      </motion.div>
-
+    <div className="flex flex-col items-center justify-center min-h-[70vh] px-6 pt-40 pb-12 text-center">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
