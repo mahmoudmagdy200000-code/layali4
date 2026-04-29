@@ -57,7 +57,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b1.webp"
         },
         {
           "id": "b2",
@@ -74,7 +74,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b2.webp"
         },
         {
           "id": "b3",
@@ -91,7 +91,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b3.webp"
         },
         {
           "id": "b4",
@@ -108,7 +108,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b4.webp"
         },
         {
           "id": "b5",
@@ -125,7 +125,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "b6",
@@ -142,7 +142,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b6.webp"
         },
         {
           "id": "b7",
@@ -159,7 +159,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "b8",
@@ -176,7 +176,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b8.webp"
         },
         {
           "id": "b9",
@@ -193,7 +193,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b9.webp"
         },
         {
           "id": "b10",
@@ -210,7 +210,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b10.webp"
         },
         {
           "id": "b11",
@@ -227,7 +227,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b11.webp"
         },
         {
           "id": "b12",
@@ -244,7 +244,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b12.webp"
         },
         {
           "id": "b13",
@@ -261,7 +261,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b13.webp"
         },
         {
           "id": "b14",
@@ -278,7 +278,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b14.webp"
         },
         {
           "id": "b15",
@@ -295,7 +295,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b15.webp"
         },
         {
           "id": "b16",
@@ -312,7 +312,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b16.webp"
         },
         {
           "id": "b17",
@@ -329,7 +329,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b17.webp"
         },
         {
           "id": "b18",
@@ -346,7 +346,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b18.webp"
         },
         {
           "id": "b19",
@@ -363,7 +363,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b19.webp"
         },
         {
           "id": "b20",
@@ -380,7 +380,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b20.webp"
         },
         {
           "id": "b21",
@@ -397,7 +397,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b21.webp"
         },
         {
           "id": "b22",
@@ -414,7 +414,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b22.webp"
         },
         {
           "id": "b23",
@@ -431,7 +431,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "b24",
@@ -448,7 +448,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "b25",
@@ -465,7 +465,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b25.webp"
         },
         {
           "id": "b26",
@@ -482,7 +482,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b26.webp"
         },
         {
           "id": "b27",
@@ -499,7 +499,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b27.webp"
         },
         {
           "id": "b28",
@@ -516,7 +516,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "b29",
@@ -533,7 +533,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b29.webp"
         },
         {
           "id": "b30",
@@ -550,7 +550,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b30.webp"
         },
         {
           "id": "b31",
@@ -567,7 +567,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b31.webp"
         },
         {
           "id": "b32",
@@ -584,7 +584,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "b33",
@@ -601,7 +601,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b33.webp"
         },
         {
           "id": "b34",
@@ -618,7 +618,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "b35",
@@ -635,7 +635,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b35.webp"
         },
         {
           "id": "b36",
@@ -652,7 +652,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b36.webp"
         },
         {
           "id": "b37",
@@ -669,7 +669,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/b37.webp"
         }
       ]
     },
@@ -695,7 +695,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/g1.webp"
         },
         {
           "id": "g2",
@@ -712,7 +712,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "g3",
@@ -729,7 +729,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/g3.webp"
         },
         {
           "id": "g4",
@@ -746,7 +746,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/g4.webp"
         },
         {
           "id": "g5",
@@ -763,7 +763,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/g5.webp"
         },
         {
           "id": "g6",
@@ -780,7 +780,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "g7",
@@ -797,7 +797,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "g8",
@@ -814,7 +814,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "g9",
@@ -831,7 +831,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "g10",
@@ -848,7 +848,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "g11",
@@ -865,7 +865,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/g11.webp"
         },
         {
           "id": "g12",
@@ -882,7 +882,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/g12.webp"
         },
         {
           "id": "g13",
@@ -899,7 +899,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/g13.webp"
         },
         {
           "id": "g14",
@@ -916,7 +916,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/g14.webp"
         },
         {
           "id": "g15",
@@ -933,7 +933,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/g15.webp"
         },
         {
           "id": "g16",
@@ -950,7 +950,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/g16.webp"
         }
       ]
     },
@@ -976,7 +976,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/h1.webp"
         },
         {
           "id": "h2",
@@ -993,7 +993,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/h2.webp"
         },
         {
           "id": "h3",
@@ -1010,7 +1010,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/h3.webp"
         },
         {
           "id": "h4",
@@ -1027,7 +1027,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/h4.webp"
         },
         {
           "id": "h5",
@@ -1044,7 +1044,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/h5.webp"
         },
         {
           "id": "h6",
@@ -1061,7 +1061,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/h6.webp"
         },
         {
           "id": "h7",
@@ -1078,7 +1078,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "h8",
@@ -1095,7 +1095,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/h8.webp"
         },
         {
           "id": "h9",
@@ -1112,7 +1112,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/h9.webp"
         },
         {
           "id": "h10",
@@ -1129,7 +1129,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/h10.webp"
         },
         {
           "id": "h11",
@@ -1146,7 +1146,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/h11.webp"
         },
         {
           "id": "h12",
@@ -1163,7 +1163,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/h12.webp"
         },
         {
           "id": "h13",
@@ -1180,7 +1180,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/h13.webp"
         },
         {
           "id": "h14",
@@ -1197,7 +1197,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "h15",
@@ -1214,7 +1214,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/h15.webp"
         },
         {
           "id": "h16",
@@ -1231,7 +1231,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "h17",
@@ -1248,7 +1248,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/h17.webp"
         },
         {
           "id": "h18",
@@ -1265,7 +1265,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/h18.webp"
         },
         {
           "id": "h19",
@@ -1282,7 +1282,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/h19.webp"
         },
         {
           "id": "h20",
@@ -1299,7 +1299,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/h20.webp"
         },
         {
           "id": "h21",
@@ -1316,7 +1316,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/h21.webp"
         }
       ]
     },
@@ -1342,7 +1342,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/d1.webp"
         },
         {
           "id": "d2",
@@ -1359,7 +1359,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/d2.webp"
         },
         {
           "id": "d3",
@@ -1376,7 +1376,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "d4",
@@ -1393,7 +1393,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/d4.webp"
         },
         {
           "id": "d5",
@@ -1410,7 +1410,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/d5.webp"
         },
         {
           "id": "d6",
@@ -1427,7 +1427,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/d6.webp"
         },
         {
           "id": "d7",
@@ -1444,7 +1444,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/d7.webp"
         },
         {
           "id": "d8",
@@ -1461,7 +1461,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/d8.webp"
         }
       ]
     },
@@ -1487,7 +1487,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/c1.webp"
         },
         {
           "id": "c2",
@@ -1504,7 +1504,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/c2.webp"
         },
         {
           "id": "c3",
@@ -1521,7 +1521,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/c3.webp"
         },
         {
           "id": "c4",
@@ -1538,7 +1538,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/c4.webp"
         },
         {
           "id": "c5",
@@ -1555,7 +1555,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/c5.webp"
         },
         {
           "id": "c6",
@@ -1572,7 +1572,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/c6.webp"
         },
         {
           "id": "c7",
@@ -1589,7 +1589,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "c8",
@@ -1606,7 +1606,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/c8.webp"
         },
         {
           "id": "c9",
@@ -1623,7 +1623,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/c9.webp"
         },
         {
           "id": "c10",
@@ -1640,7 +1640,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/c10.webp"
         },
         {
           "id": "c11",
@@ -1657,7 +1657,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/c11.webp"
         },
         {
           "id": "c12",
@@ -1674,7 +1674,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "c13",
@@ -1691,7 +1691,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/c13.webp"
         },
         {
           "id": "c14",
@@ -1708,7 +1708,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/c14.webp"
         },
         {
           "id": "c15",
@@ -1725,7 +1725,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "c16",
@@ -1742,7 +1742,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/c16.webp"
         },
         {
           "id": "c17",
@@ -1759,7 +1759,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "c18",
@@ -1776,7 +1776,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/c18.webp"
         },
         {
           "id": "c19",
@@ -1793,7 +1793,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/c19.webp"
         },
         {
           "id": "c20",
@@ -1810,7 +1810,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/c20.webp"
         },
         {
           "id": "c21",
@@ -1827,7 +1827,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/c21.webp"
         }
       ]
     },
@@ -1853,7 +1853,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/s1.webp"
         },
         {
           "id": "s2",
@@ -1870,7 +1870,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/s2.webp"
         },
         {
           "id": "s3",
@@ -1887,7 +1887,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/s3.webp"
         }
       ]
     },
@@ -1913,7 +1913,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "r2",
@@ -1930,7 +1930,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/r2.webp"
         },
         {
           "id": "r3",
@@ -1947,7 +1947,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/r3.webp"
         }
       ]
     },
@@ -1973,7 +1973,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/ds1.webp"
         },
         {
           "id": "ds2",
@@ -1990,7 +1990,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/ds2.webp"
         },
         {
           "id": "ds3",
@@ -2007,7 +2007,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/ds3.webp"
         },
         {
           "id": "ds4",
@@ -2024,7 +2024,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/ds4.webp"
         },
         {
           "id": "ds5",
@@ -2041,7 +2041,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/ds5.webp"
         },
         {
           "id": "ds6",
@@ -2058,7 +2058,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/ds6.webp"
         },
         {
           "id": "ds7",
@@ -2075,7 +2075,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/ds7.webp"
         },
         {
           "id": "ds8",
@@ -2092,7 +2092,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/ds8.webp"
         }
       ]
     },
@@ -2118,7 +2118,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/hd1.webp"
         },
         {
           "id": "hd2",
@@ -2135,7 +2135,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/hd2.webp"
         },
         {
           "id": "hd3",
@@ -2152,7 +2152,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "hd4",
@@ -2169,7 +2169,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "hd5",
@@ -2186,7 +2186,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "hd6",
@@ -2203,7 +2203,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         }
       ]
     },
@@ -2229,7 +2229,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "cf2",
@@ -2246,7 +2246,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "cf3",
@@ -2263,7 +2263,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/cf3.webp"
         },
         {
           "id": "cf4",
@@ -2280,7 +2280,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         }
       ]
     },
@@ -2306,7 +2306,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "sd2",
@@ -2323,7 +2323,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "sd3",
@@ -2340,7 +2340,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "sd4",
@@ -2357,7 +2357,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "sd5",
@@ -2374,7 +2374,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         }
       ]
     },
@@ -2400,7 +2400,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/j1.webp"
         },
         {
           "id": "j2",
@@ -2417,7 +2417,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/j2.webp"
         },
         {
           "id": "j3",
@@ -2434,7 +2434,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/j3.webp"
         },
         {
           "id": "j4",
@@ -2451,7 +2451,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/j4.webp"
         },
         {
           "id": "j5",
@@ -2468,7 +2468,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": null
         },
         {
           "id": "j6",
@@ -2485,7 +2485,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/assets/menu/placeholder.jpg"
+          "image": "/images/optimized/j6.webp"
         }
       ]
     }

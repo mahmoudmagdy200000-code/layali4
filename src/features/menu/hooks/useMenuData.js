@@ -34,7 +34,7 @@ export default function useMenuData() {
         label: cat.categoryName[lang],
         items: cat.items.map((item) => ({
           ...item,
-          image: CATEGORY_IMAGES[cat.id] || "https://placehold.co/400x300/e2e8f0/475569?text=Food",
+          image: item.image,
           title: item.name?.[lang] || '',
           description: item.description?.[lang] || '',
           currency: item.currency?.[lang] || '',

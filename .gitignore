@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Raw unoptimized images (1GB+) — only optimized WebP files should be committed
+raw_images/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

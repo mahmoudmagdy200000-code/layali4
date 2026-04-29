@@ -11,8 +11,6 @@ import { useLanguage } from '@/features/i18n';
 export function MenuItemCard({ image, title, description, price, currency, tags, categoryId, onSelect }) {
   const { isRTL, t } = useLanguage();
 
-  const displayImage = image;
-
   return (
     <motion.div
       layout
@@ -24,16 +22,16 @@ export function MenuItemCard({ image, title, description, price, currency, tags,
       className="relative overflow-hidden rounded-xl cursor-pointer group"
     >
       {/* Full-bleed Image */}
-      <div className="aspect-square w-full">
+      <div className="aspect-square w-full overflow-hidden">
         <img
-          src={displayImage}
+          src={image || '/assets/menu/placeholder.jpg'}
           alt={title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          className="w-full h-full object-cover scale-[1.15] transition-transform duration-300 group-hover:scale-[1.25]"
           loading="lazy"
           decoding="async"
           onError={(e) => {
             e.target.onerror = null;
-            e.target.src = 'https://placehold.co/400x400/e2e8f0/475569?text=Food';
+            e.target.src = '/assets/menu/placeholder.jpg';
           }}
         />
       </div>
