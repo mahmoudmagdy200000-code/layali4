@@ -11,26 +11,63 @@ export default function AboutPage() {
 
   return (
     <div className="flex flex-col min-h-screen bg-[#ECE7DC]">
-      {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
-        <img 
-          src="/assets/about/DSC03257.webp" 
-          alt="Layali Batroun Interior" 
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]" />
-        
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="relative z-10 text-center px-6"
-        >
-          <h1 className="font-display text-5xl md:text-7xl text-white tracking-tight drop-shadow-xl mb-4">
-            {t('links.story')}
-          </h1>
-          <div className="h-1 w-24 bg-[#D4AF37] mx-auto rounded-full" />
-        </motion.div>
+      {/* Dual Hero Section */}
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-[#233a34] py-20 px-6">
+        {/* Background Patterns/Effects */}
+        <div className="absolute inset-0 opacity-10 pointer-events-none">
+          <div className="absolute top-0 left-0 w-full h-full bg-[url('/assets/pattern.png')] bg-repeat opacity-20" />
+        </div>
+
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+          
+          {/* Left Column: Title & Intro */}
+          <motion.div 
+            initial={{ opacity: 0, x: isRTL ? 50 : -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="text-center lg:text-right"
+          >
+            <h1 className="font-display text-6xl md:text-8xl text-white tracking-tight drop-shadow-2xl mb-6">
+              {t('links.story')}
+            </h1>
+            <div className={`h-1.5 w-32 bg-[#D4AF37] mb-8 ${isRTL ? 'mr-0' : 'ml-0'} mx-auto lg:mx-0 rounded-full`} />
+            <p className="text-[#ECE7DC]/80 text-xl md:text-2xl font-serif italic max-w-xl">
+              تراث يتجدد.. ونكهات تروي حكاية الأصالة اللبنانية في كل زاوية.
+            </p>
+          </motion.div>
+
+          {/* Right Column: Dual Images */}
+          <div className="relative flex justify-center items-center h-[400px] md:h-[500px]">
+            {/* Image 1: Main Hero */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
+              animate={{ opacity: 1, scale: 1, rotate: -5 }}
+              transition={{ duration: 1.2, ease: "easeOut" }}
+              className="absolute z-0 w-3/4 aspect-square rounded-3xl overflow-hidden shadow-2xl border-4 border-white/10"
+            >
+              <img 
+                src="/assets/about/about-hero.webp" 
+                alt="Story Hero" 
+                className="w-full h-full object-cover grayscale-[30%] hover:grayscale-0 transition-all duration-700"
+              />
+            </motion.div>
+
+            {/* Image 2: Home Icon Image (Overlapping) */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8, rotate: 5, y: 50 }}
+              animate={{ opacity: 1, scale: 1, rotate: 5, y: 50 }}
+              transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
+              className="absolute z-10 w-3/4 aspect-square rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20 translate-y-12"
+            >
+              <img 
+                src="/assets/about/home_icon_new.webp" 
+                alt="Branding Icon" 
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+          </div>
+
+        </div>
       </section>
 
       {/* Content Section */}
