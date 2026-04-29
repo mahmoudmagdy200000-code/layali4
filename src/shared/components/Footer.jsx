@@ -31,10 +31,28 @@ export function Footer() {
       </div>
 
       {/* Copyright & Signature */}
-      <div className="flex flex-col items-center gap-2">
-        <p className="text-xs text-[#233a34]/60 font-medium tracking-wide">
-          © 2026 جميع الحقوق محفوظة لشركة GSTC إعداد وتنفيذ: شركة التقنيات العلمية العالمية
-        </p>
+      <div className="flex flex-col items-center gap-4">
+        <a 
+          href="https://alhrof.com/linktree" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="flex flex-col items-center gap-2 group transition-all"
+        >
+          {/* GSTC Logo Emblem */}
+          <div className="h-8 flex items-center justify-center opacity-50 group-hover:opacity-100 transition-opacity">
+            <img 
+              src="/GSTC_logo_white_transparent.png" 
+              alt="GSTC Logo" 
+              className="h-full object-contain filter invert"
+              onError={(e) => {
+                e.target.style.display = 'none';
+              }}
+            />
+          </div>
+          <p className="text-[10px] sm:text-xs text-[#233a34]/60 font-medium tracking-wide group-hover:text-[#233a34] text-center px-4">
+            © 2026 جميع الحقوق محفوظة لشركة GSTC إعداد وتنفيذ: شركة التقنيات العلمية العالمية
+          </p>
+        </a>
       </div>
       
     </footer>

@@ -19,6 +19,7 @@
   --font-display: "Noto Serif", serif;
   --font-body: "Work Sans", sans-serif;
   --font-arabic: "Almarai", sans-serif;
+  --font-arabic-premium: "Noto Kufi Arabic", sans-serif;
 
   /* ── Radius ────────────────────────────────────────── */
   --radius-card: 0.75rem; /* 12px as per original Stitch */

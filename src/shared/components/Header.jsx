@@ -8,61 +8,43 @@ import { LanguageToggle } from './LanguageToggle';
 export function Header() {
   const { isRTL, t } = useLanguage();
   const location = useLocation();
-  const isCategoryView = location.pathname.startsWith('/category/');
+  const isLandingPage = location.pathname === '/';
 
-  if (isCategoryView) {
+  if (isLandingPage) {
     return (
-      <header 
-        dir={isRTL ? 'rtl' : 'ltr'}
-        className="fixed top-0 left-0 right-0 z-[60] bg-[#ECE7DC]/90 backdrop-blur-md border-b border-black/5 h-14 px-4 py-1 flex items-center justify-between"
-      >
-        {/* Home Icon (First in DOM: Left in LTR, Right in RTL) */}
-        <Link 
-          to="/" 
-          className="relative z-10 p-2 hover:scale-110 transition-transform active:scale-95 flex items-center"
-        >
-          <Home size={28} strokeWidth={1.5} className="text-[#233a34]" />
-        </Link>
-
-        {/* Logo (Centered via absolute positioning) */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-          <img 
-            src="/assets/logo.png" 
-            alt="Logo" 
-            className="h-12 w-auto object-contain"
-          />
-        </div>
-
-        {/* Language Switcher (Last in DOM: Right in LTR, Left in RTL) */}
-        <div className="relative z-10 flex items-center">
-           <LanguageToggle />
+      <header className="fixed top-0 left-0 right-0 z-[60] h-14 px-6 flex items-center justify-between pointer-events-none">
+        <div className="pointer-events-auto">
+          <LanguageToggle />
         </div>
       </header>
     );
   }
 
   return (
-    <header className="bg-transparent relative">
-      {/* Utilities Container: Pinned to top corners via absolute positioning */}
-      <div className="absolute top-4 left-0 right-0 w-full px-6 flex justify-between items-start z-10">
-        {/* Language Toggle (AR/EN) */}
-        <LanguageToggle />
+    <header 
+      dir={isRTL ? 'rtl' : 'ltr'}
+      className="fixed top-0 left-0 right-0 z-[60] bg-[#ECE7DC]/90 backdrop-blur-md border-b border-black/5 h-14 px-4 py-1 flex items-center justify-between"
+    >
+      {/* Home Icon: Now contextually navigates back to the main Menu Grid (/menu) */}
+      <Link 
+        to="/menu" 
+        className="relative z-10 p-2 hover:scale-110 transition-transform active:scale-95 flex items-center"
+      >
+        <Home size={28} strokeWidth={1.5} className="text-[#233a34]" />
+      </Link>
+
+      {/* Brand Logo: Hidden only on Landing Page to reduce visual noise */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+        <img 
+          src="/assets/logo.png" 
+          alt="Logo" 
+          className="h-12 w-auto object-contain"
+        />
       </div>
 
-      {/* Hero Logo Container: Centered branding below the utilities */}
-      <div className="pt-16 pb-8 w-full flex justify-center items-center">
-        <motion.div 
-          initial={{ scale: 0.9, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-        >
-          <img 
-            src="/assets/logo.png" 
-            alt="Logo" 
-            className="w-48 sm:w-56 h-auto object-contain"
-            loading="eager"
-          />
-        </motion.div>
+      {/* Language Switcher */}
+      <div className="relative z-10 flex items-center">
+         <LanguageToggle />
       </div>
     </header>
   );
