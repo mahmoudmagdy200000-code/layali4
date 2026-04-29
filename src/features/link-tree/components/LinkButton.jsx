@@ -24,14 +24,14 @@ export function LinkButton({ href, icon: Icon, label, colorClass, index, onClick
       onClick={handleClick}
       target={(href.startsWith('#') || href.startsWith('/')) ? undefined : "_blank"}
       rel={(href.startsWith('#') || href.startsWith('/')) ? undefined : "noopener noreferrer"}
-      className={`flex items-center gap-4 p-5 rounded-2xl border border-black/10 shadow-md transition-all group ${colorClass}`}
+      className={`flex items-center gap-4 px-4 py-2.5 rounded-2xl border border-black/10 shadow-md transition-all group ${colorClass}`}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.08, duration: 0.4 }}
       whileTap={{ scale: 0.98 }}
     >
-      <div className={`w-12 h-12 rounded-lg flex items-center justify-center bg-black/10 transition-colors ${isRTL ? 'order-last' : 'order-first'}`}>
-        <Icon size={24} />
+      <div className={`w-10 h-10 rounded-lg flex items-center justify-center bg-black/10 transition-colors ${isRTL ? 'order-last' : 'order-first'}`}>
+        <Icon size={20} />
       </div>
       <div className="flex-1 flex flex-col">
         <span className="font-display text-lg font-medium">

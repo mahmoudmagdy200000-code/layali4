@@ -6,7 +6,7 @@ export function LinkTreeSection({ onAction }) {
   const { links } = useLinkTree();
 
   return (
-    <section className="px-6 py-8 flex flex-col gap-3">
+    <section className="px-6 py-8 flex flex-col gap-2">
       {links.map((link, index) => (
         <LinkButton 
           key={link.id} 

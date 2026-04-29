@@ -12,7 +12,13 @@ export function Header() {
   // Route logic: 
   const isAboutPage = location.pathname === '/';
   const isMenuRoot = location.pathname === '/menu';
-  const showHomeIcon = !isAboutPage && !isMenuRoot;
+
+  const handleHomeClick = (e) => {
+    if (isMenuRoot) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
 
   return (
     <header 
@@ -25,7 +31,8 @@ export function Header() {
         <div className="flex items-center gap-2">
           {!isAboutPage ? (
             <Link 
-              to="/" 
+              to="/menu" 
+              onClick={handleHomeClick}
               className="p-2 hover:scale-110 transition-transform active:scale-95 flex items-center shrink-0"
               title={t('nav.home')}
             >
