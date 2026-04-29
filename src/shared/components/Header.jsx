@@ -17,7 +17,7 @@ export function Header() {
   return (
     <header 
       dir={isRTL ? 'rtl' : 'ltr'}
-      className={`fixed top-0 left-0 right-0 z-[60] bg-[#ECE7DC]/90 backdrop-blur-md border-b border-black/5 w-full transition-all duration-300 ${isLandingPage ? 'h-32' : 'h-16'}`}
+      className="fixed top-0 left-0 right-0 z-[60] bg-[#ECE7DC]/90 backdrop-blur-md border-b border-black/5 w-full h-20 transition-all duration-300"
     >
       <div className="grid grid-cols-3 items-center h-full w-full px-4 max-w-5xl mx-auto">
         
@@ -36,11 +36,14 @@ export function Header() {
         </div>
 
         {/* Column 2: Central Branding (Dead Center) */}
-        <div className="flex justify-center items-center h-full overflow-hidden">
+        <div className="flex justify-center items-center h-full">
            <img 
              src="/assets/logo.png" 
              alt="Logo" 
-             className={`w-auto object-contain shrink-0 transition-all duration-300 ${isLandingPage ? 'h-24 max-h-[96px]' : 'h-14 max-h-[56px]'}`}
+             className="h-16 w-auto object-contain max-h-[64px] shrink-0"
+             style={{
+               WebkitBoxReflect: 'below -2px linear-gradient(to bottom, transparent, transparent 50%, rgba(255,255,255,0.3))'
+             }}
            />
         </div>
 

@@ -10,7 +10,7 @@ export default function LandingPage() {
   if (!restaurant) return null;
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-[70vh] px-6 pt-40 pb-12 text-center">
+    <div className="flex flex-col items-center justify-center min-h-[70vh] px-6 pt-24 pb-12 text-center">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
