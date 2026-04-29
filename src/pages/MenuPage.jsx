@@ -3,7 +3,7 @@ import { HomeCategoryGrid } from '@/features/home/components/HomeCategoryGrid';
 
 export default function MenuPage() {
   return (
-    <div className="pt-4">
+    <div className="pt-20">
       <HomeCategoryGrid />
     </div>
   );

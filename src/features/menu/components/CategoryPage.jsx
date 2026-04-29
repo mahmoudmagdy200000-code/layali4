@@ -34,8 +34,8 @@ export function CategoryPage() {
   if (!categories) return null;
 
   return (
-    <section className="flex flex-col gap-6 pt-16 pb-4 relative">
-      <div className="sticky top-14 z-50 bg-[#ECE7DC]/85 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.03)] -mx-6 px-6 pt-2 pb-2 transition-all duration-300">
+    <section className="flex flex-col gap-6 pt-20 pb-4 relative">
+      <div className="sticky top-16 z-50 bg-[#ECE7DC]/85 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.03)] -mx-6 px-6 pt-2 pb-2 transition-all duration-300">
         <CategoryTabs
           categories={categories}
           activeId={categoryId}
