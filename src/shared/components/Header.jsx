@@ -8,48 +8,49 @@ import { LanguageToggle } from './LanguageToggle';
 export function Header() {
   const { isRTL, t } = useLanguage();
   const location = useLocation();
+  
+  // Route logic: Show Home only when deep in category/item views
   const isLandingPage = location.pathname === '/';
   const isMenuRoot = location.pathname === '/menu';
-
-  if (isLandingPage) {
-    return (
-      <header className="fixed top-0 left-0 right-0 z-[60] h-14 px-6 flex items-center justify-between pointer-events-none">
-        <div className="pointer-events-auto">
-          <LanguageToggle />
-        </div>
-      </header>
-    );
-  }
+  const showHomeIcon = !isLandingPage && !isMenuRoot;
 
   return (
     <header 
       dir={isRTL ? 'rtl' : 'ltr'}
-      className="fixed top-0 left-0 right-0 z-[60] bg-[#ECE7DC]/90 backdrop-blur-md border-b border-black/5 h-16 px-4 flex items-center justify-between"
+      className="fixed top-0 left-0 right-0 z-[60] bg-[#ECE7DC]/90 backdrop-blur-md border-b border-black/5 h-16 w-full"
     >
-      {/* Home Icon Container: Dynamic visibility based on route */}
-      <div className="w-12 flex items-center">
-        {!isMenuRoot && (
-          <Link 
-            to="/menu" 
-            className="relative z-10 p-2 hover:scale-110 transition-transform active:scale-95 flex items-center"
-          >
-            <Home size={28} strokeWidth={1.5} className="text-[#233a34]" />
-          </Link>
-        )}
-      </div>
+      <div className="grid grid-cols-3 items-center h-full w-full px-4 max-w-5xl mx-auto">
+        
+        {/* Column 1: Navigation Actions */}
+        <div className="flex items-center">
+          {showHomeIcon ? (
+            <Link 
+              to="/menu" 
+              className="p-2 hover:scale-110 transition-transform active:scale-95 flex items-center shrink-0"
+            >
+              <Home size={28} strokeWidth={1.5} className="text-[#233a34]" />
+            </Link>
+          ) : (
+            <div className="w-10 h-10" /> /* Placeholder to maintain grid symmetry */
+          )}
+        </div>
 
-      {/* Brand Logo: Maximized for legibility while maintaining header slimness */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-        <img 
-          src="/assets/logo.png" 
-          alt="Logo" 
-          className="h-14 w-auto object-contain"
-        />
-      </div>
+        {/* Column 2: Central Branding (Dead Center) */}
+        <div className="flex justify-center items-center h-full overflow-hidden">
+           <img 
+             src="/assets/logo.png" 
+             alt="Logo" 
+             className="h-14 w-auto object-contain max-h-[56px] shrink-0"
+           />
+        </div>
 
-      {/* Language Switcher Container: Balanced with Home icon container */}
-      <div className="relative z-10 w-12 flex items-center justify-end">
-         <LanguageToggle />
+        {/* Column 3: Language & Settings */}
+        <div className="flex items-center justify-end">
+           <div className="shrink-0 flex items-center">
+             <LanguageToggle />
+           </div>
+        </div>
+
       </div>
     </header>
   );
