@@ -173,6 +173,8 @@ export default function AboutPage() {
               '/assets/about/DSC03295.webp',
               '/assets/about/DSC03221.webp',
               '/assets/about/DSC03260.webp',
+              '/assets/about/31.webp',
+              '/assets/about/7-1.webp',
               '/assets/about/1.webp',
               '/assets/about/2.webp',
               '/assets/about/home_icon_new.webp'
