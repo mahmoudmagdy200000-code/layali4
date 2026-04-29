@@ -15,7 +15,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <img 
-          src="/assets/about/about-hero.webp" 
+          src="/assets/about/31.webp" 
           alt="Layali Batroun Interior" 
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -48,7 +48,7 @@ export default function AboutPage() {
           >
             <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
               <img 
-                src="/assets/about/about-story.webp" 
+                src="/assets/about/7-1.webp" 
                 alt="Authentic Lebanese Dining" 
                 className="w-full aspect-[4/5] object-cover"
               />
