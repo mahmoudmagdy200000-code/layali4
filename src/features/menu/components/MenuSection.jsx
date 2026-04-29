@@ -16,8 +16,15 @@ export function MenuSection() {
     [categories, activeId],
   );
 
+  // Implement Scroll Restoration on Tab Switch (Crucial UX fix)
+  useEffect(() => {
+    if (activeId) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [activeId]);
+
   return (
-    <section className="flex flex-col gap-10 py-16">
+    <section className="flex flex-col py-16">
       <div className="text-center px-6 flex flex-col gap-4">
         <h2 className="font-display text-7xl text-[#1C1C1C] tracking-tight">
           {t('menu.title')}
@@ -27,7 +34,7 @@ export function MenuSection() {
         </p>
       </div>
 
-      <div className="sticky top-0 z-50 bg-[#ECE7DC]/85 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.03)] -mx-6 px-6 pt-4 pb-2 transition-all duration-300">
+      <div className="sticky top-24 z-50 bg-[#ECE7DC]/85 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.03)] -mx-6 px-6 pt-4 pb-2 transition-all duration-300">
         <CategoryTabs
           categories={categories}
           activeId={activeId}
@@ -35,7 +42,9 @@ export function MenuSection() {
         />
       </div>
 
-      <MenuGrid items={activeItems} isPending={isPending} />
+      <div className="mt-6">
+        <MenuGrid items={activeItems} isPending={isPending} />
+      </div>
     </section>
   );
 }

@@ -22,6 +22,13 @@ export function CategoryPage() {
     }
   }, [categories, categoryId, navigate]);
 
+  // Implement Scroll Restoration on Tab Switch (Crucial UX fix)
+  useEffect(() => {
+    if (categoryId) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [categoryId]);
+
   const activeItems = useMemo(
     () => categories?.find((cat) => cat.id === categoryId)?.items || [],
     [categories, categoryId],
@@ -34,7 +41,7 @@ export function CategoryPage() {
   if (!categories) return null;
 
   return (
-    <section className="flex flex-col gap-6 pt-28 pb-4 relative">
+    <section className="flex flex-col pt-24 pb-4 relative">
       <div className="sticky top-24 z-50 bg-[#ECE7DC]/85 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.03)] -mx-6 px-6 pt-2 pb-2 transition-all duration-300">
         <CategoryTabs
           categories={categories}
@@ -43,7 +50,9 @@ export function CategoryPage() {
         />
       </div>
 
-      <MenuGrid items={activeItems} isPending={false} />
+      <div className="mt-6">
+        <MenuGrid items={activeItems} isPending={false} />
+      </div>
     </section>
   );
 }
