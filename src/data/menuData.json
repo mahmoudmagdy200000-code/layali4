@@ -502,23 +502,6 @@
           "image": "/images/optimized/b27.webp"
         },
         {
-          "id": "b28",
-          "name": {
-            "ar": "صحن خضرة",
-            "en": "Plate Vegetables"
-          },
-          "description": {
-            "ar": "",
-            "en": ""
-          },
-          "price": "1.000",
-          "currency": {
-            "ar": "د.ك",
-            "en": "KWD"
-          },
-          "image": "/images/optimized/_DSC3410.webp"
-        },
-        {
           "id": "b29",
           "name": {
             "ar": "منقوشة زعتر",
@@ -2230,40 +2213,6 @@
             "en": "KWD"
           },
           "image": ""
-        },
-        {
-          "id": "hd_b1",
-          "name": {
-            "ar": "بابونج",
-            "en": "Chamomile"
-          },
-          "description": {
-            "ar": "",
-            "en": ""
-          },
-          "price": "0.750",
-          "currency": {
-            "ar": "د.ك",
-            "en": "KWD"
-          },
-          "image": ""
-        },
-        {
-          "id": "hd_b2",
-          "name": {
-            "ar": "أبريق بابونج",
-            "en": "Chamomile Pot"
-          },
-          "description": {
-            "ar": "",
-            "en": ""
-          },
-          "price": "2.000",
-          "currency": {
-            "ar": "د.ك",
-            "en": "KWD"
-          },
-          "image": ""
         }
       ]
     },
@@ -2341,108 +2290,6 @@
             "en": "KWD"
           },
           "image": "/images/optimized/_DSC3410.webp"
-        },
-        {
-          "id": "cf_sl1",
-          "name": {
-            "ar": "ايس سبانش لاتيه",
-            "en": "Ice Spanish Latte"
-          },
-          "description": {
-            "ar": "",
-            "en": ""
-          },
-          "price": "2.250",
-          "currency": {
-            "ar": "د.ك",
-            "en": "KWD"
-          },
-          "image": ""
-        },
-        {
-          "id": "cf_sl2",
-          "name": {
-            "ar": "سبانش لاتيه",
-            "en": "Spanish Latte"
-          },
-          "description": {
-            "ar": "",
-            "en": ""
-          },
-          "price": "2.250",
-          "currency": {
-            "ar": "د.ك",
-            "en": "KWD"
-          },
-          "image": ""
-        },
-        {
-          "id": "cf_cl1",
-          "name": {
-            "ar": "كافيه لاتيه",
-            "en": "Caffe Latte"
-          },
-          "description": {
-            "ar": "",
-            "en": ""
-          },
-          "price": "2.000",
-          "currency": {
-            "ar": "د.ك",
-            "en": "KWD"
-          },
-          "image": ""
-        },
-        {
-          "id": "cf_hc1",
-          "name": {
-            "ar": "هوت شوكلت",
-            "en": "Hot Chocolate"
-          },
-          "description": {
-            "ar": "",
-            "en": ""
-          },
-          "price": "1.750",
-          "currency": {
-            "ar": "د.ك",
-            "en": "KWD"
-          },
-          "image": ""
-        },
-        {
-          "id": "cf_mh1",
-          "name": {
-            "ar": "موكا هوت",
-            "en": "Hot Mocha"
-          },
-          "description": {
-            "ar": "",
-            "en": ""
-          },
-          "price": "2.000",
-          "currency": {
-            "ar": "د.ك",
-            "en": "KWD"
-          },
-          "image": ""
-        },
-        {
-          "id": "cf_mb1",
-          "name": {
-            "ar": "موكا بارد",
-            "en": "Iced Mocha"
-          },
-          "description": {
-            "ar": "",
-            "en": ""
-          },
-          "price": "2.000",
-          "currency": {
-            "ar": "د.ك",
-            "en": "KWD"
-          },
-          "image": ""
         },
         {
           "id": "cf_sl1",
@@ -2668,40 +2515,6 @@
             "en": ""
           },
           "price": "0.500",
-          "currency": {
-            "ar": "د.ك",
-            "en": "KWD"
-          },
-          "image": ""
-        },
-        {
-          "id": "sd_mc1",
-          "name": {
-            "ar": "موهيتو كلاسيك",
-            "en": "Classic Mojito"
-          },
-          "description": {
-            "ar": "",
-            "en": ""
-          },
-          "price": "2.000",
-          "currency": {
-            "ar": "د.ك",
-            "en": "KWD"
-          },
-          "image": ""
-        },
-        {
-          "id": "sd_ln1",
-          "name": {
-            "ar": "لبن نعنع",
-            "en": "Mint Yogurt"
-          },
-          "description": {
-            "ar": "",
-            "en": ""
-          },
-          "price": "1.000",
           "currency": {
             "ar": "د.ك",
             "en": "KWD"
