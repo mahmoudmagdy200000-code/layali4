@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/features/i18n';
 import useMenuData from '@/features/menu/hooks/useMenuData';
+import { Sparkles, ChefHat, Leaf } from 'lucide-react';
 
 export default function AboutPage() {
   const { t, isRTL } = useLanguage();
@@ -52,7 +53,6 @@ export default function AboutPage() {
                 className="w-full aspect-[4/5] object-cover"
               />
             </div>
-            {/* Decorative element */}
             <div className="absolute -bottom-6 -right-6 w-full h-full bg-[#233a34]/10 -z-10 rounded-3xl translate-x-3 translate-y-3" />
           </motion.div>
 
@@ -99,23 +99,59 @@ export default function AboutPage() {
       </section>
 
       {/* Value Proposition Grid */}
-      <section className="bg-white/50 py-20 px-6">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-          <div className="flex flex-col items-center gap-4">
-            <div className="w-16 h-16 bg-[#233a34] text-white rounded-full flex items-center justify-center text-2xl">🌿</div>
-            <h3 className="font-bold text-xl text-[#233a34]">مكونات طازجة</h3>
-            <p className="text-gray-600">نختار أجود المكونات الطازجة يومياً لنضمن نكهة لبنانية أصلية.</p>
-          </div>
-          <div className="flex flex-col items-center gap-4">
-            <div className="w-16 h-16 bg-[#233a34] text-white rounded-full flex items-center justify-center text-2xl">👨‍🍳</div>
-            <h3 className="font-bold text-xl text-[#233a34]">شيف محترف</h3>
-            <p className="text-gray-600">فريقنا من الطهاة اللبنانيين يجمعون بين الخبرة والشغف في كل طبق.</p>
-          </div>
-          <div className="flex flex-col items-center gap-4">
-            <div className="w-16 h-16 bg-[#233a34] text-white rounded-full flex items-center justify-center text-2xl">💎</div>
-            <h3 className="font-bold text-xl text-[#233a34]">ضيافة راقية</h3>
-            <p className="text-gray-600">نهتم بأدق التفاصيل لنمنحكم تجربة ضيافة ملكية تليق بكم.</p>
-          </div>
+      <section className="bg-white/30 py-24 px-6 border-y border-white/20">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          {/* Card 1: Hospitality */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="bg-white/60 backdrop-blur-sm border border-gray-100 rounded-3xl p-10 flex flex-col items-center text-center shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 group"
+          >
+            <div className="bg-[#233a34]/5 p-5 rounded-full mb-6 group-hover:bg-[#233a34] transition-colors duration-500">
+              <Sparkles size={32} strokeWidth={1.5} className="text-[#233a34] group-hover:text-white transition-colors duration-500" />
+            </div>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4 font-display">ضيافة راقية</h3>
+            <p className="text-gray-600 text-base leading-relaxed">
+              نهتم بأدق التفاصيل لنمنحكم تجربة ضيافة ملكية تليق بكم وبأصالة تقاليدنا.
+            </p>
+          </motion.div>
+
+          {/* Card 2: Chef */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="bg-white/60 backdrop-blur-sm border border-gray-100 rounded-3xl p-10 flex flex-col items-center text-center shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 group"
+          >
+            <div className="bg-[#233a34]/5 p-5 rounded-full mb-6 group-hover:bg-[#233a34] transition-colors duration-500">
+              <ChefHat size={32} strokeWidth={1.5} className="text-[#233a34] group-hover:text-white transition-colors duration-500" />
+            </div>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4 font-display">شيف محترف</h3>
+            <p className="text-gray-600 text-base leading-relaxed">
+              فريقنا من الطهاة اللبنانيين يجمعون بين الخبرة الطويلة والشغف في كل طبق يقدمونه.
+            </p>
+          </motion.div>
+
+          {/* Card 3: Ingredients */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="bg-white/60 backdrop-blur-sm border border-gray-100 rounded-3xl p-10 flex flex-col items-center text-center shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 group"
+          >
+            <div className="bg-[#233a34]/5 p-5 rounded-full mb-6 group-hover:bg-[#233a34] transition-colors duration-500">
+              <Leaf size={32} strokeWidth={1.5} className="text-[#233a34] group-hover:text-white transition-colors duration-500" />
+            </div>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4 font-display">مكونات طازجة</h3>
+            <p className="text-gray-600 text-base leading-relaxed">
+              نختار أجود المكونات الطازجة يومياً لنضمن نكهة لبنانية أصلية وصحية في كل لقمة.
+            </p>
+          </motion.div>
+
         </div>
       </section>
 
