@@ -1,5 +1,5 @@
 import { Phone, MapPin, MessageCircle, MessageSquareHeart, Clapperboard } from 'lucide-react';
-import { InstagramIcon as Instagram } from '@/shared/components/Icons';
+import { InstagramIcon as Instagram, TikTokIcon as TikTok } from '@/shared/components/Icons';
 
 export const LINK_CONFIG = [
   {
@@ -29,7 +29,7 @@ export const LINK_CONFIG = [
   {
     id: 'tiktok',
     href: 'https://tiktok.com/@layalialbatroun',
-    icon: Clapperboard,
+    icon: TikTok,
     labelKey: 'links.tiktok',
     colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',
     priority: 4,

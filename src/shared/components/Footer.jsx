@@ -33,7 +33,7 @@ export function Footer() {
       {/* Copyright & Signature */}
       <div className="flex flex-col items-center gap-4">
         <a 
-          href="https://alhrof.com/linktree" 
+          href="https://gstckw.com/" 
           target="_blank" 
           rel="noopener noreferrer"
           className="flex flex-col items-center gap-2 group transition-all"
