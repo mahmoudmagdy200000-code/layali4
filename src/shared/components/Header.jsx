@@ -17,7 +17,7 @@ export function Header() {
   return (
     <header 
       dir={isRTL ? 'rtl' : 'ltr'}
-      className="fixed top-0 left-0 right-0 z-[60] bg-[#ECE7DC]/90 backdrop-blur-md border-b border-black/5 w-full h-20 transition-all duration-300"
+      className="fixed top-0 left-0 right-0 z-[60] bg-[#ECE7DC]/90 backdrop-blur-md border-b border-black/5 w-full h-24 transition-all duration-300"
     >
       <div className="grid grid-cols-3 items-center h-full w-full px-4 max-w-5xl mx-auto">
         
@@ -40,7 +40,7 @@ export function Header() {
            <img 
              src="/assets/logo.png" 
              alt="Logo" 
-             className="h-16 w-auto object-contain max-h-[64px] shrink-0"
+             className="h-20 w-auto object-contain max-h-[80px] shrink-0"
              style={{
                WebkitBoxReflect: 'below -2px linear-gradient(to bottom, transparent, transparent 50%, rgba(255,255,255,0.3))'
              }}
