@@ -198,11 +198,7 @@ export default function AboutPage() {
               '/assets/about/DSC03260.webp',
               '/assets/about/31.webp',
               '/assets/about/7-1.webp',
-              '/assets/about/about-hero.webp',
-              '/assets/about/about-story.webp',
-              '/assets/about/1.webp',
-              '/assets/about/2.webp',
-              '/assets/about/home_icon_new.webp'
+              '/assets/about/1.webp'
             ].map((src, index) => (
               <GalleryImage key={src} src={src} index={index} />
             ))}
