@@ -23,14 +23,7 @@ export function Header() {
         
         {/* Column 1: Navigation Actions */}
         <div className="flex items-center gap-2">
-          {isAboutPage ? (
-            <Link 
-              to="/menu"
-              className="px-6 py-2 rounded-full bg-[#233a34] text-white text-sm font-bold hover:bg-[#1a2c27] transition-all duration-300 shadow-md shrink-0"
-            >
-              {t('menu.title')}
-            </Link>
-          ) : (
+          {!isAboutPage ? (
             <Link 
               to="/" 
               className="p-2 hover:scale-110 transition-transform active:scale-95 flex items-center shrink-0"
@@ -38,6 +31,8 @@ export function Header() {
             >
               <Home size={28} strokeWidth={1.5} className="text-[#233a34]" />
             </Link>
+          ) : (
+            <div className="w-10 h-10" /> /* Placeholder to maintain grid symmetry on About page */
           )}
         </div>
 
