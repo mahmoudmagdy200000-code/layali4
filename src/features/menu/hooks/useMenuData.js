@@ -17,7 +17,7 @@ const CATEGORY_IMAGES = {
   "juices": "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400&h=300&fit=crop", // reused breakfast
 };
 
-export function useMenuData() {
+export default function useMenuData() {
   const { lang } = useLanguage();
 
   const data = useMemo(() => {

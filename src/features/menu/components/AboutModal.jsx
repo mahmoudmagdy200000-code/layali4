@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
-import { useMenuData } from '../hooks/useMenuData';
+import useMenuData from '../hooks/useMenuData';
 import { useLanguage } from '@/features/i18n';
 
 export function AboutModal({ isOpen, onClose }) {

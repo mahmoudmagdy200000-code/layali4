@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useMenuData } from '@/features/menu/hooks/useMenuData';
+import useMenuData from '@/features/menu/hooks/useMenuData';
 import { useLanguage } from '@/features/i18n';
 import { motion } from 'framer-motion';
 import { 

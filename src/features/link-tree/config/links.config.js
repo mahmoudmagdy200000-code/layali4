@@ -1,14 +1,7 @@
-import { Phone, MapPin, Aperture, MessageCircle, MessageSquareHeart, Clapperboard, Globe } from 'lucide-react';
+import { Phone, MapPin, MessageCircle, MessageSquareHeart, Clapperboard } from 'lucide-react';
+import { InstagramIcon as Instagram } from '@/shared/components/Icons';
 
 export const LINK_CONFIG = [
-  {
-    id: 'website',
-    href: '/',
-    icon: Globe,
-    labelKey: 'links.website',
-    colorClass: 'bg-[#ECE7DC] text-[#1C1C1C]',
-    priority: 10,
-  },
   {
     id: 'whatsapp',
     href: 'https://wa.me/96541204444',
@@ -28,7 +21,7 @@ export const LINK_CONFIG = [
   {
     id: 'instagram',
     href: 'https://instagram.com/layalialbatroun',
-    icon: Aperture,
+    icon: Instagram,
     labelKey: 'links.instagram',
     colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',
     priority: 3,

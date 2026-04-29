@@ -1,6 +1,6 @@
 import React, { useMemo, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { useMenuData } from '../hooks/useMenuData';
+import useMenuData from '../hooks/useMenuData';
 import { useLanguage } from '@/features/i18n';
 import { CategoryTabs } from './CategoryTabs';
 import { MenuGrid } from './MenuGrid';

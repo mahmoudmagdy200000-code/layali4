@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { useMenuData } from '../hooks/useMenuData';
+import useMenuData from '../hooks/useMenuData';
 import { useLanguage } from '@/features/i18n';
 import { useActiveCategory } from '../hooks/useActiveCategory';
 import { CategoryTabs } from './CategoryTabs';

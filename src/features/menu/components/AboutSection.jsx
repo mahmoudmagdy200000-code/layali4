@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useMenuData } from '../hooks/useMenuData';
+import useMenuData from '../hooks/useMenuData';
 
 export function AboutSection() {
   const { restaurant } = useMenuData() || {};
