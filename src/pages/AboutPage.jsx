@@ -100,27 +100,16 @@ export default function AboutPage() {
             className="flex flex-col gap-8"
           >
             <h2 className="text-3xl md:text-4xl font-display text-[#233a34] leading-tight font-semibold">
-              ليالي البترون.. حيث تبدأ الحكاية
+              {t('about.title')}
               <span className="block text-xl text-gray-600 font-normal mt-2 italic font-serif">
-                وتأخذكم نكهاتنا في رحلة إلى قلب لبنان..
+                {t('about.subtitle')}
               </span>
             </h2>
 
-            <div className="space-y-6 text-gray-700 text-lg md:text-xl leading-loose font-[var(--font-arabic-premium)]">
-              <p>
-                تطّل على أصالة أزقة البترون العريقة، لننقلكم في تجربة حسية فريدة تتجاوز حدود المكان؛ 
-                من هنا، ومن قلب الكويت، نفتح لكم أبواباً حيث تجتمع رائحة الياسمين مع عبق المطبخ اللبناني الأصيل.
-              </p>
-              
-              <p>
-                في ليالي البترون، نحن لا نقدم مجرد طعام، بل نحيي تراثاً عريقاً ونشارككم تفاصيله في كل طبق. 
-                أهلاً بكم في بيتكم الثاني..
-              </p>
-
-              <p>
-                لأن الضيافة هي جوهر هويتنا، يستقبلكم فريقنا بابتسامة لبنانية دافئة وترحيب ينبع من القلب. 
-                نحرص في ليالي البترون على تقديم تجربة ضيافة استثنائية تجعل من كل زيارة ذكرى لا تُنسى.
-              </p>
+            <div className={`space-y-6 text-gray-700 text-lg md:text-xl leading-loose ${isRTL ? 'font-[var(--font-arabic-premium)]' : 'font-serif'}`}>
+              <p>{t('about.p1')}</p>
+              <p>{t('about.p2')}</p>
+              <p>{t('about.p3')}</p>
             </div>
 
             <div className="mt-4 flex items-center gap-4">
@@ -147,9 +136,9 @@ export default function AboutPage() {
             <div className="bg-[#233a34]/5 p-5 rounded-full mb-6 group-hover:bg-[#233a34] transition-colors duration-500">
               <Sparkles size={32} strokeWidth={1.5} className="text-[#233a34] group-hover:text-white transition-colors duration-500" />
             </div>
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4 font-display">ضيافة راقية</h3>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4 font-display">{t('about.features.hospitality.title')}</h3>
             <p className="text-gray-600 text-base leading-relaxed">
-              نهتم بأدق التفاصيل لنمنحكم تجربة ضيافة ملكية تليق بكم وبأصالة تقاليدنا.
+              {t('about.features.hospitality.desc')}
             </p>
           </motion.div>
 
@@ -164,9 +153,9 @@ export default function AboutPage() {
             <div className="bg-[#233a34]/5 p-5 rounded-full mb-6 group-hover:bg-[#233a34] transition-colors duration-500">
               <ChefHat size={32} strokeWidth={1.5} className="text-[#233a34] group-hover:text-white transition-colors duration-500" />
             </div>
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4 font-display">شيف محترف</h3>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4 font-display">{t('about.features.chef.title')}</h3>
             <p className="text-gray-600 text-base leading-relaxed">
-              فريقنا من الطهاة اللبنانيين يجمعون بين الخبرة الطويلة والشغف في كل طبق يقدمونه.
+              {t('about.features.chef.desc')}
             </p>
           </motion.div>
 
@@ -181,9 +170,9 @@ export default function AboutPage() {
             <div className="bg-[#233a34]/5 p-5 rounded-full mb-6 group-hover:bg-[#233a34] transition-colors duration-500">
               <Leaf size={32} strokeWidth={1.5} className="text-[#233a34] group-hover:text-white transition-colors duration-500" />
             </div>
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4 font-display">مكونات طازجة</h3>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4 font-display">{t('about.features.ingredients.title')}</h3>
             <p className="text-gray-600 text-base leading-relaxed">
-              نختار أجود المكونات الطازجة يومياً لنضمن نكهة لبنانية أصلية وصحية في كل لقمة.
+              {t('about.features.ingredients.desc')}
             </p>
           </motion.div>
 
@@ -194,10 +183,10 @@ export default function AboutPage() {
       <section className="py-24 px-6 bg-[#ECE7DC]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-display text-[#233a34] mb-4">معرض الصور</h2>
+            <h2 className="text-4xl md:text-5xl font-display text-[#233a34] mb-4">{t('about.gallery.title')}</h2>
             <div className="h-1 w-20 bg-[#D4AF37] mx-auto rounded-full" />
             <p className="text-gray-600 mt-6 text-lg max-w-2xl mx-auto">
-              لمحات من ليالي البترون.. حيث تجتمع الأصالة مع الرقي في كل زاوية.
+              {t('about.gallery.subtitle')}
             </p>
           </div>
 

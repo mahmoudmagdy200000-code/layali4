@@ -22,5 +22,30 @@
     "popular": "Popular",
     "vegan": "Vegan",
     "back": "Back to Categories"
+  },
+  "about": {
+    "title": "Layali Batroun.. Where the story begins",
+    "subtitle": "And our flavors take you on a journey to the heart of Lebanon..",
+    "p1": "Overlooking the authenticity of the ancient Batroun alleys, we transport you in a unique sensory experience that transcends the boundaries of place; from here, and from the heart of Kuwait, we open doors for you where the scent of jasmine meets the fragrance of authentic Lebanese cuisine.",
+    "p2": "At Layali Batroun, we don't just serve food, we revive an ancient heritage and share its details with you in every dish. Welcome to your second home..",
+    "p3": "Because hospitality is the essence of our identity, our team welcomes you with a warm Lebanese smile and a welcome from the heart. At Layali Batroun, we ensure an exceptional hospitality experience that makes every visit an unforgettable memory.",
+    "features": {
+      "hospitality": {
+        "title": "Premium Hospitality",
+        "desc": "We care about the smallest details to give you a royal hospitality experience worthy of you and the authenticity of our traditions."
+      },
+      "chef": {
+        "title": "Professional Chef",
+        "desc": "Our team of Lebanese chefs combine long experience and passion in every dish they serve."
+      },
+      "ingredients": {
+        "title": "Fresh Ingredients",
+        "desc": "We select the finest fresh ingredients daily to guarantee an authentic and healthy Lebanese flavor in every bite."
+      }
+    },
+    "gallery": {
+      "title": "Photo Gallery",
+      "subtitle": "Glimpses of Layali Batroun.. Where authenticity meets elegance in every corner."
+    }
   }
 }
