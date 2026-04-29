@@ -10,9 +10,8 @@ export function Header() {
   const location = useLocation();
   
   // Route logic: Show Home only when deep in category/item views
-  const isLandingPage = location.pathname === '/';
-  const isMenuRoot = location.pathname === '/menu';
-  const showHomeIcon = !isLandingPage && !isMenuRoot;
+  const isMenuRoot = location.pathname === '/' || location.pathname === '/menu';
+  const showHomeIcon = !isMenuRoot;
 
   return (
     <header 
@@ -22,26 +21,34 @@ export function Header() {
       <div className="grid grid-cols-3 items-center h-full w-full px-4 max-w-5xl mx-auto">
         
         {/* Column 1: Navigation Actions */}
-        <div className="flex items-center">
+        <div className="flex items-center gap-2">
           {showHomeIcon ? (
             <Link 
-              to="/menu" 
+              to="/" 
               className="p-2 hover:scale-110 transition-transform active:scale-95 flex items-center shrink-0"
+              title={t('nav.home')}
             >
               <Home size={28} strokeWidth={1.5} className="text-[#233a34]" />
             </Link>
           ) : (
-            <div className="w-10 h-10" /> /* Placeholder to maintain grid symmetry */
+            <Link 
+              to="/about"
+              className="px-4 py-1.5 rounded-full border border-[#233a34]/20 text-[#233a34] text-sm font-bold hover:bg-[#233a34] hover:text-white transition-all duration-300 shrink-0"
+            >
+              {t('links.story')}
+            </Link>
           )}
         </div>
 
         {/* Column 2: Central Branding (Dead Center) */}
         <div className="flex justify-center items-center h-full py-2">
-           <img 
-             src="/assets/logo.png" 
-             alt="Logo" 
-             className="h-20 w-auto object-contain max-h-[80px] shrink-0 drop-shadow-2xl"
-           />
+           <Link to="/" className="flex items-center justify-center">
+             <img 
+               src="/assets/logo.png" 
+               alt="Logo" 
+               className="h-20 w-auto object-contain max-h-[80px] shrink-0 drop-shadow-2xl"
+             />
+           </Link>
         </div>
 
         {/* Column 3: Language & Settings */}

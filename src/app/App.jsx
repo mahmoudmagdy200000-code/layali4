@@ -4,8 +4,8 @@ import { AppProviders } from './providers/AppProviders';
 import { MainLayout } from './layouts/MainLayout';
 import { MinimalLayout } from './layouts/MinimalLayout';
 import { useLanguage } from '@/features/i18n';
-import LandingPage from '@/pages/LandingPage';
 import MenuPage from '@/pages/MenuPage';
+import AboutPage from '@/pages/AboutPage';
 import LinkTreePage from '@/pages/LinkTreePage';
 import { CategoryPage } from '@/features/menu/components/CategoryPage';
 
@@ -22,8 +22,8 @@ function App() {
       <Routes>
         {/* Kiosk Core Experience */}
         <Route element={<MainLayout />}>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/menu" element={<MenuPage />} />
+          <Route path="/" element={<MenuPage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/category/:categoryId" element={<CategoryPage />} />
         </Route>
 
@@ -31,6 +31,9 @@ function App() {
         <Route element={<MinimalLayout />}>
           <Route path="/linktree" element={<LinkTreePage />} />
         </Route>
+
+        {/* Fallback for legacy /menu path */}
+        <Route path="/menu" element={<Navigate to="/" replace />} />
       </Routes>
     </>
   );
