@@ -171,8 +171,11 @@ export default function AboutPage() {
               '/assets/about/DSC03257.webp',
               '/assets/about/DSC03285.webp',
               '/assets/about/DSC03295.webp',
+              '/assets/about/DSC03221.webp',
+              '/assets/about/DSC03260.webp',
               '/assets/about/1.webp',
-              '/assets/about/2.webp'
+              '/assets/about/2.webp',
+              '/assets/about/home_icon_new.webp'
             ].map((src, index) => (
               <motion.div
                 key={index}
