@@ -118,6 +118,47 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Photo Gallery Section */}
+      <section className="py-24 px-6 bg-[#ECE7DC]">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-display text-[#233a34] mb-4">معرض الصور</h2>
+            <div className="h-1 w-20 bg-[#D4AF37] mx-auto rounded-full" />
+            <p className="text-gray-600 mt-6 text-lg max-w-2xl mx-auto">
+              لمحات من ليالي البترون.. حيث تجتمع الأصالة مع الرقي في كل زاوية.
+            </p>
+          </div>
+
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+            {[
+              '/assets/about/DSC03257.webp',
+              '/assets/about/DSC03285.webp',
+              '/assets/about/DSC03295.webp',
+              '/assets/about/1.webp',
+              '/assets/about/2.webp',
+              '/assets/about/about-hero.webp',
+              '/assets/about/about-story.webp'
+            ].map((src, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="relative group overflow-hidden rounded-2xl shadow-lg break-inside-avoid"
+              >
+                <img 
+                  src={src} 
+                  alt={`Gallery Image ${index + 1}`} 
+                  className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
