@@ -27,7 +27,7 @@ export default function LinkTreePage() {
       {/* Agency Footer */}
       <footer className="text-xs md:text-sm text-gray-500 text-center mt-auto pt-8 pb-4">
         <p>
-          © 2026 جميع الحقوق محفوظة لـ <a href="#" className="text-gray-800 font-medium hover:text-black underline transition-colors">شركة GSTC</a> إعداد وتنفيذ: <a href="#" className="text-gray-800 font-medium hover:text-black underline transition-colors">شركة التقنيات العلمية العالمية</a>
+          © 2026 جميع الحقوق محفوظة لـ <a href="https://gstckw.com" target="_blank" rel="noopener noreferrer" className="text-gray-800 font-medium hover:text-black underline transition-colors">شركة GSTC</a> إعداد وتنفيذ: <a href="#" className="text-gray-800 font-medium hover:text-black underline transition-colors">شركة التقنيات العلمية العالمية</a>
         </p>
       </footer>
     </div>
