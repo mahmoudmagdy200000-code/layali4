@@ -67,12 +67,12 @@ export function MenuItemDetailModal({ item, isOpen, onClose, onNext, onPrev, has
             {/* High-Resolution Image */}
             <div className="w-full aspect-[4/3] overflow-hidden flex-shrink-0 relative group">
               <img
-                src={item?.image || '/assets/menu/placeholder.jpg'}
+                src={item?.image && item.image.trim() !== "" ? item.image : '/images/optimized/_DSC3410.webp'}
                 alt={item?.title}
                 className="w-full h-full object-cover"
                 onError={(e) => {
                   e.target.onerror = null;
-                  e.target.src = '/assets/menu/placeholder.jpg';
+                  e.target.src = '/images/optimized/_DSC3410.webp';
                 }}
               />
               
