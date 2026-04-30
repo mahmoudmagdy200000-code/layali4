@@ -16,10 +16,6 @@ export default function LinkTreePage() {
         />
       </div>
 
-      <h2 className="font-display text-2xl text-gray-900 text-center mb-8">
-        {t('links.section_title')}
-      </h2>
-      
       <div className="flex-1">
         <LinkTreeSection />
       </div>

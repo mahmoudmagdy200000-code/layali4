@@ -26,13 +26,13 @@ function GalleryImage({ src, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.1 }}
-      className="relative group overflow-hidden rounded-2xl shadow-lg break-inside-avoid mb-6"
+      className="flex-none w-4/5 md:w-1/2 snap-center relative group overflow-hidden rounded-2xl shadow-lg aspect-[4/5]"
     >
       <img 
         src={src} 
         alt={`Gallery Image ${index + 1}`} 
         onError={() => setError(true)}
-        className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
+        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
       />
       <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
     </motion.div>
@@ -190,7 +190,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="columns-1 sm:columns-2 lg:columns-3 gap-6">
+          <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-8 hide-scrollbar">
             {[
               '/assets/about/DSC03285.webp',
               '/assets/about/DSC03295.webp',
