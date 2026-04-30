@@ -5,7 +5,9 @@ import useMenuData from '@/features/menu/hooks/useMenuData';
 import { Sparkles, ChefHat, Leaf, ImageOff } from 'lucide-react';
 
 function GalleryImage({ src, index }) {
-  const [error, setError] = React.useState(false);
+  const [
+              error,
+              setError] = React.useState(false);
 
   if (error) {
     return (
@@ -22,8 +24,10 @@ function GalleryImage({ src, index }) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0,
+              y: 20 }}
+      whileInView={{ opacity: 1,
+              y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.1 }}
       className="flex-none w-[85%] snap-center md:w-full md:snap-align-none relative group overflow-hidden rounded-2xl shadow-lg aspect-[4/5]"
@@ -40,7 +44,8 @@ function GalleryImage({ src, index }) {
 }
 
 export default function AboutPage() {
-  const { t, isRTL } = useLanguage();
+  const { t,
+              isRTL } = useLanguage();
   const { restaurant } = useMenuData() || {};
 
   if (!restaurant) return null;
@@ -57,8 +62,10 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]" />
         
         <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0,
+              y: 30 }}
+          animate={{ opacity: 1,
+              y: 0 }}
           transition={{ duration: 1 }}
           className="relative z-10 text-center px-6"
         >
@@ -75,8 +82,10 @@ export default function AboutPage() {
           
           {/* Image Side */}
           <motion.div 
-            initial={{ opacity: 0, x: isRTL ? 50 : -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0,
+              x: isRTL ? 50 : -50 }}
+            whileInView={{ opacity: 1,
+              x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
             className="relative"
@@ -93,10 +102,13 @@ export default function AboutPage() {
 
           {/* Text Side */}
           <motion.div 
-            initial={{ opacity: 0, x: isRTL ? -50 : 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0,
+              x: isRTL ? -50 : 50 }}
+            whileInView={{ opacity: 1,
+              x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.8,
+              delay: 0.2 }}
             className="flex flex-col gap-8"
           >
             <h2 className="text-3xl md:text-4xl font-display text-[#233a34] leading-tight font-semibold">
@@ -128,8 +140,10 @@ export default function AboutPage() {
           
           {/* Card 1: Hospitality */}
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0,
+              y: 20 }}
+            whileInView={{ opacity: 1,
+              y: 0 }}
             viewport={{ once: true }}
             className="bg-white/60 backdrop-blur-sm border border-gray-100 rounded-3xl p-10 flex flex-col items-center text-center shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 group"
           >
@@ -144,8 +158,10 @@ export default function AboutPage() {
 
           {/* Card 2: Chef */}
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0,
+              y: 20 }}
+            whileInView={{ opacity: 1,
+              y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
             className="bg-white/60 backdrop-blur-sm border border-gray-100 rounded-3xl p-10 flex flex-col items-center text-center shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 group"
@@ -161,8 +177,10 @@ export default function AboutPage() {
 
           {/* Card 3: Ingredients */}
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0,
+              y: 20 }}
+            whileInView={{ opacity: 1,
+              y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
             className="bg-white/60 backdrop-blur-sm border border-gray-100 rounded-3xl p-10 flex flex-col items-center text-center shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 group"
@@ -197,7 +215,10 @@ export default function AboutPage() {
               '/assets/about/DSC03221.webp',
               '/assets/about/DSC03260.webp',
               '/assets/about/31.webp',
-              '/assets/about/1.webp'
+              '/assets/about/1.webp',
+              '/assets/about/1_new.webp',
+              '/assets/about/6.webp',
+              '/assets/about/DSC03289.webp'
             ].map((src, index) => (
               <GalleryImage key={src} src={src} index={index} />
             ))}
