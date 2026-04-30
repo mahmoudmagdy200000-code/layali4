@@ -26,7 +26,7 @@ function GalleryImage({ src, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.1 }}
-      className="flex-none w-4/5 md:w-1/2 snap-center relative group overflow-hidden rounded-2xl shadow-lg aspect-[4/5]"
+      className="flex-none w-[85%] snap-center md:w-full md:snap-align-none relative group overflow-hidden rounded-2xl shadow-lg aspect-[4/5]"
     >
       <img 
         src={src} 
@@ -180,7 +180,7 @@ export default function AboutPage() {
       </section>
 
       {/* Photo Gallery Section */}
-      <section className="py-24 px-6 bg-[#ECE7DC]">
+      <section id="gallery" className="py-24 px-6 bg-[#ECE7DC] scroll-mt-20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-display text-[#233a34] mb-4">{t('about.gallery.title')}</h2>
@@ -190,7 +190,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-8 hide-scrollbar">
+          <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-8 hide-scrollbar md:grid md:grid-cols-2 lg:grid-cols-3 md:overflow-visible md:gap-6 md:snap-none">
             {[
               '/assets/about/DSC03285.webp',
               '/assets/about/DSC03295.webp',
