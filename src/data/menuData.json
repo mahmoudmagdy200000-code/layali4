@@ -108,7 +108,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/b4.webp"
+          "image": ""
         },
         {
           "id": "b5",
@@ -278,7 +278,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/b14.webp"
+          "image": ""
         },
         {
           "id": "b15",
@@ -317,8 +317,8 @@
         {
           "id": "b17",
           "name": {
-            "ar": "حمسة بالبيض",
-            "en": "Hamset Egg Plat"
+            "ar": "حمسة حلوم بالباذنجان",
+            "en": "Halloumi Eggplant Hamset"
           },
           "description": {
             "ar": "",
@@ -431,7 +431,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/_DSC3410.webp"
+          "image": "/images/optimized/b14.webp"
         },
         {
           "id": "b24",
@@ -780,7 +780,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/g7.webp"
+          "image": ""
         },
         {
           "id": "g8",
@@ -921,11 +921,11 @@
         {
           "id": "g16",
           "name": {
-            "ar": "روش (كستليتة) 4 حبة",
+            "ar": "ريش (كستليتة) 4 حبة",
             "en": "Lamb Cutlets"
           },
           "description": {
-            "ar": "روش مشوية بالتوابل والخضار",
+            "ar": "ريش مشوية بالتوابل والخضار",
             "en": "Marinated lamb cutlets with spices and vegetables"
           },
           "price": "7.500",
@@ -998,7 +998,7 @@
         {
           "id": "h1_fried",
           "name": {
-            "ar": "رقاقات حبة مقلية",
+            "ar": "رقاقات مقلية",
             "en": "Fried Cheese Rolls"
           },
           "description": {
@@ -1015,7 +1015,7 @@
         {
           "id": "h1_grilled",
           "name": {
-            "ar": "رقاقات حبة مشوية",
+            "ar": "رقاقات مشوية",
             "en": "Grilled Cheese Rolls"
           },
           "description": {
@@ -1233,23 +1233,7 @@
           },
           "image": "/images/optimized/h13.webp"
         },
-        {
-          "id": "h16",
-          "name": {
-            "ar": "زهرة بالطحينة",
-            "en": "Cauliflower with Tahina"
-          },
-          "description": {
-            "ar": "زهرة مقلية مع طحينة",
-            "en": "Fried cauliflower with tahina"
-          },
-          "price": "2.000",
-          "currency": {
-            "ar": "د.ك",
-            "en": "KWD"
-          },
-          "image": "/images/optimized/_DSC3410.webp"
-        },
+
         {
           "id": "h17",
           "name": {
@@ -1650,6 +1634,23 @@
             "en": "KWD"
           },
           "image": "/images/optimized/c12.webp"
+        },
+        {
+          "id": "c22",
+          "name": {
+            "ar": "حمص باللحمة",
+            "en": "Hummus with Meat"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "2.500",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": "/images/optimized/b25.webp"
         },
         {
           "id": "c13",
@@ -2068,6 +2069,23 @@
             "en": "KWD"
           },
           "image": "/images/optimized/ds8.webp"
+        },
+        {
+          "id": "ds9",
+          "name": {
+            "ar": "غزل البنات بالآيس كريم بالفراولة",
+            "en": "Gazal with Ice Cream Strawberry"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": "/images/optimized/عزل بنات بالايس كريم  بالفراولة.webp"
         }
       ]
     },
@@ -2093,7 +2111,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/hd1.webp"
+          "image": ""
         },
         {
           "id": "hd2",
@@ -2110,7 +2128,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/hd2.webp"
+          "image": ""
         },
         {
           "id": "hd3",
@@ -2306,7 +2324,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/_DSC3410.webp"
+          "image": "/images/optimized/cf_sl2.webp"
         },
         {
           "id": "cf_sl2",
@@ -2323,7 +2341,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/cf_sl2.webp"
+          "image": ""
         },
         {
           "id": "cf_cl1",
@@ -2399,7 +2417,7 @@
       "id": "soft_drinks",
       "categoryName": {
         "ar": "مشروبات باردة",
-        "en": "Soft Drinks"
+        "en": "Cold Drinks"
       },
       "items": [
         {
@@ -2520,16 +2538,7 @@
             "en": "KWD"
           },
           "image": "/images/optimized/_DSC3410.webp"
-        }
-      ]
-    },
-    {
-      "id": "juices",
-      "categoryName": {
-        "ar": "عصائر",
-        "en": "Juices"
-      },
-      "items": [
+        },
         {
           "id": "j1",
           "name": {
@@ -2634,6 +2643,7 @@
         }
       ]
     },
+
     {
       "id": "kids_meals",
       "categoryName": {

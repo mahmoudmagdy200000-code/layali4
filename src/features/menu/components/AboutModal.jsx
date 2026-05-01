@@ -90,5 +90,4 @@ export function AboutModal({ isOpen, onClose }) {
     </AnimatePresence>
   );
 }
-  );
-}
+
