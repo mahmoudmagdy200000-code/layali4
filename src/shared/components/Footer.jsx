@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import { LINK_CONFIG } from '@/features/link-tree/config/links.config';
 import { useLanguage } from '@/features/i18n';
 import { ContactLink } from './ContactLink';
@@ -7,6 +8,8 @@ import { Phone } from 'lucide-react';
 
 export function Footer() {
   const { isRTL } = useLanguage();
+  const location = useLocation();
+  const isAboutPage = location.pathname === '/';
   
   // Filter out internal app triggers like 'story'
   const externalLinks = LINK_CONFIG.filter(link => link.id !== 'story');
@@ -14,20 +17,22 @@ export function Footer() {
   return (
     <footer className="mt-auto w-full py-10 flex flex-col items-center text-center bg-transparent border-t border-black/5">
       
-      {/* Contact Information */}
-      <div className="flex flex-col gap-3 mb-10 w-full max-w-xs px-4">
-        <ContactLink 
-          href="tel:41114030"
-          text="41114030"
-          icon={Phone}
-        />
-        <ContactLink 
-          href="https://wa.me/96541114030"
-          text="الاستعلام 41114030 (واتس اب)"
-          icon={WhatsAppIcon}
-          isWhatsApp={true}
-        />
-      </div>
+      {/* Contact Information (Hidden on About Page) */}
+      {!isAboutPage && (
+        <div className="flex flex-col gap-3 mb-10 w-full max-w-xs px-4">
+          <ContactLink 
+            href="tel:41114030"
+            text="41114030"
+            icon={Phone}
+          />
+          <ContactLink 
+            href="https://wa.me/96541114030"
+            text="الاستعلام 41114030 (واتس اب)"
+            icon={WhatsAppIcon}
+            isWhatsApp={true}
+          />
+        </div>
+      )}
 
       {/* Socials & Links Row */}
       <div className="flex gap-6 mb-8 items-center justify-center">

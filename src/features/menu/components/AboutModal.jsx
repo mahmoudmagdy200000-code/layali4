@@ -80,6 +80,8 @@ export function AboutModal({ isOpen, onClose }) {
                 <img
                   src="/assets/logo.png"
                   alt="Logo"
+                  fetchpriority="high"
+                  decoding="sync"
                   className="h-20 w-auto mx-auto opacity-10 grayscale pointer-events-none"
                 />
               </div>

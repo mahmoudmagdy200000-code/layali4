@@ -49,6 +49,8 @@ export function Header() {
              <img 
                src="/assets/logo.png" 
                alt="Logo" 
+               fetchpriority="high"
+               decoding="sync"
                className="h-20 w-auto object-contain max-h-[80px] shrink-0 drop-shadow-2xl"
              />
            </Link>

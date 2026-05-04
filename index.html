@@ -16,9 +16,23 @@
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@600;700&family=Noto+Naskh+Arabic:wght@400;600&family=Almarai:wght@400;700&family=Noto+Kufi+Arabic:wght@400;700&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Alexandria:wght@300;400;500;700&family=Cairo:wght@300;400;600;700&display=swap"
     rel="stylesheet">
+  <!-- Preload Logo to prevent FOUC -->
+  <link rel="preload" href="/assets/logo.png" as="image" type="image/png" />
+  <!-- Theme Hydration Script to prevent FOUC -->
+  <script>
+    (function() {
+      try {
+        var localTheme = localStorage.getItem('theme');
+        var sysTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (localTheme === 'dark' || (!localTheme && sysTheme)) {
+          document.documentElement.classList.add('dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
 </head>
 
-<body class="bg-surface-100 dark:bg-surface-950 transition-colors duration-300">
+<body class="bg-[#121212] text-[#E8D9C5] antialiased">
   <div id="root"></div>
   <script type="module" src="/src/app/main.jsx"></script>
 </body>

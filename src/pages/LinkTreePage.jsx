@@ -12,6 +12,8 @@ export default function LinkTreePage() {
         <img 
           src="/assets/logo.png" 
           alt="Layali Albatroun Logo" 
+          fetchpriority="high"
+          decoding="sync"
           className="w-48 md:w-56 h-auto drop-shadow-md"
         />
       </div>

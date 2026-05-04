@@ -11,7 +11,7 @@ export function MainLayout() {
       <main className="flex-1 pb-12">
         <Outlet />
         <div className="flex justify-center py-8 opacity-10 grayscale pointer-events-none select-none">
-          <img src="/assets/logo.png" alt="Signature" className="h-20 w-auto" />
+          <img src="/assets/logo.png" alt="Signature" className="h-20 w-auto" fetchpriority="high" decoding="sync" />
         </div>
       </main>
       <Footer />
