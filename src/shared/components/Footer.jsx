@@ -10,6 +10,8 @@ export function Footer() {
   const { isRTL } = useLanguage();
   const location = useLocation();
   const isAboutPage = location.pathname === '/';
+  const isMenuPage = location.pathname === '/menu';
+  const hideContactButtons = isAboutPage || isMenuPage;
   
   // Filter out internal app triggers like 'story'
   const externalLinks = LINK_CONFIG.filter(link => link.id !== 'story');
@@ -17,8 +19,8 @@ export function Footer() {
   return (
     <footer className="mt-auto w-full py-10 flex flex-col items-center text-center bg-transparent border-t border-black/5">
       
-      {/* Contact Information (Hidden on About Page) */}
-      {!isAboutPage && (
+      {/* Contact Information (Hidden on specific pages) */}
+      {!hideContactButtons && (
         <div className="flex flex-col gap-3 mb-10 w-full max-w-xs px-4">
           <ContactLink 
             href="tel:41114030"
