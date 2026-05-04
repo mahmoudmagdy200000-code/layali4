@@ -1,20 +1,20 @@
-import { Phone, MapPin, MessageCircle, MessageSquareHeart, Clapperboard, Globe } from 'lucide-react';
-import { InstagramIcon as Instagram, TikTokIcon as TikTok } from '@/shared/components/Icons';
+import { Phone, MapPin, MessageSquareHeart, Clapperboard, Globe } from 'lucide-react';
+import { InstagramIcon as Instagram, TikTokIcon as TikTok, WhatsAppIcon } from '@/shared/components/Icons';
 
 export const LINK_CONFIG = [
-  {
-    id: 'whatsapp',
-    href: 'https://wa.me/96541114030',
-    icon: MessageCircle,
-    labelKey: 'links.whatsapp',
-    colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',
-    priority: 1,
-  },
   {
     id: 'call',
     href: 'tel:41114030',
     icon: Phone,
     labelKey: 'links.call',
+    colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',
+    priority: 1,
+  },
+  {
+    id: 'whatsapp',
+    href: 'https://wa.me/96541114030',
+    icon: WhatsAppIcon,
+    labelKey: 'links.whatsapp',
     colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',
     priority: 2,
   },
