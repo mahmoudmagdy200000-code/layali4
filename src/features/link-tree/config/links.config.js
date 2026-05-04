@@ -4,7 +4,7 @@ import { InstagramIcon as Instagram, TikTokIcon as TikTok } from '@/shared/compo
 export const LINK_CONFIG = [
   {
     id: 'whatsapp',
-    href: 'https://wa.me/96541204444',
+    href: 'https://wa.me/96541114030',
     icon: MessageCircle,
     labelKey: 'links.whatsapp',
     colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',
@@ -36,7 +36,7 @@ export const LINK_CONFIG = [
   },
   {
     id: 'call',
-    href: 'https://wa.me/96541204444',
+    href: 'tel:41114030',
     icon: Phone,
     labelKey: 'links.call',
     colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',
@@ -44,7 +44,7 @@ export const LINK_CONFIG = [
   },
   {
     id: 'feedback',
-    href: 'https://wa.me/96541204444',
+    href: 'https://wa.me/96541114030',
     icon: MessageSquareHeart,
     labelKey: 'links.feedback',
     colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',

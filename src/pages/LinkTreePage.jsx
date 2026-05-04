@@ -21,10 +21,31 @@ export default function LinkTreePage() {
       </div>
 
       {/* Agency Footer */}
-      <footer className="text-xs md:text-sm text-gray-500 text-center mt-auto pt-8 pb-4">
-        <p>
-          © 2026 جميع الحقوق محفوظة لـ <a href="https://gstckw.com" target="_blank" rel="noopener noreferrer" className="text-gray-800 font-medium hover:text-black underline transition-colors">شركة GSTC</a> إعداد وتنفيذ: <a href="#" className="text-gray-800 font-medium hover:text-black underline transition-colors">شركة التقنيات العلمية العالمية</a>
+      <footer className="mt-auto pt-8 pb-4 flex flex-col items-center gap-4">
+        <p className="text-[10px] sm:text-xs text-gray-500 font-medium tracking-wide text-center px-4">
+          © 2026 جميع الحقوق محفوظة لشركة GSTC
         </p>
+        <a 
+          href="https://gstckw.com" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="flex items-center justify-center gap-3 group transition-all"
+        >
+          <span className="text-[10px] sm:text-xs text-gray-500 font-medium tracking-wide group-hover:text-gray-800 transition-colors">
+            إعداد وتنفيذ: شركة التقنيات العلمية العالمية
+          </span>
+          {/* GSTC Logo Emblem */}
+          <div className="h-6 flex items-center justify-center opacity-50 group-hover:opacity-100 transition-opacity">
+            <img 
+              src="/GSTC_logo_white_transparent.png" 
+              alt="GSTC Logo" 
+              className="h-full object-contain filter invert"
+              onError={(e) => {
+                e.target.style.display = 'none';
+              }}
+            />
+          </div>
+        </a>
       </footer>
     </div>
   );

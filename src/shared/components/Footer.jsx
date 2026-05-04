@@ -1,6 +1,9 @@
 import React from 'react';
 import { LINK_CONFIG } from '@/features/link-tree/config/links.config';
 import { useLanguage } from '@/features/i18n';
+import { ContactLink } from './ContactLink';
+import { WhatsAppIcon } from './Icons';
+import { Phone } from 'lucide-react';
 
 export function Footer() {
   const { isRTL } = useLanguage();
@@ -11,6 +14,21 @@ export function Footer() {
   return (
     <footer className="mt-auto w-full py-10 flex flex-col items-center text-center bg-transparent border-t border-black/5">
       
+      {/* Contact Information */}
+      <div className="flex flex-col gap-3 mb-10 w-full max-w-xs px-4">
+        <ContactLink 
+          href="tel:41114030"
+          text="41114030"
+          icon={Phone}
+        />
+        <ContactLink 
+          href="https://wa.me/96541114030"
+          text="الاستعلام 41114030 (واتس اب)"
+          icon={WhatsAppIcon}
+          isWhatsApp={true}
+        />
+      </div>
+
       {/* Socials & Links Row */}
       <div className="flex gap-6 mb-8 items-center justify-center">
         {externalLinks.map((link) => {
@@ -32,14 +50,20 @@ export function Footer() {
 
       {/* Copyright & Signature */}
       <div className="flex flex-col items-center gap-4">
+        <p className="text-[10px] sm:text-xs text-[#233a34]/60 font-medium tracking-wide text-center px-4">
+          © 2026 جميع الحقوق محفوظة لشركة GSTC
+        </p>
         <a 
           href="https://gstckw.com/" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="flex flex-col items-center gap-2 group transition-all"
+          className="flex items-center justify-center gap-3 group transition-all"
         >
+          <span className="text-[10px] sm:text-xs text-[#233a34]/60 font-medium tracking-wide group-hover:text-[#233a34] transition-colors">
+            إعداد وتنفيذ: شركة التقنيات العلمية العالمية
+          </span>
           {/* GSTC Logo Emblem */}
-          <div className="h-8 flex items-center justify-center opacity-50 group-hover:opacity-100 transition-opacity">
+          <div className="h-6 flex items-center justify-center opacity-50 group-hover:opacity-100 transition-opacity">
             <img 
               src="/GSTC_logo_white_transparent.png" 
               alt="GSTC Logo" 
@@ -49,9 +73,6 @@ export function Footer() {
               }}
             />
           </div>
-          <p className="text-[10px] sm:text-xs text-[#233a34]/60 font-medium tracking-wide group-hover:text-[#233a34] text-center px-4">
-            © 2026 جميع الحقوق محفوظة لشركة GSTC إعداد وتنفيذ: شركة التقنيات العلمية العالمية
-          </p>
         </a>
       </div>
       
