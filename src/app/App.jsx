@@ -1,5 +1,5 @@
-import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { AppProviders } from './providers/AppProviders';
 import { MainLayout } from './layouts/MainLayout';
 import { MinimalLayout } from './layouts/MinimalLayout';
@@ -14,7 +14,17 @@ import { useSmartRefresh } from '@/shared/hooks/useSmartRefresh';
 
 function App() {
   const { t } = useLanguage();
+  const location = useLocation();
   useSmartRefresh();
+
+  // Automatically clean up messy tracking URLs (fbclid, utm_*) from the address bar
+  // so that when a user copies the link or uses native share, it's clean and premium.
+  useEffect(() => {
+    if (window.location.search) {
+      const cleanUrl = window.location.origin + window.location.pathname;
+      window.history.replaceState({}, document.title, cleanUrl);
+    }
+  }, [location.search]);
 
   return (
     <>
