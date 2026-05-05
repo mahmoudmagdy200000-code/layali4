@@ -57,6 +57,9 @@ export function MenuItemDetailModal({ item, isOpen, onClose, onNext, onPrev, has
           transition={{ duration: 0.25 }}
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4"
           onClick={onClose}
+          onTouchStart={(e) => e.stopPropagation()}
+          onTouchMove={(e) => e.stopPropagation()}
+          onTouchEnd={(e) => e.stopPropagation()}
         >
           {/* Modal Content Card */}
           <motion.div
