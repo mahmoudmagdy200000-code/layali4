@@ -2,14 +2,27 @@ import React, { useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useLanguage } from '@/features/i18n';
+import { useSwipeGesture } from '../hooks/useSwipeGesture';
 
 /**
  * MenuItemDetailModal — Full-screen modal that reveals the
  * high-resolution image, full description, and price of a menu item.
- * Supports click-outside-to-close and Escape key dismissal.
+ * Supports click-outside-to-close, Escape key, and swipe gestures.
  */
 export function MenuItemDetailModal({ item, isOpen, onClose, onNext, onPrev, hasNext, hasPrev }) {
   const { isRTL, t } = useLanguage();
+
+  // Swipe navigation (RTL-aware):
+  // In RTL: visual swipe-left → next item, visual swipe-right → prev item
+  // In LTR: visual swipe-left → next item, visual swipe-right → prev item
+  // (Same visual mapping — the arrows already handle the physical direction)
+  const swipeHandlers = useSwipeGesture({
+    onSwipeLeft: () => { if (hasNext) onNext(); },
+    onSwipeRight: () => { if (hasPrev) onPrev(); },
+    isRTL,
+    threshold: 50,
+    enabled: isOpen,
+  });
 
   // Close on Escape key
   const handleKeyDown = useCallback(
@@ -64,12 +77,16 @@ export function MenuItemDetailModal({ item, isOpen, onClose, onNext, onPrev, has
               <X size={18} className="text-white" />
             </button>
 
-            {/* High-Resolution Image */}
-            <div className="w-full aspect-[4/3] overflow-hidden flex-shrink-0 relative group">
+            {/* High-Resolution Image — Swipe zone for item navigation */}
+            <div
+              className="w-full aspect-[4/3] overflow-hidden flex-shrink-0 relative group touch-pan-y"
+              {...swipeHandlers}
+            >
               <img
                 src={item?.image && item.image.trim() !== "" ? item.image : '/images/optimized/_DSC3410.webp'}
                 alt={item?.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover select-none pointer-events-none"
+                draggable={false}
                 onError={(e) => {
                   e.target.onerror = null;
                   e.target.src = '/images/optimized/_DSC3410.webp';
