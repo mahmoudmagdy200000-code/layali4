@@ -69,7 +69,7 @@ export function MenuItemDetailModal({ item, isOpen, onClose, onNext, onPrev, has
             exit={{ opacity: 0, scale: 0.9, y: 30 }}
             transition={{ type: 'spring', stiffness: 300, damping: 25 }}
             onClick={(e) => e.stopPropagation()}
-            className="relative bg-[#ECE7DC] rounded-2xl overflow-hidden max-w-lg w-full h-[85vh] max-h-[85vh] flex flex-col shadow-2xl"
+            className="relative bg-[#ECE7DC] rounded-2xl overflow-hidden max-w-lg w-full max-h-[70vh] flex flex-col shadow-2xl"
           >
             {/* Close Button */}
             <button
@@ -125,7 +125,7 @@ export function MenuItemDetailModal({ item, isOpen, onClose, onNext, onPrev, has
             </div>
 
             {/* Details Section */}
-            <div className="p-6 flex flex-col gap-3 overflow-y-auto text-start flex-1 min-h-0">
+            <div className="p-6 flex flex-col gap-3 overflow-y-auto text-start flex-1 min-h-0 min-h-[130px]">
               {/* Name + Price Row */}
               <div className="flex items-start justify-between gap-3">
                 <h2 className="font-display text-2xl font-bold text-[#1C1C1C] leading-tight flex-1">
