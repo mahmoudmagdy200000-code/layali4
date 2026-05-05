@@ -7,8 +7,11 @@ import { MenuItemDetailModal } from './MenuItemDetailModal';
  * MenuGrid — Renders menu items in a tight image gallery grid.
  * 2 columns on mobile, 3 on tablets, 4 on large screens.
  * Manages the selected-index state for the detail modal gallery.
+ *
+ * @param {Function} onReachEnd   - Called when user swipes past the last item (cross-category nav)
+ * @param {Function} onReachStart - Called when user swipes before the first item (cross-category nav)
  */
-export function MenuGrid({ items, isPending = false }) {
+export function MenuGrid({ items, isPending = false, onReachEnd, onReachStart }) {
   const [selectedIndex, setSelectedIndex] = useState(null);
 
   if (!items || items.length === 0) {
@@ -22,12 +25,20 @@ export function MenuGrid({ items, isPending = false }) {
   const handleNext = () => {
     if (selectedIndex !== null && selectedIndex < items.length - 1) {
       setSelectedIndex(selectedIndex + 1);
+    } else if (selectedIndex === items.length - 1 && onReachEnd) {
+      // At the last item — close modal and navigate to next category
+      setSelectedIndex(null);
+      onReachEnd();
     }
   };
 
   const handlePrev = () => {
     if (selectedIndex !== null && selectedIndex > 0) {
       setSelectedIndex(selectedIndex - 1);
+    } else if (selectedIndex === 0 && onReachStart) {
+      // At the first item — close modal and navigate to previous category
+      setSelectedIndex(null);
+      onReachStart();
     }
   };
 
@@ -56,8 +67,8 @@ export function MenuGrid({ items, isPending = false }) {
         onClose={() => setSelectedIndex(null)}
         onNext={handleNext}
         onPrev={handlePrev}
-        hasNext={hasNext}
-        hasPrev={hasPrev}
+        hasNext={hasNext || !!onReachEnd}
+        hasPrev={hasPrev || !!onReachStart}
       />
     </>
   );

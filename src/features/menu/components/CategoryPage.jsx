@@ -98,7 +98,22 @@ export function CategoryPage() {
       </div>
 
       <div className="mt-6" {...swipeHandlers}>
-        <MenuGrid items={activeItems} isPending={false} />
+        <MenuGrid
+          items={activeItems}
+          isPending={false}
+          onReachEnd={() => {
+            // Swiped past the last item → go to next category
+            if (currentIndex < categories.length - 1) {
+              navigate(`/category/${categories[currentIndex + 1].id}`);
+            }
+          }}
+          onReachStart={() => {
+            // Swiped before the first item → go to previous category
+            if (currentIndex > 0) {
+              navigate(`/category/${categories[currentIndex - 1].id}`);
+            }
+          }}
+        />
       </div>
     </section>
   );
