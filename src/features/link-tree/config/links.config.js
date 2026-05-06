@@ -44,7 +44,7 @@ export const LINK_CONFIG = [
   },
   {
     id: 'feedback',
-    href: 'https://wa.me/96541114030',
+    href: 'https://wa.me/96541204444',
     icon: MessageSquareHeart,
     labelKey: 'links.feedback',
     colorClass: 'bg-[#233a34] hover:bg-[#1a2c27] text-[#ECE7DC]',
