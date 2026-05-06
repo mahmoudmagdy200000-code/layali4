@@ -695,7 +695,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/_DSC3410.webp"
+          "image": "/images/optimized/g2.webp"
         },
         {
           "id": "g3",
@@ -780,7 +780,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": ""
+          "image": "/images/optimized/g7.webp"
         },
         {
           "id": "g8",
@@ -938,7 +938,7 @@
         {
           "id": "h18",
           "name": {
-            "ar": "دجاج مشوي",
+            "ar": "دجاج مسحب",
             "en": "Chicken Grilled"
           },
           "description": {
