@@ -1249,23 +1249,6 @@
             "en": "KWD"
           },
           "image": "/images/optimized/h17.webp"
-        },
-        {
-          "id": "h21",
-          "name": {
-            "ar": "برغر دجاج",
-            "en": "Chicken Burger"
-          },
-          "description": {
-            "ar": "",
-            "en": "Fried chicken, French fries and cheese"
-          },
-          "price": "1.750",
-          "currency": {
-            "ar": "د.ك",
-            "en": "KWD"
-          },
-          "image": "/images/optimized/h21.webp"
         }
       ]
     },
@@ -1325,7 +1308,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/_DSC3410.webp"
+          "image": "/images/optimized/d3.webp"
         },
         {
           "id": "d4",
@@ -2255,7 +2238,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/_DSC3410.webp"
+          "image": "/images/optimized/cf1.webp"
         },
         {
           "id": "cf2",
@@ -2289,7 +2272,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": ""
+          "image": "/images/optimized/cf3.webp"
         },
         {
           "id": "cf4",
@@ -2306,7 +2289,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/_DSC3410.webp"
+          "image": "/images/optimized/cf4.webp"
         },
         {
           "id": "cf_sl1",
@@ -2323,7 +2306,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/cf_sl2.webp"
+          "image": "/images/optimized/cf_sl1.webp"
         },
         {
           "id": "cf_sl2",
@@ -2340,7 +2323,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": ""
+          "image": "/images/optimized/cf_sl2.webp"
         },
         {
           "id": "cf_cl1",
@@ -2391,7 +2374,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/_DSC3410.webp"
+          "image": "/images/optimized/cf_mh1.webp"
         },
         {
           "id": "cf_mb1",
@@ -2408,7 +2391,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/_DSC3410.webp"
+          "image": "/images/optimized/cf_mb1.webp"
         }
       ]
     },
@@ -2536,7 +2519,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/_DSC3410.webp"
+          "image": "/images/optimized/sd_ln1.webp"
         },
         {
           "id": "j1",
