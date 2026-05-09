@@ -494,12 +494,12 @@
             "ar": "",
             "en": ""
           },
-          "price": "0.500",
+          "price": "0",
           "currency": {
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/b27.webp"
+          "image": ""
         },
         {
           "id": "b29",
