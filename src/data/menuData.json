@@ -74,7 +74,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/b2.webp"
+          "image": "/images/optimized/%D8%A8%D9%8A%D8%B6%20%D8%A8%D8%A7%D9%84%D8%AC%D8%A8%D9%86%D8%A9.webp"
         },
         {
           "id": "b3",
@@ -91,7 +91,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/b3.webp"
+          "image": "/images/optimized/%D8%A8%D9%8A%D8%B6%20%D9%85%D8%B9%20%D8%A7%D9%84%D9%81%D8%B7%D8%B1%20%D9%88%D8%A7%D9%84%D8%AC%D8%A8%D9%86%D8%A9.webp"
         },
         {
           "id": "b4",
@@ -108,7 +108,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": ""
+          "image": "/images/optimized/%D8%A8%D9%8A%D8%B6%20%D8%A8%D8%A7%D9%84%D8%A8%D9%86%D8%AF%D9%88%D8%B1%D9%87.webp"
         },
         {
           "id": "b5",
@@ -125,7 +125,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/b5.webp"
+          "image": "/images/optimized/%D8%A8%D9%8A%D8%B6%20%D8%A8%D8%A7%D9%84%D8%AC%D8%A8%D9%86%D8%A9.webp"
         },
         {
           "id": "b6",
@@ -278,7 +278,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": ""
+          "image": "/images/optimized/%D9%81%D8%AA%D8%A9%20%D8%A8%D8%A7%D8%B0%D9%86%D8%AC%D8%A7%D9%86.webp"
         },
         {
           "id": "b15",
@@ -443,18 +443,18 @@
             "ar": "",
             "en": ""
           },
-          "price": "1.750",
+          "price": "0.750",
           "currency": {
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/_DSC3410.webp"
+          "image": "/images/optimized/%D8%B5%D8%AD%D9%86%20%D8%AE%D8%B6%D8%B1%D9%87%20-%20750.webp"
         },
         {
           "id": "b25",
           "name": {
-            "ar": "حمص باللحمة",
-            "en": "Hummus with Meat"
+            "ar": "حمص باللحمة والصنوبر",
+            "en": "Hummus with Meat and Pine Nuts"
           },
           "description": {
             "ar": "",
@@ -499,7 +499,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": ""
+          "image": "/images/optimized/%D8%B5%D8%AD%D9%86%20%D9%83%D8%A8%D9%8A%D8%B3.webp"
         },
         {
           "id": "b29",
@@ -516,7 +516,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/b29.webp"
+          "image": "/images/optimized/%D9%85%D9%86%D9%82%D9%88%D8%B4%D8%A9%20%D9%86%D8%B5%D9%81%20%D8%B2%D8%B9%D8%AA%D8%B1%20%D9%86%D8%B5%D9%81%20%D8%AC%D8%A8%D9%86%D8%A9.webp"
         },
         {
           "id": "b30",
@@ -533,7 +533,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/b30.webp"
+          "image": "/images/optimized/%D9%85%D9%86%D9%82%D9%88%D8%B4%D8%A9%20%D9%86%D8%B5%D9%81%20%D8%B2%D8%B9%D8%AA%D8%B1%20%D9%86%D8%B5%D9%81%20%D8%AC%D8%A8%D9%86%D8%A9.webp"
         },
         {
           "id": "b31",
@@ -550,7 +550,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/b31.webp"
+          "image": "/images/optimized/%D9%85%D9%86%D9%82%D9%88%D8%B4%D8%A9%20%D9%86%D8%B5%D9%81%20%D8%B2%D8%B9%D8%AA%D8%B1%20%D9%86%D8%B5%D9%81%20%D8%AC%D8%A8%D9%86%D8%A9.webp"
         },
         {
           "id": "b32",
@@ -567,7 +567,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/_DSC3410.webp"
+          "image": "/images/optimized/%D9%85%D9%86%D9%82%D9%88%D8%B4%D8%A9%20%D9%86%D8%B5%D9%81%20%D8%AC%D8%A8%D9%86%20%D9%86%D8%B5%D9%81%20%D9%84%D8%AD%D9%85.webp"
         },
         {
           "id": "b33",
@@ -584,7 +584,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/b33.webp"
+          "image": "/images/optimized/%D9%84%D8%AD%D9%85%D8%A9%20%D8%A8%D8%B9%D8%AC%D9%8A%D9%86%20%D8%AF%D8%A8%D8%B3%20%D8%B1%D9%85%D8%A7%D9%86.webp"
         },
         {
           "id": "b34",
@@ -601,7 +601,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/_DSC3410.webp"
+          "image": "/images/optimized/%D9%84%D8%AD%D9%85%D8%A9%20%D8%A8%D8%B9%D8%AC%D9%8A%D9%86%20%D8%AF%D8%A8%D8%B3%20%D8%B1%D9%85%D8%A7%D9%86.webp"
         },
         {
           "id": "b35",
@@ -746,7 +746,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/g5.webp"
+          "image": "/images/optimized/%D8%B4%D9%8A%D8%B4%20%D8%B7%D8%A7%D9%88%D9%88%D9%82%20%D8%AD%D8%A7%D8%B1%20%D9%85%D9%83%D8%B1%D8%B1.webp"
         },
         {
           "id": "g6",
@@ -797,7 +797,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/g8.webp"
+          "image": "/images/optimized/%D8%B4%D9%8A%D8%B4%20%D8%B7%D8%A7%D9%88%D9%88%D9%82%20%D8%AD%D8%A7%D8%B1%20%D9%85%D9%83%D8%B1%D8%B1.webp"
         },
         {
           "id": "g9",
@@ -831,7 +831,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/g10.webp"
+          "image": "/images/optimized/%D8%B5%D8%AD%D9%86%20%D9%83%D8%A8%D9%8A%D8%B3.webp"
         },
         {
           "id": "g11",
@@ -1010,7 +1010,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/h1.webp"
+          "image": "/images/optimized/%D8%B1%D9%82%D8%A7%D9%82%D8%A7%D8%AA%20%D9%85%D8%B4%D9%88%D9%8A%D8%A9.webp"
         },
         {
           "id": "h1_grilled",
@@ -1027,7 +1027,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/h1.webp"
+          "image": "/images/optimized/%D8%B1%D9%82%D8%A7%D9%82%D8%A7%D8%AA%20%D9%85%D8%B4%D9%88%D9%8A%D8%A9.webp"
         },
         {
           "id": "h2",
@@ -1129,7 +1129,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/h7.webp"
+          "image": "/images/optimized/%D8%B1%D8%A7%D8%B3%20%D8%B9%D8%B5%D9%81%D9%88%D8%B1%20%D8%A8%D8%A7%D9%84%D9%84%D9%8A%D9%85%D9%88%D9%86.webp"
         },
         {
           "id": "h8",
@@ -1615,7 +1615,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/c12.webp"
+          "image": "/images/optimized/%D8%AD%D9%85%D8%B5%20%D8%B5%D9%86%D9%88%D8%A8%D8%B1.webp"
         },
         {
           "id": "c22",
@@ -1637,8 +1637,8 @@
         {
           "id": "c13",
           "name": {
-            "ar": "متبل باذنجان",
-            "en": "Moutabal Eggplant"
+            "ar": "فتة باذنجان",
+            "en": "Eggplant Fatteh"
           },
           "description": {
             "ar": "باذنجان مشوي – طحينة – زيت زيتون",
@@ -1649,7 +1649,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/c13.webp"
+          "image": "/images/optimized/%D9%81%D8%AA%D8%A9%20%D8%A8%D8%A7%D8%B0%D9%86%D8%AC%D8%A7%D9%86.webp"
         },
         {
           "id": "c14",
@@ -1666,7 +1666,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/c14.webp"
+          "image": "/images/optimized/%D9%88%D8%B1%D9%82%20%D8%B9%D9%86%D8%A8.webp"
         },
         {
           "id": "c15",
@@ -1683,7 +1683,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/_DSC3410.webp"
+          "image": "/images/optimized/%D9%81%D8%AA%D8%A9%20%D9%88%D8%B1%D9%82%20%D8%B9%D9%86%D8%A8.webp"
         },
         {
           "id": "c16",
@@ -1773,7 +1773,7 @@
         {
           "id": "c21",
           "name": {
-            "ar": "متبل سلق",
+            "ar": "متبل سلق وهندبة",
             "en": "Moutabal Selek"
           },
           "description": {
@@ -1871,7 +1871,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/r1.webp"
+          "image": "/images/optimized/%D8%AA%D8%A7%D8%A8%D9%84%D9%87.webp"
         },
         {
           "id": "r2",
@@ -1888,7 +1888,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/r2.webp"
+          "image": "/images/optimized/%D9%83%D8%A8%D9%87%20%D9%86%D9%8A%D9%87.webp"
         },
         {
           "id": "r3",
@@ -1905,7 +1905,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/r3.webp"
+          "image": "/images/optimized/%D9%81%D8%B1%D8%A7%D9%83%20%D8%AC%D9%86%D9%88%D8%A8%D9%8A%D9%87.webp"
         }
       ]
     },
@@ -2016,7 +2016,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/ds6.webp"
+          "image": "/images/optimized/%D8%B9%D8%B2%D9%84%20%D8%A8%D9%86%D8%A7%D8%AA%20%D8%A8%D8%A7%D9%84%D8%A7%D9%8A%D8%B3%20%D9%83%D8%B1%D9%8A%D9%85%20%20%D8%A8%D8%A7%D9%84%D9%81%D8%B1%D8%A7%D9%88%D9%84%D8%A9.webp"
         },
         {
           "id": "ds7",
@@ -2067,7 +2067,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/عزل بنات بالايس كريم  بالفراولة.webp"
+          "image": "/images/optimized/%D8%B9%D8%B2%D9%84%20%D8%A8%D9%86%D8%A7%D8%AA%20%D8%A8%D8%A7%D9%84%D8%A7%D9%8A%D8%B3%20%D9%83%D8%B1%D9%8A%D9%85%20%20%D8%A8%D8%A7%D9%84%D9%81%D8%B1%D8%A7%D9%88%D9%84%D8%A9.webp"
         }
       ]
     },
@@ -2340,7 +2340,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/_DSC3410.webp"
+          "image": "/images/optimized/%D9%83%D8%A7%D9%81%D9%8A%D9%87%20%D9%84%D8%A7%D8%AA%D9%8A%D9%87.webp"
         },
         {
           "id": "cf_hc1",
@@ -2434,7 +2434,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/_DSC3410.webp"
+          "image": "/images/optimized/%D9%85%D9%8A%D8%A7%D9%87%20%D9%85%D8%B9%D8%AF%D9%86%D9%8A%D8%A9%20%D9%83%D8%A8%D9%8A%D8%B1.webp"
         },
         {
           "id": "sd3",
@@ -2451,7 +2451,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/_DSC3410.webp"
+          "image": "/images/optimized/%D9%85%D9%8A%D8%A7%D9%87%20%D9%85%D8%B9%D8%AF%D9%86%D9%8A%D8%A9%20%D9%83%D8%A8%D9%8A%D8%B1.webp"
         },
         {
           "id": "sd4",
@@ -2468,7 +2468,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": ""
+          "image": "/images/optimized/%D9%85%D9%8A%D8%A7%D9%87%20%D8%BA%D8%A7%D8%B2%D9%8A%D9%87%20%D8%B5%D8%BA%D9%8A%D8%B1.webp"
         },
         {
           "id": "sd5",
@@ -2485,7 +2485,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": ""
+          "image": "/images/optimized/%D9%85%D9%8A%D8%A7%D9%87%20%D8%BA%D8%A7%D8%B2%D9%8A%D8%A9%20%D9%83%D8%A8%D9%8A%D8%B1.webp"
         },
         {
           "id": "sd_mc1",
@@ -2502,7 +2502,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/sd_mc1.webp"
+          "image": "/images/optimized/%D9%85%D9%88%D9%87%D9%8A%D8%AA%D9%88%20%D9%83%D9%84%D8%A7%D8%B3%D9%8A%D9%83.webp"
         },
         {
           "id": "sd_ln1",
@@ -2604,7 +2604,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/_DSC3410.webp"
+          "image": "/images/optimized/%D8%A7%D9%84%D8%AC%D9%84%D8%A7%D8%A8.webp"
         },
         {
           "id": "j6",

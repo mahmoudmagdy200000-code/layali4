@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
 
-const IMG_DIR = path.join(__dirname, '..', 'img');
+const IMG_DIR = path.join(__dirname, 'img');
 const OUTPUT_DIR = path.join(__dirname, 'public', 'images', 'optimized');
 const MENU_DATA_PATH = path.join(__dirname, 'src', 'data', 'menuData.json');
 

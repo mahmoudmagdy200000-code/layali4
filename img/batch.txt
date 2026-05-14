@@ -1,0 +1,9 @@
+Role: Developer
+Task: Execute existing patch script for the next batch of images.
+
+Context: I have cleared the `./img` folder and placed a NEW batch of missing images named by their IDs for the next menu section.
+
+Instructions:
+1. Run the existing `patch-images.cjs` script using Node.js.
+2. Output the success logs to confirm which IDs were just processed and mapped in `menuData.json`.
+3. Do not rewrite the script unless it encounters an error. Just run it.
