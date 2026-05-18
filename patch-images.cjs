@@ -14,7 +14,7 @@ async function patchImages() {
     return;
   }
 
-  const files = fs.readdirSync(IMG_DIR).filter(file => 
+  const files = fs.readdirSync(IMG_DIR).filter(file =>
     ['.jpg', '.jpeg', '.png', '.webp'].includes(path.extname(file).toLowerCase())
   );
 
