@@ -499,7 +499,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/%D9%85%D9%86%D9%82%D9%88%D8%B4%D8%A9%20%D9%86%D8%B5%D9%81%20%D8%B2%D8%B9%D8%AA%D8%B1%20%D9%86%D8%B5%D9%81%20%D8%AC%D8%A8%D9%86%D8%A9.webp"
+          "image": "/images/optimized/b29.webp"
         },
         {
           "id": "b30",
@@ -516,7 +516,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/%D9%85%D9%86%D9%82%D9%88%D8%B4%D8%A9%20%D9%86%D8%B5%D9%81%20%D8%B2%D8%B9%D8%AA%D8%B1%20%D9%86%D8%B5%D9%81%20%D8%AC%D8%A8%D9%86%D8%A9.webp"
+          "image": "/images/optimized/b30.webp"
         },
         {
           "id": "b31",
@@ -567,7 +567,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/%D9%84%D8%AD%D9%85%D8%A9%20%D8%A8%D8%B9%D8%AC%D9%8A%D9%86%20%D8%AF%D8%A8%D8%B3%20%D8%B1%D9%85%D8%A7%D9%86.webp"
+          "image": "/images/optimized/b33.webp"
         },
         {
           "id": "b34",
@@ -2375,6 +2375,23 @@
             "en": "KWD"
           },
           "image": "/images/optimized/cf_mb1.webp"
+        },
+        {
+          "id": "cf_milk1",
+          "name": {
+            "ar": "كوب حليب",
+            "en": "Cup of Milk"
+          },
+          "description": {
+            "ar": "",
+            "en": ""
+          },
+          "price": "0.250",
+          "currency": {
+            "ar": "د.ك",
+            "en": "KWD"
+          },
+          "image": ""
         }
       ]
     },
