@@ -1756,12 +1756,12 @@
         {
           "id": "c21",
           "name": {
-            "ar": "متبل سلق وهندبة",
-            "en": "Moutabal Selek"
+            "ar": "هندبة",
+            "en": "Dandelion/Hendbeh"
           },
           "description": {
-            "ar": "سلق – ثوم – كزبرة – زيت زيتون",
-            "en": "Chard, garlic, coriander and olive oil"
+            "ar": "هندبة – ثوم – كزبرة – زيت زيتون",
+            "en": "Hendbeh, garlic, coriander and olive oil"
           },
           "price": "1.800",
           "currency": {
