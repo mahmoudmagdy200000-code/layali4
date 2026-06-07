@@ -22,12 +22,12 @@ export function MenuItemCard({ image, title, description, price, currency, tags,
       className="relative overflow-hidden rounded-xl cursor-pointer group"
     >
       {/* Full-bleed Image Wrapper */}
-      <div className="relative aspect-square w-full overflow-hidden">
+      <div className="relative aspect-square w-full overflow-hidden z-0">
         <img
           src={image && image.trim() !== "" ? image : '/images/optimized/_DSC3410.webp'}
           alt={title}
           className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 transform-gpu will-change-transform scale-110 group-hover:scale-[1.25]"
-          loading="lazy"
+          loading="eager"
           decoding="async"
           onError={(e) => {
             e.target.onerror = null;
@@ -37,11 +37,11 @@ export function MenuItemCard({ image, title, description, price, currency, tags,
       </div>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pointer-events-none z-10" />
 
       {/* Popular Badge: Top corner */}
       {tags?.includes('popular') && (
-        <div className={`absolute top-2.5 ${isRTL ? 'right-2.5' : 'left-2.5'} z-10`}>
+        <div className={`absolute top-2.5 ${isRTL ? 'right-2.5' : 'left-2.5'} z-20`}>
           <span className="bg-brand-600 text-white text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md shadow-lg">
             {t('common.popular')}
           </span>
@@ -49,7 +49,7 @@ export function MenuItemCard({ image, title, description, price, currency, tags,
       )}
 
       {/* Bottom Text Overlay: Name + Description + Price */}
-      <div className="absolute bottom-0 left-0 right-0 px-3 pt-3 pb-4 md:px-4 md:pb-5 flex flex-col justify-end items-start gap-1">
+      <div className="absolute bottom-0 left-0 right-0 px-3 pt-3 pb-4 md:px-4 md:pb-5 flex flex-col justify-end items-start gap-1 z-20">
         <h3 className="font-display text-sm sm:text-base md:text-lg font-bold text-white leading-tight w-full">
           {title}
         </h3>

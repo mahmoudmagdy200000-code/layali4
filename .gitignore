@@ -14,6 +14,7 @@ dist-ssr
 
 # Raw unoptimized images (1GB+) — only optimized WebP files should be committed
 raw_images/
+img/
 
 # Editor directories and files
 .vscode/*

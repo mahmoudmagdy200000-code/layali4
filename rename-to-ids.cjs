@@ -31,8 +31,8 @@ function renameToIds() {
     for (const item of category.items) {
       const currentImage = item.image;
 
-      // If there's an image path and it's pointing to the optimized folder
-      if (currentImage && currentImage.includes('/images/optimized/')) {
+      // If there's an image path, pointing to optimized folder, and it's not the fallback image
+      if (currentImage && currentImage.includes('/images/optimized/') && !currentImage.includes('_DSC3410.webp')) {
         // Extract filename and decode it (in case it's URL-encoded)
         const filename = decodeURIComponent(path.basename(currentImage));
         const oldFilePath = path.join(OPTIMIZED_DIR, filename);
