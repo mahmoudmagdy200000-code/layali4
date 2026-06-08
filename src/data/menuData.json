@@ -652,7 +652,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/_DSC3410.webp"
+          "image": "/images/optimized/b38.webp"
         }
       ]
     },
@@ -1632,19 +1632,19 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/_DSC3410.webp"
+          "image": "/images/optimized/c22.webp"
         },
         {
           "id": "c13",
           "name": {
-            "ar": "فتة باذنجان",
-            "en": "Eggplant Fatteh"
+            "ar": "متبل",
+            "en": "Mutabal"
           },
           "description": {
             "ar": "باذنجان مشوي – طحينة – زيت زيتون",
             "en": "Grilled eggplant, tahina, olive oil"
           },
-          "price": "2.800",
+          "price": "2.000",
           "currency": {
             "ar": "د.ك",
             "en": "KWD"
@@ -1999,7 +1999,7 @@
             "ar": "د.ك",
             "en": "KWD"
           },
-          "image": "/images/optimized/_DSC3410.webp"
+          "image": "/images/optimized/ds5.webp"
         },
         {
           "id": "ds6",
